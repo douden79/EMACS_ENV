@@ -1,0 +1,19 @@
+* oscam 클라이언트 환경 만들기
++--------------------------------------------------+
+cccam cline 내용
++--------------------------------------------------+
+N: 127.0.0.1 15000 dummy dummy 01 02 03 04 05 06 07 08 09 10 11 12 13 14                                        
+N: 127.0.0.1 15001 dummy dummy 01 02 03 04 05 06 07 08 09 10 11 12 13 14
+N: www.ilovehobbysite.com 36730 hantest_0cc6ac008E9D qwhqFhiQYIjQo 01 02 03 04 05 06 07 08 09 10 11 12 13 14
+N: www.ilovehobbysite.com 36731 hantest_0cc6ac008E9D qwhqFhiQYIjQo 01 02 03 04 05 06 07 08 09 10 11 12 13 14
+N: www.ilovehobbysite.com 36732 hantest_0cc6ac008E9D qwhqFhiQYIjQo 01 02 03 04 05 06 07 08 09 10 11 12 13 14
+N: www.ilovehobbysite.com 36733 hantest_0cc6ac008E9D qwhqFhiQYIjQo 01 02 03 04 05 06 07 08 09 10 11 12 13 14
+N: www.ilovehobbysite.com 36734 hantest_0cc6ac008E9D qwhqFhiQYIjQo 01 02 03 04 05 06 07 08 09 10 11 12 13 14
+N: www.ilovehobbysite.com 36735 hantest_0cc6ac008E9D qwhqFhiQYIjQo 01 02 03 04 05 06 07 08 09 10 11 12 13 14                                                                                  
+N: www.ilovehobbysite.com 36736 hantest_0cc6ac008E9D qwhqFhiQYIjQo 01 02 03 04 05 06 07 08 09 10 11 12 13 14
+N: www.ilovehobbysite.com 36737 hantest_0cc6ac008E9D qwhqFhiQYIjQo 01 02 03 04 05 06 07 08 09 10 11 12 13 14
+N: www.ilovehobbysite.com 36738 hantest_0cc6ac008E9D qwhqFhiQYIjQo 01 02 03 04 05 06 07 08 09 10 11 12 13 14
+N: www.ilovehobbysite.com 36739 hantest_0cc6ac008E9D qwhqFhiQYIjQo 01 02 03 04 05 06 07 08 09 10 11 12 13 14
+
+C: www.ilovehobbysite.com 26730 hantest_0cc6ac008E9D qwhqFhiQYIjQo
+

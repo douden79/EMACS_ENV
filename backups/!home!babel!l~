@@ -1,0 +1,84 @@
+ systemplugins-3gmodemmanager
+ systemplugins-advhdmi
+ systemplugins-animationsetup
+ systemplugins-aspectratioswitch (translations)
+ systemplugins-audioeffect (translations)
+ systemplugins-audioeffect (source files)
+ systemplugins-autobouquetsmaker
+ systemplugins-autobouquetsmaker (translations)
+ systemplugins-autobouquetsmaker (source files)
+ systemplugins-automaticcleanup (translations)
+ systemplugins-automaticcleanup (source files)
+ systemplugins-automaticvolumeadjustment (translations)
+ systemplugins-automaticvolumeadjustment (source files)
+ systemplugins-autoresolution (translations)
+ systemplugins-autoresolution (source files)
+ systemplugins-blindscan (translations)
+ systemplugins-blindscan (source files)
+ systemplugins-cablescan
+ systemplugins-cablescan (source files)
+ systemplugins-commoninterfaceassignment
+ systemplugins-commoninterfaceassignment (source files)
+ systemplugins-crossepg
+ systemplugins-crossepg (source files)
+ systemplugins-defaultservicesscanner
+ systemplugins-defaultservicesscanner (source files)
+ systemplugins-diseqctester
+ systemplugins-diseqctester (source files)
+ systemplugins-dlnabrowser
+ systemplugins-dlnabrowser (translations)
+ systemplugins-dlnaserver
+ systemplugins-dlnaserver (translations)
+ systemplugins-fastscan
+ systemplugins-fastscan (source files)
+ systemplugins-fempa
+ systemplugins-fempa (translations)
+ systemplugins-firmwareupgrade (translations)
+ systemplugins-firmwareupgrade (source files)
+ systemplugins-hdmicec
+ systemplugins-hdmicec (source files)
+ systemplugins-hotplug
+ systemplugins-hotplug (source files)
+ systemplugins-lcnscanner
+ systemplugins-lcnscanner (source files)
+ systemplugins-mphelp (translations)
+ systemplugins-mphelp (source files)
+ systemplugins-networkbrowser (development)
+ systemplugins-networkbrowser (translations)
+ systemplugins-networkbrowser (source files)
+ systemplugins-networkwizardprovides easy step by step network
+ systemplugins-networkwizard (source files)
+ systemplugins-pipservicerelation (source files)
+ systemplugins-positionersetuphelps you installing a motorized dish.
+ systemplugins-positionersetup (source files)
+ systemplugins-remotecontrolcode (translations)
+ systemplugins-remotecontrolcode (source files)
+ systemplugins-satelliteequipmentcontrolallows you to fine-tune DiSEqC-
+ systemplugins-satelliteequipmentcontrol (source files)
+ systemplugins-satfinderhelps you to align your dish.
+ systemplugins-satfinder (source files)
+ systemplugins-satipclient (translations)
+ systemplugins-satipclient (source files)
+ systemplugins-setpasswd (translations)
+ systemplugins-setpasswd (source files)
+ systemplugins-softwaremanager
+ systemplugins-softwaremanager (source files)
+ systemplugins-streamtv
+ systemplugins-streamtv (translations)
+ systemplugins-terrestrialscan (translations)
+ systemplugins-terrestrialscan (source files)
+ systemplugins-toolkit (source files)
+ systemplugins-transcodingsetup (translations)
+ systemplugins-transcodingsetup (source files)
+ systemplugins-videoclippingsetup
+ systemplugins-videoclippingsetup (source files)
+ systemplugins-videocolorspace (translations)
+ systemplugins-videocolorspace (source files)
+ systemplugins-videoenhancement
+ systemplugins-videoenhancement (source files)
+ systemplugins-videotune
+ systemplugins-videotune (source files)
+ systemplugins-vps (source files)
+ systemplugins-weathercomponenthandler (source files)
+ systemplugins-wirelesslanhelps you configuring your wireless lan
+ systemplugins-wirelesslan (source files)

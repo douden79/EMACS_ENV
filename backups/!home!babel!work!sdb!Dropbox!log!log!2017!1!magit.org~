@@ -1,0 +1,16 @@
+* MAGIT Pull
+F     (magit-pull-popup)
+
+    This prefix command shows the following suffix commands in a popup buffer.
+F p     (magit-pull-from-pushremote)
+
+    Pull from the push-remote of the current branch.
+F u     (magit-pull-from-upstream)
+
+    Pull from the upstream of the current branch.
+F e     (magit-pull)
+
+    Pull from a branch read in the minibuffer. 
+
+- magit.vc manual
+[[https://magit.vc/manual/magit/Transferring.html#Transferring]]

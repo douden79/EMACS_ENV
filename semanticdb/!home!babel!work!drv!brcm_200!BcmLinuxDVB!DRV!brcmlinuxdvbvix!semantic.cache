@@ -1,0 +1,16 @@
+;; Object brcmlinuxdvbvix/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "brcmlinuxdvbvix/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags nil
+      :file "Makefile"
+      :pointmax 1684
+      :fsize 1683
+      :lastmodtime '(22684 20995 860871 189000)
+      :unmatched-syntax nil))
+  :file "!home!babel!work!drv!brcm_200!BcmLinuxDVB!DRV!brcmlinuxdvbvix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,27 @@
+
+;; ----- smex-history -----
+(
+ menu-bar-mode
+ ecb-activate
+ ansi-term
+ chmod
+ ecb-deactivate
+ load-theme
+ find-name-dired
+)
+
+;; ----- smex-data -----
+(
+ (menu-bar-mode . 5)
+ (byte-recompile-directory . 1)
+ (toggle-frame-fullscreen . 1)
+ (rgrep . 1)
+ (compile . 12)
+ (woman . 1)
+ (find-name-dired . 1)
+ (ansi-term . 7)
+ (load-theme . 1)
+ (ecb-activate . 2)
+ (ecb-deactivate . 1)
+ (chmod . 1)
+)

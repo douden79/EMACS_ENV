@@ -1,0 +1,143 @@
+;; Object alpumr/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "alpumr/"
+  :tables
+  (list
+    (semanticdb-table "alpumr.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("../linuxcommon/linuxcommon.h" include nil nil [162 201])
+            ("nexus_platform.h" include nil nil [202 229])
+            ("nexus_base_types.h" include nil nil [230 259])
+            ("project.h" include nil nil [260 280])
+            ("vstb_build_opt.h" include nil nil [281 308])
+            ("bcmdebug.h" include nil nil [309 330])
+            ("bsp_i.h" include nil nil [331 349])
+            ("../frontuart/front_common.h" include nil nil [350 388])
+            ("hw_info" variable
+               (:typemodifiers ("extern")
+                :type ("HARDWARE_INFO_S" type (:type "class") nil nil))
+                nil [550 581])
+            ("pConfig" variable
+               (:typemodifiers ("static")
+                :type ("NEXUS_PlatformConfiguration" type (:type "class") nil nil))
+                nil [582 625])
+            ("alpuc_process" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [784 800])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [801 817]))                  
+                :type "unsigned char")
+                nil [749 818])
+            ("alpuc_tx_data" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "unsigned char")
+                nil [819 858])
+            ("alpuc_rx_data" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "unsigned char")
+                nil [859 898])
+            ("GetRandom" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "unsigned int")
+                nil [1004 1036])
+            ("_alpu_rand" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1070 1075]))                  
+                :type "unsigned char")
+                nil [1045 1522])
+            ("check_alpumr_security" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1624 1629]))                  
+                :type "int")
+                nil [1598 1682])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("check_alpumr_security" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1698 1720]))                  
+                :type "int")
+                nil [1684 1721])
+            ("check_alpuc_security" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1755 1760]))                  
+                :type "int")
+                nil [1730 2810])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("check_alpuc_security" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2826 2847]))                  
+                :type "int")
+                nil [2812 2848])
+            ("_alpu_delay_ms" function
+               (:arguments 
+                  ( ("i" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2870 2885]))                  
+                :type "void")
+                nil [2850 3053])
+            ("_i2c_read" function
+               (:arguments 
+                  ( ("device_addr" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [3079 3105])
+                    ("sub_addr" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [3106 3129])
+                    ("buff" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3130 3150])
+                    ("ByteNo" variable (:type "int") (reparse-symbol arg-sub-list) [3151 3162]))                  
+                :type "unsigned char")
+                nil [3055 3389])
+            ("_i2c_write" function
+               (:arguments 
+                  ( ("device_addr" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [3416 3442])
+                    ("sub_addr" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [3443 3466])
+                    ("buff" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3467 3487])
+                    ("ByteNo" variable (:type "int") (reparse-symbol arg-sub-list) [3488 3499]))                  
+                :type "unsigned char")
+                nil [3391 3737]))          
+      :file "alpumr.c"
+      :pointmax 6273
+      :fsize 6272
+      :lastmodtime '(22684 20995 860871 189000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("APP" variable (:default-value ("alpumr.o")) nil [1 14])
+            ("$(NEXUS_TOP)/platforms/$(NEXUS_PLATFORM)/build/platform_app.inc" include nil nil [44 116])
+            (".PHONY" function (:arguments ("api" "clean" "subdirs" "clean-subdirs")) nil [118 158])
+            ("all" function (:arguments ("$(APP)")) nil [159 171])
+            ("LDFLAGS" variable (:default-value ("${NEXUS_LDFLAGS}")) nil [222 250])
+            ("clean" function nil nil [313 355])
+            ("CFLAGS" variable (:default-value ("$(NEXUS_CFLAGS)" "$(addprefix -I,$(NEXUS_APP_INCLUDE_PATHS))" "$(addprefix -D,$(NEXUS_APP_DEFINES))" "$(addprefix -I,$(KERNEL_INCLUDE_PATH1))" "$(addprefix -I,$(KERNEL_INCLUDE_PATH2))" "$(addprefix -I,$(KERNEL_INCLUDE_PATH3))" "$(addprefix -I,$(KERNEL_INCLUDE_PATH4))" "$(addprefix -I,$(DRV_TOP)/debug)" "$(addprefix -I,$(TVLITE_INCLUDES))" "$(addprefix -I,$(BASE_INCLUDE_PATH))" "$(addprefix -I,$(BASE_KERNEL_INCLUDE_PATH))")) nil [416 887])
+            ("CFLAGS" variable (:default-value ("$(addprefix -I,$(KERNEL_UAPI_PATH1))")) nil [942 989])
+            ("CFLAGS" variable (:default-value ("$(addprefix -I,$(KERNEL_UAPI_PATH2))")) nil [989 1036])
+            ("CFLAGS" variable (:default-value ("$(addprefix -I,$(KERNEL_UAPI_PATH3))")) nil [1036 1083])
+            ("CFLAGS" variable (:default-value ("$(addprefix -I,$(KERNEL_UAPI_PATH4))")) nil [1083 1130])
+            ("CFLAGS" variable (:default-value ("$(addprefix -I,$(LINUX)/drivers/media/dvb-core)")) nil [1130 1188])
+            ("CFLAGS" variable (:default-value ("$(addprefix -I,$(KERNEL_INCLUDE_PATH3))" "$(addprefix -I,$(KERNEL_INCLUDE_PATH4))" "$(addprefix -I,$(KERNEL_INCLUDE_PATH5))")) nil [1229 1380])
+            ("CFLAGS" variable (:default-value ("-Wno-unused-but-set-variable" "-Wno-unused-variable" "-Wno-unused-but-set-variable" "-Wno-implicit-function-declaration" "-Wno-unused-function" "-Wno-switch")) nil [1388 1544])
+            ("CFLAGS" variable (:default-value ("-DTVLITE=$(TVLITE)" "-DBCHIP=$(BCHP_CHIP)" "-DSDK_VERNO=$(SDK_VER)" "-DBCMSDK_VER=$(BCMSDKVER)")) nil [1570 1669])
+            ("CFLAGS" variable (:default-value ("-DDEBUG_ON=1")) nil [1697 1720])
+            ("CFLAGS" variable (:default-value ("-DDEBUG_ON=0")) nil [1725 1748])
+            ("FB_OBJS" variable (:default-value ("alpumr.c")) nil [1757 1777])
+            ("%" function (:arguments ("%.c" "$(FB_OBJS)")) nil [1777 2011])
+            ("install" function (:arguments ("all")) nil [2013 2026]))          
+      :file "Makefile"
+      :pointmax 2027
+      :fsize 2026
+      :lastmodtime '(22684 20995 860871 189000)
+      :unmatched-syntax '((ENDIF 1188 . 1193) (bol 1188 . 1188) (semantic-list 33 . 43) (punctuation 32 . 33) (punctuation 30 . 31) (punctuation 29 . 30) (symbol 14 . 28) (bol 14 . 14))))
+  :file "!home!babel!work!drv!brcm_200!BcmLinuxDVB!DRV!brcmlinuxdvbvix!alpumr!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

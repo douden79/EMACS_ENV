@@ -1,0 +1,137 @@
+;; Object priv/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "priv/"
+  :tables
+  (list
+    (semanticdb-table "nexus_generic_driver.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("NEXUS_GENERIC_DRIVER_H_" variable (:constant-flag t) nil [2563 2586])
+            ("NEXUS_DRIVER_MAJOR" variable (:constant-flag t) nil [2639 2657])
+            ("nexus_generic_driver_init_settings" type
+               (:members 
+                  ( ("region" variable
+                       (:dereference 1
+                        :type ("" type
+                             (:members 
+                                ( ("offset" variable (:type "unsigned int") (reparse-symbol classsubparts) [2727 2743])
+                                  ("size" variable (:type "unsigned int") (reparse-symbol classsubparts) [2775 2789]))                                
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2710 2807])
+                    ("max_dcache_line_size" variable (:type "unsigned int") (reparse-symbol classsubparts) [2813 2843]))                  
+                :type "struct")
+                nil [2662 2904])
+            ("nexus_generic_driver_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("settings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("nexus_generic_driver_init_settings" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2937 2995]))                  
+                :type "int")
+                nil [2906 2996])
+            ("nexus_generic_driver_uninit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3030 3035]))                  
+                :type "void")
+                nil [2997 3036])
+            ("nexus_generic_driver_open" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("module" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3074 3090])
+                    ("context" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3165 3180])
+                    ("process_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3232 3252])
+                    ("process_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3355 3380])
+                    ("trusted" variable (:type "bool") (reparse-symbol arg-sub-list) [3417 3486]))                  
+                :type "int")
+                nil [3038 3487])
+            ("nexus_generic_driver_close" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("module" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3520 3536])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3537 3551])
+                    ("abnormal_termination" variable (:type "bool") (reparse-symbol arg-sub-list) [3552 3578]))                  
+                :type "void")
+                nil [3488 3579])
+            ("nexus_generic_driver_validate_mmap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("module" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3620 3636])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3637 3651])
+                    ("offset" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3652 3668])
+                    ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3669 3683]))                  
+                :type "int")
+                nil [3580 3684])
+            ("nexus_generic_driver_ioctl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("module" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3717 3733])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3734 3748])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3749 3766])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3767 3785]))                  
+                :type "int")
+                nil [3685 3786])
+            ("nexus_generic_driver_read_register" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3827 3841])
+                    ("p_value" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3842 3860]))                  
+                :type "void")
+                nil [3787 3861])
+            ("nexus_generic_driver_write_register" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3903 3917])
+                    ("value" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3918 3933]))                  
+                :type "void")
+                nil [3862 3934])
+            ("nexus_init_module" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4080 4085]))                  
+                :type "int")
+                nil [4058 4086])
+            ("nexus_cleanup_module" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4113 4118]))                  
+                :type "void")
+                nil [4087 4119]))          
+      :file "nexus_generic_driver.h"
+      :pointmax 4128
+      :fsize 4127
+      :lastmodtime '(22684 21049 444873 411000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NEXUS_GENERIC_DRIVER_H_")
+          ("NEXUS_DRIVER_MAJOR" . ((number "33" 2658 . 2660)))
+          )
+))
+  :file "!home!babel!work!drv!brcm_200!BcmLinuxDVB!DRV!unified_20160329!nexus!platforms!common!include!priv!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

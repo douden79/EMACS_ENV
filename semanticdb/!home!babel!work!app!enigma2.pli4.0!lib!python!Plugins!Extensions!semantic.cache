@@ -1,0 +1,19 @@
+;; Object Extensions/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Extensions/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("installdir" variable (:default-value ("$(pkglibdir)/python/Plugins/Extensions")) nil [1 53])
+            ("SUBDIRS" variable (:default-value ("TuxboxPlugins" "CutListEditor" "PicturePlayer" "MediaScanner" "MediaPlayer" "GraphMultiEPG" "SocketMMI" "DVDBurn" "Modem" "CoolTVGuide" "iSettingE2" "DVDPlayer")) nil [54 202])
+            ("install_PYTHON" variable (:default-value ("__init__.py")) nil [203 235]))          
+      :file "Makefile.am"
+      :pointmax 235
+      :fsize 234
+      :lastmodtime '(22653 45150 152777 704000)
+      :unmatched-syntax nil))
+  :file "!home!babel!work!app!enigma2.pli4.0!lib!python!Plugins!Extensions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

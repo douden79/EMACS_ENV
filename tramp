@@ -1,0 +1,50 @@
+;; -*- emacs-lisp -*- <17/02/06 12:18:12 /home/babel/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+((["smb" "root" "192.168.1.102" nil nil]
+  ("smbclient-version" "Version 4.3.11-Ubuntu"))
+ (["smb" "root" "192.168.116" nil nil]
+  ("smbclient-version" "Version 4.3.11-Ubuntu"))
+ (["smb" "root" "192.168.1.119" nil nil]
+  ("smbclient-version" "Version 4.3.11-Ubuntu")
+  ("smbserver-version" "Domain=[WORKGROUP] OS=[Unix] Server=[Samba 4.1.12]")
+  ("share-cache"
+   (("Media" "dr-xr-xr-x" 0
+     (0 0))
+    ("root" "dr-xr-xr-x" 0
+     (0 0)))))
+ (["ssh" "iqsr4" "ilovehobbysite.com" nil nil]
+  ("locale" "LC_ALL=en_US.utf8")
+  ("uname" "Linux 3.13.0-57-generic")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("file-exists" "test -e")
+  ("ls" "/bin/ls --color=never")
+  ("ls-dired" t)
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 1000)
+  ("gid-string" "iqsr4")
+  ("readlink" "\\readlink")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl"))
+ (["smb" "root" "192.168.1.202" nil nil]
+  ("smbclient-version" "Version 4.3.11-Ubuntu")
+  ("smbserver-version" "Domain=[WORKGROUP] OS=[Unix] Server=[Samba 4.1.12]")
+  ("share-cache"
+   (("Media" "dr-xr-xr-x" 0
+     (0 0))
+    ("root" "dr-xr-xr-x" 0
+     (0 0)))))
+ (["smb" "root" "192.168.1.106" nil nil]
+  ("smbclient-version" "Version 4.3.11-Ubuntu")
+  ("smbserver-version" "Domain=[WORKGROUP] OS=[Unix] Server=[Samba 4.1.12]")
+  ("share-cache"
+   (("Media" "dr-xr-xr-x" 0
+     (0 0))
+    ("root" "dr-xr-xr-x" 0
+     (0 0))))))

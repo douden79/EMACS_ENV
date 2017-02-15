@@ -1,0 +1,16 @@
+;; Object debug/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "debug/"
+  :tables
+  (list
+    (semanticdb-table "bcmdebug.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "bcmdebug.h"
+      :pointmax 908
+      :fsize 907
+      :lastmodtime '(22685 22643 389098 588000)
+      :unmatched-syntax nil))
+  :file "!home!babel!work!drv!brcm_200!BcmLinuxDVB!DRV!unified_20160329!brcmlinuxdvbvix!debug!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

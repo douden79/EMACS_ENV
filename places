@@ -1,0 +1,246 @@
+;;; -*- coding: utf-8 -*-
+(("/home/babel/work/drv/brcm_200/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB"))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV"))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329"))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix"))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix/graphics"))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix/graphics/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix/graphics/brcmfb.c"))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix/graphics/brcmfb.c" . 49334)
+ ("/home/babel/.emacs.d/init.el" . 4256)
+ ("/home/babel/.emacs.d/recentf" . 1443)
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/brcmlinuxdvbvix/alpumr/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/brcmlinuxdvbvix/alpumr/.."))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/brcmlinuxdvbvix/debug/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/brcmlinuxdvbvix/debug/.."))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/brcmlinuxdvbvix/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/brcmlinuxdvbvix/core"))
+ ("/home/babel/.emacs.d/" . 1193)
+ ("/home/babel/"
+  (dired-filename . "/home/babel/work"))
+ ("/home/babel/work/"
+  (dired-filename . "/home/babel/work/drv"))
+ ("/home/babel/work/drv/"
+  (dired-filename . "/home/babel/work/drv/brcm_200"))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix/debug/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix/debug/.."))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix/core/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix/core/bcmlinuxdvb.c"))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/platforms/common/include/priv/nexus_generic_driver.h" . 2662)
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/BSEAV/linux/driver/usermode/bcm_driver.c" . 50845)
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/platforms/common/src/linuxkernel/nexus_generic_driver.c" . 20325)
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix/core/bcmlinuxdvb.c" . 8129)
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/platforms/common/src/linuxkernel/nexus_driver.c" . 12815)
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/platforms/common/src/linuxkernel/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/platforms/common/src/linuxkernel/.."))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/platforms/common/src/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/platforms/common/src/.."))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/platforms/common/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/platforms/common/.."))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/platforms/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/platforms/.."))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/"
+  (dired-filename . "/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/nexus/.."))
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/unified_20160329/brcmlinuxdvbvix/debug/bcmdebug.h" . 17)
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/brcmlinuxdvbvix/debug/bcmdebug.h" . 90)
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/brcmlinuxdvbvix/Makefile" . 25)
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/brcmlinuxdvbvix/alpumr/Makefile" . 320)
+ ("/home/babel/work/drv/brcm_200/BcmLinuxDVB/DRV/brcmlinuxdvbvix/alpumr/alpumr.c" . 1891)
+ ("/home/babel/.emacs.d/config.org" . 12094)
+ ("/home/babel/work/app/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli5.merge"))
+ ("/home/babel/work/app/enigma2.pli5.merge/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli5.merge/timer.py"))
+ ("/home/babel/spacemacs-master/layers/+themes/colors/"
+  (dired-filename . "/home/babel/spacemacs-master/layers/+themes/colors/.."))
+ ("/home/babel/spacemacs-master/layers/+themes/"
+  (dired-filename . "/home/babel/spacemacs-master/layers/+themes/.."))
+ ("/home/babel/spacemacs-master/layers/"
+  (dired-filename . "/home/babel/spacemacs-master/layers/.."))
+ ("/home/babel/spacemacs-master/"
+  (dired-filename . "/home/babel/spacemacs-master/core"))
+ ("/home/babel/spacemacs-master/core/" . 1898)
+ ("/home/babel/spacemacs-master/core/core-themes-support.el" . 923)
+ ("/home/babel/spacemacs-master/core/core-configuration-layer.el" . 11781)
+ ("/home/babel/spacemacs-master/layers/+themes/colors/packages.el" . 1921)
+ ("/home/babel/spacemacs-master/layers/+themes/colors/funcs.el" . 2462)
+ ("/home/babel/work/sdb/"
+  (dired-filename . "/home/babel/work/sdb/Dropbox"))
+ ("/home/babel/work/sdb/build/"
+  (dired-filename . "/home/babel/work/sdb/build/build"))
+ ("/nfsroot/rootfs/usr/lib/enigma2/python/Components/"
+  (dired-filename . "/nfsroot/rootfs/usr/lib/enigma2/python/Components/About.py"))
+ ("/home/babel/work/app/enigma2.pli4.0/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli4.0/lib"))
+ ("/home/babel/work/app/enigma2.pli4.0/lib/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli4.0/lib/python"))
+ ("/home/babel/work/app/enigma2.pli4.0/lib/python/Components/Renderer/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli4.0/lib/python/Components/Renderer/.."))
+ ("/home/babel/work/app/enigma2.pli4.0/lib/python/Components/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli4.0/lib/python/Components/.."))
+ ("/home/babel/work/app/enigma2.pli4.0/lib/python/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli4.0/lib/python/Plugins"))
+ ("/home/babel/work/app/enigma2.pli4.0/lib/python/Plugins/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli4.0/lib/python/Plugins/Extensions"))
+ ("/home/babel/work/app/enigma2.pli4.0/lib/python/Plugins/Extensions/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli4.0/lib/python/Plugins/Extensions/CoolTVGuide"))
+ ("/home/babel/work/app/enigma2.pli4.0/lib/python/Plugins/Extensions/CoolTVGuide/" . 726)
+ ("/home/babel/About.py" . 9756)
+ ("/nfsroot/rootfs/usr/lib/enigma2/python/Plugins/SystemPlugins/SoftwareManager/ImageBackup.py" . 23720)
+ ("/nfsroot/rootfs/usr/lib/enigma2/python/Plugins/SystemPlugins/SoftwareManager/"
+  (dired-filename . "/nfsroot/rootfs/usr/lib/enigma2/python/Plugins/SystemPlugins/SoftwareManager/BackupRestore.py"))
+ ("/home/babel/work/app/enigma2.pli4.0/lib/python/Plugins/Extensions/CoolTVGuide/CoolSkin/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli4.0/lib/python/Plugins/Extensions/CoolTVGuide/CoolSkin/Makefile.am"))
+ ("/home/babel/work/app/enigma2.pli4.0/lib/python/Plugins/Extensions/CoolTVGuide/CoolSkin/Makefile.am" . 926)
+ ("/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-dags/recipes-bsp/linux/"
+  (dired-filename . "/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-dags/recipes-bsp/linux/linux-3.14.28"))
+ ("/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-openpli/"
+  (dired-filename . "/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-openpli/classes"))
+ ("/home/babel/work/sdb/build/openpli5.0/"
+  (dired-filename . "/home/babel/work/sdb/build/openpli5.0/branding.conf.sample"))
+ ("/home/babel/work/build/"
+  (dired-filename . "/home/babel/work/build/openpli5.0"))
+ ("/home/babel/work/build/openpli5.0/"
+  (dired-filename . "/home/babel/work/build/openpli5.0/meta-openembedded"))
+ ("/smb:root@192.168.1.106:/"
+  (dired-filename . "/smb:root@192.168.1.106:/root"))
+ ("/smb:root@192.168.1.106:/root/"
+  (dired-filename . "/smb:root@192.168.1.106:/root/usr"))
+ ("/smb:root@192.168.1.106:/root/usr/"
+  (dired-filename . "/smb:root@192.168.1.106:/root/usr/lib"))
+ ("/smb:root@192.168.1.106:/root/usr/lib/"
+  (dired-filename . "/smb:root@192.168.1.106:/root/usr/lib/enigma2"))
+ ("/smb:root@192.168.1.106:/root/usr/lib/enigma2/"
+  (dired-filename . "/smb:root@192.168.1.106:/root/usr/lib/enigma2/python"))
+ ("/smb:root@192.168.1.106:/root/usr/lib/enigma2/python/"
+  (dired-filename . "/smb:root@192.168.1.106:/root/usr/lib/enigma2/python/Plugins"))
+ ("/smb:root@192.168.1.106:/root/usr/lib/enigma2/python/Plugins/"
+  (dired-filename . "/smb:root@192.168.1.106:/root/usr/lib/enigma2/python/Plugins/SystemPlugins"))
+ ("/smb:root@192.168.1.106:/root/usr/lib/enigma2/python/Plugins/SystemPlugins/"
+  (dired-filename . "/smb:root@192.168.1.106:/root/usr/lib/enigma2/python/Plugins/SystemPlugins/SoftwareManager"))
+ ("/smb:root@192.168.1.106:/root/usr/lib/enigma2/python/Plugins/SystemPlugins/SoftwareManager/"
+  (dired-filename . "/smb:root@192.168.1.106:/root/usr/lib/enigma2/python/Plugins/SystemPlugins/SoftwareManager/ImageBackup.py"))
+ ("/smb:root@192.168.1.106:/root/usr/lib/enigma2/python/Plugins/SystemPlugins/SoftwareManager/ImageBackup.py" . 11349)
+ ("/home/babel/work/sdb/build/build/"
+  (dired-filename . "/home/babel/work/sdb/build/build/4d-pli"))
+ ("/home/babel/work/sdb/build/build/4d-pli/"
+  (dired-filename . "/home/babel/work/sdb/build/build/4d-pli/openpli5.0"))
+ ("/home/babel/work/sdb/build/build/4d-pli/openpli5.0/"
+  (dired-filename . "/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-dags"))
+ ("/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-dags/"
+  (dired-filename . "/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-dags/recipes-bsp"))
+ ("/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-dags/recipes-bsp/"
+  (dired-filename . "/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-dags/recipes-bsp/drivers"))
+ ("/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-dags/recipes-bsp/drivers/"
+  (dired-filename . "/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-dags/recipes-bsp/drivers/distro-feed-configs.bbappend"))
+ ("/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-dags/recipes-bsp/drivers/distro-feed-configs.bbappend" . 876)
+ ("/home/babel/work/sdb/build/build/4d-pli/openpli5.0/meta-dags/recipes-bsp/drivers/3rdparty-plugins.bb" . 941)
+ ("/home/babel/work/app/enigma2.pli5.merge/lib/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli5.merge/lib/python"))
+ ("/home/babel/work/app/enigma2.pli5.merge/lib/python/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli5.merge/lib/python/Plugins"))
+ ("/home/babel/work/app/enigma2.pli5.merge/lib/python/Plugins/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli5.merge/lib/python/Plugins/SystemPlugins"))
+ ("/home/babel/work/app/enigma2.pli5.merge/lib/python/Plugins/SystemPlugins/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli5.merge/lib/python/Plugins/SystemPlugins/SoftwareManager"))
+ ("/home/babel/work/app/enigma2.pli5.merge/lib/python/Plugins/SystemPlugins/SoftwareManager/"
+  (dired-filename . "/home/babel/work/app/enigma2.pli5.merge/lib/python/Plugins/SystemPlugins/SoftwareManager/ImageBackup.py"))
+ ("/home/babel/work/app/enigma2.pli5.merge/lib/python/Plugins/SystemPlugins/SoftwareManager/ImageBackup.py" . 10535)
+ ("/home/babel/work/sdb/Dropbox/log/log/2017/1/+issue/+Astrasat/"
+  (dired-filename . "/home/babel/work/sdb/Dropbox/log/log/2017/1/+issue/+Astrasat/.."))
+ ("/home/babel/work/sdb/Dropbox/log/log/2017/1/+issue/"
+  (dired-filename . "/home/babel/work/sdb/Dropbox/log/log/2017/1/+issue/+technomate"))
+ ("/home/babel/work/sdb/Dropbox/log/log/2017/1/+issue/+technomate/"
+  (dired-filename . "/home/babel/work/sdb/Dropbox/log/log/2017/1/+issue/+technomate/170125.org"))
+ ("/home/babel/work/sdb/Dropbox/log/log/2017/1/+info/" . 227)
+ ("/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins/Extensions/CyrusSettings/Panel/"
+  (dired-filename . "/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins/Extensions/CyrusSettings/Panel/CyrusSettings.png"))
+ ("/smb:root@192.168.1.202:/"
+  (dired-filename . "/smb:root@192.168.1.202:/root"))
+ ("/smb:root@192.168.1.202:/root/"
+  (dired-filename . "/smb:root@192.168.1.202:/root/usr"))
+ ("/smb:root@192.168.1.202:/root/usr/"
+  (dired-filename . "/smb:root@192.168.1.202:/root/usr/lib"))
+ ("/smb:root@192.168.1.202:/root/usr/lib/"
+  (dired-filename . "/smb:root@192.168.1.202:/root/usr/lib/enigma2"))
+ ("/smb:root@192.168.1.202:/root/usr/lib/enigma2/"
+  (dired-filename . "/smb:root@192.168.1.202:/root/usr/lib/enigma2/python"))
+ ("/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/"
+  (dired-filename . "/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins"))
+ ("/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins/"
+  (dired-filename . "/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins/Extensions"))
+ ("/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins/Extensions/"
+  (dired-filename . "/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins/Extensions/CyrusSettings"))
+ ("/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins/Extensions/CyrusSettings/"
+  (dired-filename . "/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins/Extensions/CyrusSettings/Moduli"))
+ ("/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins/Extensions/CyrusSettings/Moduli/"
+  (dired-filename . "/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins/Extensions/CyrusSettings/Moduli/Setting.py"))
+ ("/smb:root@192.168.1.202:/root/usr/lib/enigma2/python/Plugins/Extensions/CyrusSettings/Moduli/Setting.py" . 20102)
+ ("/home/babel/work/sdb/Dropbox/"
+  (dired-filename . "/home/babel/work/sdb/Dropbox/log"))
+ ("/home/babel/work/sdb/Dropbox/log/"
+  (dired-filename . "/home/babel/work/sdb/Dropbox/log/log"))
+ ("/home/babel/work/sdb/Dropbox/log/log/"
+  (dired-filename . "/home/babel/work/sdb/Dropbox/log/log/2017"))
+ ("/home/babel/work/sdb/Dropbox/log/log/2017/"
+  (dired-filename . "/home/babel/work/sdb/Dropbox/log/log/2017/1"))
+ ("/home/babel/work/sdb/Dropbox/log/log/2017/1/170109~170114.org" . 332)
+ ("/home/babel/work/sdb/Dropbox/log/log/2017/1/"
+  (dired-filename . "/home/babel/work/sdb/Dropbox/log/log/2017/1/bolt_make_header.org"))
+ ("/home/babel/work/sdb/build/build/build-enviroment/"
+  (dired-filename . "/home/babel/work/sdb/build/build/build-enviroment/LICENSE"))
+ ("/home/babel/work/sdb/Dropbox/log/log/2017/1/+issue/+technomate/170125.org" . 1421)
+ ("/home/babel/work/sdb/Dropbox/log/log/2017/1/170131~170203.org" . 1568)
+ ("/ssh:iqsr4@ilovehobbysite.com:/var/cps/"
+  (dired-filename . "/ssh:iqsr4@ilovehobbysite.com:/var/cps/CPS"))
+ ("/home/babel/work/sdb/Dropbox/log/log/2017/+server/+serverinfo.org" . 35)
+ ("/ssh:iqsr4@ilovehobbysite.com:/home/iqsr4/"
+  (dired-filename . "/ssh:iqsr4@ilovehobbysite.com:/home/iqsr4/.."))
+ ("/ssh:iqsr4@ilovehobbysite.com:/home/"
+  (dired-filename . "/ssh:iqsr4@ilovehobbysite.com:/home/.."))
+ ("/ssh:iqsr4@ilovehobbysite.com:/"
+  (dired-filename . "/ssh:iqsr4@ilovehobbysite.com:/var"))
+ ("/ssh:iqsr4@ilovehobbysite.com:/var/"
+  (dired-filename . "/ssh:iqsr4@ilovehobbysite.com:/var/www"))
+ ("/ssh:iqsr4@ilovehobbysite.com:/var/www/"
+  (dired-filename . "/ssh:iqsr4@ilovehobbysite.com:/var/www/html"))
+ ("/ssh:iqsr4@ilovehobbysite.com:/var/www/html/"
+  (dired-filename . "/ssh:iqsr4@ilovehobbysite.com:/var/www/html/ursr2"))
+ ("/ssh:iqsr4@ilovehobbysite.com:/var/www/html/ursr2/"
+  (dired-filename . "/ssh:iqsr4@ilovehobbysite.com:/var/www/html/ursr2/logout.php"))
+ ("/ssh:iqsr4@ilovehobbysite.com:/var/www/html/ursr2/main.php" . 9230)
+ ("/smb:root@192.168.1.119:/"
+  (dired-filename . "/smb:root@192.168.1.119:/root"))
+ ("/smb:root@192.168.1.119:/root/usr/"
+  (dired-filename . "/smb:root@192.168.1.119:/root/usr/lib"))
+ ("/smb:root@192.168.1.119:/root/usr/lib/"
+  (dired-filename . "/smb:root@192.168.1.119:/root/usr/lib/enigma2"))
+ ("/smb:root@192.168.1.119:/root/usr/lib/enigma2/"
+  (dired-filename . "/smb:root@192.168.1.119:/root/usr/lib/enigma2/python"))
+ ("/smb:root@192.168.1.119:/root/usr/lib/enigma2/python/"
+  (dired-filename . "/smb:root@192.168.1.119:/root/usr/lib/enigma2/python/Screens"))
+ ("/smb:root@192.168.1.119:/root/"
+  (dired-filename . "/smb:root@192.168.1.119:/root/TestMenu.py"))
+ ("/smb:root@192.168.1.119:/root/usr/lib/enigma2/python/Screens/"
+  (dired-filename . "/smb:root@192.168.1.119:/root/usr/lib/enigma2/python/Screens/TestMenu.py"))
+ ("/smb:root@192.168.1.119:/root/usr/lib/enigma2/python/Screens/TestMenu.py" . 44565)
+ ("/home/babel/uncompyle/"
+  (dired-filename . "/home/babel/uncompyle/.git"))
+ ("/home/babel/python-uncompyle6/"
+  (dired-filename . "/home/babel/python-uncompyle6/.git"))
+ ("/home/babel/work/sdb/Dropbox/log/log/2017/+server/"
+  (dired-filename . "/home/babel/work/sdb/Dropbox/log/log/2017/+server/.."))
+ ("/home/babel/.emacs.d/elpa/solarized-theme-20161222.109/"
+  (dired-filename . "/home/babel/.emacs.d/elpa/solarized-theme-20161222.109/solarized.el"))
+ ("/home/babel/.emacs.d/elpa/solarized-theme-20161222.109/solarized.el" . 4254)
+ ("/home/babel/.emacs.d/elpa/elpy-20161229.1103/elpy-autoloads.el" . 1077)
+ ("/home/babel/.emacs.d/elpa/company-20170112.2005/company-autoloads.el" . 8746)
+ ("/home/babel/.emacs.d/elpa/find-file-in-project-20161202.2205/find-file-in-project-autoloads.el" . 5907)
+ ("/home/babel/.emacs.d/elpa/highlight-indentation-20161012.209/highlight-indentation-autoloads.el" . 944)
+ ("/home/babel/.emacs.d/elpa/pyvenv-20160527.442/pyvenv-autoloads.el" . 1887)
+ ("/home/babel/.emacs.d/elpa/s-20160928.636/s-autoloads.el" . 215))

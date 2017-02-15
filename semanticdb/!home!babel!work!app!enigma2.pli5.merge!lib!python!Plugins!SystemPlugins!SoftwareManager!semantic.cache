@@ -1,0 +1,134 @@
+;; Object SoftwareManager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SoftwareManager/"
+  :tables
+  (list
+    (semanticdb-table "ImageBackup.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("enigma" include nil nil [377 418])
+            ("Screens.Screen" include nil nil [419 452])
+            ("Components.Button" include nil nil [453 489])
+            ("Components.Label" include nil nil [490 524])
+            ("Components.ActionMap" include nil nil [525 567])
+            ("Components.About" include nil nil [568 602])
+            ("Screens.Console" include nil nil [603 638])
+            ("Screens.MessageBox" include nil nil [639 680])
+            ("time" include nil nil [681 723])
+            ("os" include nil nil [724 785])
+            ("commands" include nil nil [786 801])
+            ("datetime" include nil nil [802 817])
+            ("Components.About" include nil nil [934 1242])
+            ("VERSION" variable nil nil [1244 1275])
+            ("VERSION" variable nil nil [1277 1308])
+            ("HaveGZkernel" variable nil nil [1309 1328])
+            ("Freespace" function (:arguments 
+              ( ("dev" variable nil (reparse-symbol function_parameters) [1344 1347]))              ) nil [1330 1511])
+            ("ImageBackup" type
+               (:superclasses ("Screen")
+                :members 
+                  ( ("skin" variable nil (reparse-symbol indented_block_body) [1540 3166])
+                    ("__init__" function
+                       (:suite 
+                          ( ("Screen" code nil (reparse-symbol indented_block_body) [3212 3242])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3245 3267])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3270 3295])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3298 3326])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3329 3366])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3369 3404])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3407 3444])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3495 3530])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3533 3572])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3575 3614])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3617 3656])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3659 3709])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3712 3750])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3753 3790])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3793 3832])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3835 3873])
+                            ("print" code nil (reparse-symbol indented_block_body) [3876 3940])
+                            ("print" code nil (reparse-symbol indented_block_body) [3943 4005])
+                            ("print" code nil (reparse-symbol indented_block_body) [4008 4072])
+                            ("print" code nil (reparse-symbol indented_block_body) [4075 4125])
+                            ("print" code nil (reparse-symbol indented_block_body) [4128 4176])
+                            ("print" code nil (reparse-symbol indented_block_body) [4179 4237])
+                            ("print" code nil (reparse-symbol indented_block_body) [4240 4295])
+                            ("print" code nil (reparse-symbol indented_block_body) [4298 4353])
+                            ("print" code nil (reparse-symbol indented_block_body) [4356 4410])
+                            ("print" code nil (reparse-symbol indented_block_body) [4413 4469])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4475 4508])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4511 4542])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4545 4581])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4584 4615])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4618 4860])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4863 5006])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5009 5203]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3184 3188])
+                            ("session" variable nil (reparse-symbol function_parameters) [3190 3197])
+                            ("args" variable nil (reparse-symbol function_parameters) [3199 3203]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3171 5204])
+                    ("check_hdd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5220 5224]))                          )
+                        (reparse-symbol indented_block_body) [5206 5619])
+                    ("check_usb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5635 5639])
+                            ("dev" variable nil (reparse-symbol function_parameters) [5641 5644]))                          )
+                        (reparse-symbol indented_block_body) [5621 5852])
+                    ("quit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5865 5869]))                          )
+                        (reparse-symbol indented_block_body) [5856 5887])
+                    ("red" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5899 5903]))                          )
+                        (reparse-symbol indented_block_body) [5891 5958])
+                    ("green" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5970 5974]))                          )
+                        (reparse-symbol indented_block_body) [5960 6419])
+                    ("yellow" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6432 6436]))                          )
+                        (reparse-symbol indented_block_body) [6421 6462])
+                    ("SearchUSBcanidate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6486 6490]))                          )
+                        (reparse-symbol indented_block_body) [6464 6797])
+                    ("doFullBackup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6816 6820])
+                            ("DIRECTORY" variable nil (reparse-symbol function_parameters) [6822 6831]))                          )
+                        (reparse-symbol indented_block_body) [6799 11201])
+                    ("doFullBackupCB" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11222 11226]))                          )
+                        (reparse-symbol indented_block_body) [11203 16821])
+                    ("imageInfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16837 16841]))                          )
+                        (reparse-symbol indented_block_body) [16823 19205]))                  
+                :type "class")
+                nil [1512 19205]))          
+      :file "ImageBackup.py"
+      :pointmax 19205
+      :fsize 19204
+      :lastmodtime '(22679 53733 845245 455000)
+      :unmatched-syntax nil))
+  :file "!home!babel!work!app!enigma2.pli5.merge!lib!python!Plugins!SystemPlugins!SoftwareManager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

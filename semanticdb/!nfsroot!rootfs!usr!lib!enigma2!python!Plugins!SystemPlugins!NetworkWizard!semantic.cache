@@ -1,0 +1,271 @@
+;; Object NetworkWizard/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "NetworkWizard/"
+  :tables
+  (list
+    (semanticdb-table "NetworkWizard.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("Screens.Wizard" include nil nil [1 56])
+            ("Screens.WizardLanguage" include nil nil [57 106])
+            ("Screens.Rc" include nil nil [107 132])
+            ("Screens.MessageBox" include nil nil [133 174])
+            ("Components.Pixmap" include nil nil [175 238])
+            ("Components.Sources.Boolean" include nil nil [239 285])
+            ("Components.Network" include nil nil [286 325])
+            ("Tools.Directories" include nil nil [326 404])
+            ("enigma" include nil nil [405 430])
+            ("os" include nil nil [431 452])
+            ("'''
+class NetworkWizard(WizardLanguage, Rc):
+	skin = \"\"\"
+		<screen position=\"0,0\" size=\"720,576\" title=\"Welcome...\" flags=\"wfNoBorder\" >
+			<widget name=\"text\" position=\"153,40\" size=\"340,300\" font=\"Regular;22\" />
+			<widget source=\"list\" render=\"Listbox\" position=\"53,340\" size=\"440,180\" scrollbarMode=\"showOnDemand\" >
+				<convert type=\"StringList\" />
+			</widget>
+			<widget name=\"config\" position=\"53,340\" zPosition=\"1\" size=\"440,180\" transparent=\"1\" scrollbarMode=\"showOnDemand\" />
+			<ePixmap pixmap=\"skin_default/buttons/button_red.png\" position=\"40,225\" zPosition=\"0\" size=\"15,16\" transparent=\"1\" alphatest=\"on\" />
+			<widget name=\"languagetext\" position=\"55,225\" size=\"95,30\" font=\"Regular;18\" />
+			<widget name=\"wizard\" pixmap=\"skin_default/wizard.png\" position=\"40,50\" zPosition=\"10\" size=\"110,174\" alphatest=\"on\" />
+			<widget name=\"rc\" pixmaps=\"skin_default/rc.png,skin_default/rcold.png\" position=\"500,50\" zPosition=\"10\" size=\"154,500\" alphatest=\"on\" />
+			<widget name=\"arrowdown\" pixmap=\"skin_default/arrowdown.png\" position=\"-100,-100\" zPosition=\"11\" size=\"37,70\" alphatest=\"on\" />
+			<widget name=\"arrowdown2\" pixmap=\"skin_default/arrowdown.png\" position=\"-100,-100\" zPosition=\"11\" size=\"37,70\" alphatest=\"on\" />
+			<widget name=\"arrowup\" pixmap=\"skin_default/arrowup.png\" position=\"-100,-100\" zPosition=\"11\" size=\"37,70\" alphatest=\"on\" />
+			<widget name=\"arrowup2\" pixmap=\"skin_default/arrowup.png\" position=\"-100,-100\" zPosition=\"11\" size=\"37,70\" alphatest=\"on\" />
+			<widget source=\"VKeyIcon\" render=\"Pixmap\" pixmap=\"skin_default/buttons/key_text.png\" position=\"40,260\" zPosition=\"0\" size=\"35,25\" transparent=\"1\" alphatest=\"on\" >
+				<convert type=\"ConditionalShowHide\" />
+			</widget>
+			<widget name=\"HelpWindow\" pixmap=\"skin_default/buttons/key_text.png\" position=\"125,170\" zPosition=\"1\" size=\"1,1\" transparent=\"1\" alphatest=\"on\" />
+		</screen>\"\"\"
+		'''" code nil nil [512 2391])
+            ("NetworkWizard" type
+               (:superclasses ("WizardLanguage" "Rc")
+                :members 
+                  ( ("skin" variable nil (reparse-symbol indented_block_body) [2467 3607])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3658 3752])
+                            ("WizardLanguage" code nil (reparse-symbol indented_block_body) [3755 3836])
+                            ("Rc" code nil (reparse-symbol indented_block_body) [3839 3856])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3859 3881])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3884 3909])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3912 3941])
+                            ("self" code nil (reparse-symbol indented_block_body) [3944 3969])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3972 4005])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4009 4044])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4047 4070])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4073 4099])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4102 4127])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4130 4162])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4165 4179])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4182 4195])
+                            ("if" code nil (reparse-symbol indented_block_body) [4198 4303])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4305 4325])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4328 4348])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4351 4371])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4374 4396])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4399 4417])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4420 4441])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4444 4463])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4467 4499])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4502 4544])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4547 4563])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4566 4593])
+                            ("self" code nil (reparse-symbol indented_block_body) [4596 4651])
+                            ("self" code nil (reparse-symbol indented_block_body) [4654 4687])
+                            ("self" code nil (reparse-symbol indented_block_body) [4690 4718]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3622 3626])
+                            ("session" variable nil (reparse-symbol function_parameters) [3628 3635])
+                            ("interface" variable nil (reparse-symbol function_parameters) [3637 3646]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3609 4719])
+                    ("exitWizardQuestion" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4744 4748])
+                            ("ret" variable nil (reparse-symbol function_parameters) [4750 4753]))                          )
+                        (reparse-symbol indented_block_body) [4721 4811])
+                    ("markDone" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4826 4830]))                          )
+                        (reparse-symbol indented_block_body) [4813 4913])
+                    ("back" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4924 4928]))                          )
+                        (reparse-symbol indented_block_body) [4915 4994])
+                    ("stopScan" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5009 5013]))                          )
+                        (reparse-symbol indented_block_body) [4996 5174])
+                    ("getInstalledInterfaceCount" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5207 5211]))                          )
+                        (reparse-symbol indented_block_body) [5176 5701])
+                    ("selectInterface" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5723 5727]))                          )
+                        (reparse-symbol indented_block_body) [5703 6353])
+                    ("checkOldInterfaceState" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6382 6386]))                          )
+                        (reparse-symbol indented_block_body) [6355 6811])
+                    ("listInterfaces" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6832 6836]))                          )
+                        (reparse-symbol indented_block_body) [6813 7019])
+                    ("InterfaceSelectionMade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7048 7052])
+                            ("index" variable nil (reparse-symbol function_parameters) [7054 7059]))                          )
+                        (reparse-symbol indented_block_body) [7021 7125])
+                    ("InterfaceSelect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7147 7151])
+                            ("index" variable nil (reparse-symbol function_parameters) [7153 7158]))                          )
+                        (reparse-symbol indented_block_body) [7127 7305])
+                    ("InterfaceSelectionMoved" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7335 7339]))                          )
+                        (reparse-symbol indented_block_body) [7307 7381])
+                    ("checkInterface" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7402 7406])
+                            ("iface" variable nil (reparse-symbol function_parameters) [7407 7412]))                          )
+                        (reparse-symbol indented_block_body) [7383 8470])
+                    ("resetNetworkConfigFinished" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8503 8507])
+                            ("data" variable nil (reparse-symbol function_parameters) [8508 8512]))                          )
+                        (reparse-symbol indented_block_body) [8472 8698])
+                    ("resetNetworkConfigCB" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8725 8729])
+                            ("callback" variable nil (reparse-symbol function_parameters) [8730 8738])
+                            ("iface" variable nil (reparse-symbol function_parameters) [8739 8744]))                          )
+                        (reparse-symbol indented_block_body) [8700 8853])
+                    ("getInterfacesFinished" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8881 8885])
+                            ("data" variable nil (reparse-symbol function_parameters) [8887 8891]))                          )
+                        (reparse-symbol indented_block_body) [8855 9132])
+                    ("AdapterSetupEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9154 9158])
+                            ("iface" variable nil (reparse-symbol function_parameters) [9160 9165]))                          )
+                        (reparse-symbol indented_block_body) [9134 9598])
+                    ("AdapterSetupEndCB" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9622 9626])
+                            ("data" variable nil (reparse-symbol function_parameters) [9627 9631]))                          )
+                        (reparse-symbol indented_block_body) [9600 10090])
+                    ("AdapterSetupEndFinished" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10120 10124])
+                            ("data" variable nil (reparse-symbol function_parameters) [10125 10129]))                          )
+                        (reparse-symbol indented_block_body) [10092 10247])
+                    ("checkWlanStateCB" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10270 10274])
+                            ("data" variable nil (reparse-symbol function_parameters) [10275 10279])
+                            ("status" variable nil (reparse-symbol function_parameters) [10280 10286]))                          )
+                        (reparse-symbol indented_block_body) [10249 11371])
+                    ("checkNetwork" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11390 11394]))                          )
+                        (reparse-symbol indented_block_body) [11373 11632])
+                    ("checkNetworkCB" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11653 11657])
+                            ("data" variable nil (reparse-symbol function_parameters) [11658 11662]))                          )
+                        (reparse-symbol indented_block_body) [11634 12121])
+                    ("checkNetworkStateCB" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12147 12151])
+                            ("data" variable nil (reparse-symbol function_parameters) [12152 12156]))                          )
+                        (reparse-symbol indented_block_body) [12123 12272])
+                    ("rescanTimerFired" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12295 12299]))                          )
+                        (reparse-symbol indented_block_body) [12274 12350])
+                    ("updateAPList" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12369 12373]))                          )
+                        (reparse-symbol indented_block_body) [12352 13201])
+                    ("listAccessPoints" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13224 13228]))                          )
+                        (reparse-symbol indented_block_body) [13203 14151])
+                    ("AccessPointsSelectionMoved" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14185 14189]))                          )
+                        (reparse-symbol indented_block_body) [14154 14250])
+                    ("checkWlanSelection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14275 14279]))                          )
+                        (reparse-symbol indented_block_body) [14252 14352])
+                    ("isWlanPluginInstalled" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14380 14384]))                          )
+                        (reparse-symbol indented_block_body) [14354 14555])
+                    ("listChoices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14573 14577]))                          )
+                        (reparse-symbol indented_block_body) [14557 14843])
+                    ("ChoicesSelectionMade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14870 14874])
+                            ("index" variable nil (reparse-symbol function_parameters) [14876 14881]))                          )
+                        (reparse-symbol indented_block_body) [14845 14912])
+                    ("ChoicesSelect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14932 14936])
+                            ("index" variable nil (reparse-symbol function_parameters) [14938 14943]))                          )
+                        (reparse-symbol indented_block_body) [14914 15129])
+                    ("ChoicesSelectionMoved" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15157 15161]))                          )
+                        (reparse-symbol indented_block_body) [15131 15171]))                  
+                :type "class")
+                nil [2392 15171]))          
+      :file "NetworkWizard.py"
+      :pointmax 15171
+      :fsize 15170
+      :lastmodtime '(22682 57473 275368 601000)
+      :unmatched-syntax '(($EOI 14399 . 14399) ($EOI 14250 . 14250) ($EOI 14399 . 14399) ($EOI 14399 . 14399) ($EOI 14399 . 14399) ($EOI 14382 . 14382) ($EOI 14373 . 14373) ($EOI 14373 . 14373) ($EOI 14373 . 14373) ($EOI 14373 . 14373) ($EOI 14355 . 14355) ($EOI 14355 . 14355) ($EOI 14347 . 14347) ($EOI 14337 . 14337) ($EOI 14338 . 14338) ($EOI 14339 . 14339) ($EOI 14337 . 14337) ($EOI 14340 . 14340) ($EOI 14340 . 14340) ($EOI 14340 . 14340) ($EOI 14254 . 14254) ($EOI 14228 . 14228) ($EOI 14205 . 14205) ($EOI 14192 . 14192) ($EOI 14191 . 14191) ($EOI 14192 . 14192) ($EOI 14578 . 14578) ($EOI 15192 . 15192) ($EOI 15192 . 15192) ($EOI 15191 . 15191) ($EOI 15190 . 15190) ($EOI 15191 . 15191) ($EOI 15190 . 15190) ($EOI 15187 . 15187) ($EOI 15189 . 15189) ($EOI 15189 . 15189) ($EOI 15189 . 15189) ($EOI 15173 . 15173) ($EOI 15168 . 15168) ($EOI 15173 . 15173))))
+  :file "!nfsroot!rootfs!usr!lib!enigma2!python!Plugins!SystemPlugins!NetworkWizard!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

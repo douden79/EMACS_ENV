@@ -1,0 +1,23 @@
+;; Object enigma2-plugins/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "enigma2-plugins/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [1 25])
+            ("SUBDIRS" variable (:default-value ("advhdmi" "antiscrollbar" "aspectratioswitch" "audiorestart" "automaticcleanup" "autotimer" "birthdayreminder" "channelselectionshorttitle" "curlytx" "easyinfo" "ecasa" "emission" "eparted" "eurotictv" "eventlist" "eventposition" "flashexpander" "infobartunerstate" "internetradio" "letterbox" "merlinepgcenter" "moviesearch" "pipservicerelation" "podcast" "pushservice" "quickbutton" "reftopiconname" "rsdownloader" "seriesplugin" "subsdownloader2" "teletext" "toolkit" "tvcharts" "videocolorspace" "weathercomponent" "weathercomponenthandler" "webadmin" "webbouqueteditor" "webcamviewer" "zapstatistic" "oscaminfo" "esame" "schiffe" "sudoku" "vierg" "bmediacenter" "advancedmovieselection")) nil [26 775])
+            ("SUBDIRS" variable (:default-value ("mytube" "yttrailer" "webinterface" "menusort" "pluginhider" "pluginsort")) nil [783 875])
+            ("metadir" variable (:default-value ("$(datadir)/meta")) nil [882 908])
+            ("meta_DATA" variable (:default-value ("index-enigma2-plugins.xml")) nil [908 946])
+            ("CLEANFILES" variable (:default-value ("index-enigma2-plugins.xml")) nil [946 985])
+            ("index-enigma2-plugins.xml" function (:arguments ("$(top_srcdir)/genmetaindex.py" "$(top_srcdir)/*/meta/plugin_*.xml")) nil [986 1107]))          
+      :file "Makefile.am"
+      :pointmax 1107
+      :fsize 1106
+      :lastmodtime '(22682 44899 774847 333000)
+      :unmatched-syntax nil))
+  :file "!home!babel!work!sdb!build!build!4d-pli!openpli5.0!build!enigma2-plugins!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

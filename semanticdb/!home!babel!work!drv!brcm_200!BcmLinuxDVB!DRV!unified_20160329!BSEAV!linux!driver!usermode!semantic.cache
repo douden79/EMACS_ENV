@@ -1,0 +1,775 @@
+;; Object usermode/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "usermode/"
+  :tables
+  (list
+    (semanticdb-table "bcm_driver.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/version.h" include (:system-flag t) nil [702 728])
+            ("linux/config.h" include (:system-flag t) nil [922 947])
+            ("linux/module.h" include (:system-flag t) nil [955 980])
+            ("linux/utsname.h" include (:system-flag t) nil [981 1007])
+            ("linux/proc_fs.h" include (:system-flag t) nil [1008 1034])
+            ("asm/uaccess.h" include (:system-flag t) nil [1035 1059])
+            ("linux/interrupt.h" include (:system-flag t) nil [1060 1088])
+            ("linux/pci.h" include (:system-flag t) nil [1089 1111])
+            ("linux/slab.h" include (:system-flag t) nil [1112 1135])
+            ("linux/mutex.h" include (:system-flag t) nil [1136 1160])
+            ("bcm_driver.h" include nil nil [1161 1184])
+            ("bcmdriver_common.h" include nil nil [1185 1214])
+            ("stdbool.h" include (:system-flag t) nil [1370 1390])
+            ("b_memory_regions.h" include nil nil [1391 1420])
+            ("DEBUG" variable (:constant-flag t) nil [1606 1611])
+            ("PERR" variable (:constant-flag t) nil [1637 1641])
+            ("PWARN" variable (:constant-flag t) nil [1710 1715])
+            ("PINFO" variable (:constant-flag t) nil [1788 1793])
+            ("PDEBUG" variable (:constant-flag t) nil [1863 1869])
+            ("BVIRTADDR" variable (:constant-flag t) nil [2251 2260])
+            ("BERR_TRACE" variable (:constant-flag t) nil [2315 2325])
+            ("BDBG_CWARNING" variable (:constant-flag t) nil [2404 2417])
+            ("make_linux_irq" variable (:constant-flag t) nil [2939 2953])
+            ("unmake_linux_irq" variable (:constant-flag t) nil [2969 2985])
+            ("BRCMSTB_H_VERSION" variable (:constant-flag t) nil [3035 3052])
+            ("PINFO_TRACE" variable (:constant-flag t) nil [3190 3201])
+            ("intmgr_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("reportedStatus" variable
+                             (:dereference 1
+                              :type "unsigned long")
+                              (reparse-symbol classsubparts) [3859 3909])
+                          ("globalmask" variable
+                             (:dereference 1
+                              :type "unsigned long")
+                              (reparse-symbol classsubparts) [3981 4027])
+                          ("status" variable
+                             (:dereference 1
+                              :type "unsigned long")
+                              (reparse-symbol classsubparts) [4081 4123])
+                          ("reportedInvalidWait" variable
+                             (:dereference 1
+                              :type "unsigned long")
+                              (reparse-symbol classsubparts) [4234 4289]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3838 4300])
+            ("MODULE_NAME" variable (:constant-flag t) nil [4311 4322])
+            ("INFINITE" variable (:constant-flag t) nil [4343 4351])
+            ("BRCM_MAJOR" variable (:constant-flag t) nil [4371 4381])
+            ("KERNEL_MEM_SIZE" variable (:constant-flag t) nil [4839 4854])
+            ("BOARD_MEM_SIZE" variable (:constant-flag t) nil [4882 4896])
+            ("brcm_stb_init" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4952 4957]))                  
+                :type "int")
+                nil [4926 4958])
+            ("brcm_open" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4981 5001])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5002 5020]))                  
+                :type "int")
+                nil [4959 5021])
+            ("brcm_close" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5045 5066])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5067 5086]))                  
+                :type "int")
+                nil [5022 5087])
+            ("brcm_mmap" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5110 5128])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5129 5156]))                  
+                :type "int")
+                nil [5088 5157])
+            ("brcm_ioctl" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5319 5339])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5340 5359])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5359 5376])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5377 5395]))                  
+                :type "int")
+                nil [5296 5396])
+            ("brcm_interrupt" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [5551 5559])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5560 5573])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5574 5595]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [5517 5596])
+            ("brcm_enable_irq" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("p_intmgr" variable
+                       (:pointer 1
+                        :type ("intmgr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5632 5651])
+                    ("Mask" variable
+                       (:dereference 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [5652 5673]))                  
+                :type "void")
+                nil [5604 5674])
+            ("vmalloc_size" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("required_vmalloc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5705 5731])
+                    ("highest_installed_dram" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5732 5764])
+                    ("lowest_bmem_addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5765 5791]))                  
+                :type "unsigned int")
+                nil [5676 5792])
+            ("gBcmDebuglevel" variable
+               (:default-value "0"
+                :type "int")
+                nil [5794 5815])
+            ("gBcmDebug" variable
+               (:default-value "0"
+                :type "int")
+                nil [5816 5832])
+            ("gSpinLock" variable
+               (:typemodifiers ("static")
+                :default-value "SPIN_LOCK_UNLOCKED"
+                :type ("spinlock_t" type (:type "class") nil nil))
+                nil [5950 5999])
+            ("g_WaitQueue" variable
+               (:typemodifiers ("static")
+                :type ("wait_queue_head_t" type (:type "class") nil nil))
+                nil [6007 6044])
+            ("g_intmgr" variable
+               (:typemodifiers ("static")
+                :type ("intmgr_t" type (:type "class") nil nil))
+                nil [6045 6070])
+            ("umdrv_dir" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6071 6186])
+            ("version_file" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6071 6186])
+            ("interrupt_file" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6071 6186])
+            ("latency_file" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6071 6186])
+            ("meminfo_file" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6071 6186])
+            ("debug_file" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("proc_dir_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6071 6186])
+            ("DEBUG_INFO_LEN" variable (:constant-flag t) nil [6195 6209])
+            ("debug_info" variable
+               (:dereference 1
+                :type "char")
+                nil [6214 6246])
+            ("asm/brcmstb/common/brcmstb.h" include nil nil [6607 6646])
+            ("g_magnum_spinlock" variable
+               (:typemodifiers ("static")
+                :default-value "SPIN_LOCK_UNLOCKED"
+                :type ("spinlock_t" type (:type "class") nil nil))
+                nil [6676 6733])
+            ("brcm_magnum_spinlock" variable (:constant-flag t) nil [6792 6812])
+            ("print_int_status" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6984 6989]))                  
+                :type "void")
+                nil [6962 7325])
+            ("MODULE_PARM" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("gBcmDebug" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7592 7602]))                  
+                :type "int")
+                nil [7580 7610])
+            ("DEFINE_MUTEX" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("gBcmLock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7639 7648]))                  
+                :type "int")
+                nil [7619 7649])
+            ("brcm_fops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    owner:      THIS_MODULE,
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(2, 6, 37)
+    unlocked_ioctl:      brcm_ioctl,
+#else
+    ioctl:      brcm_ioctl,
+#endif
+    open:       brcm_open,
+    release:    brcm_close,
+    mmap:       brcm_mmap
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [7651 7936])
+            ("brcm_enable_irq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p_intmgr" variable
+                       (:pointer 1
+                        :type ("intmgr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7966 7985])
+                    ("Mask" variable
+                       (:dereference 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [7986 8007]))                  
+                :type "void")
+                nil [7938 8711])
+            ("brcm_reenable_irq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p_intmgr" variable
+                       (:pointer 1
+                        :type ("intmgr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8894 8913]))                  
+                :type "void")
+                nil [8864 9429])
+            ("g_jiffies_isr" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [9431 9460])
+            ("g_jiffies_user" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [9507 9537])
+            ("g_latency" variable
+               (:typemodifiers ("static")
+                :type ("" type
+                     (:members 
+                        ( ("cnt" variable (:type "unsigned int") (reparse-symbol classsubparts) [9616 9629])
+                          ("total" variable (:type "unsigned int") (reparse-symbol classsubparts) [9634 9659])
+                          ("min" variable (:type "unsigned int") (reparse-symbol classsubparts) [9634 9659])
+                          ("max" variable (:type "unsigned int") (reparse-symbol classsubparts) [9634 9659]))                        
+                      :type "struct")
+                      nil nil))
+                nil [9596 9672])
+            ("get_jiffies" variable (:constant-flag t) nil [9682 9693])
+            ("brcm_interrupt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [10122 10130])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10131 10144])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10145 10166]))                  
+                :type ("irqreturn_t" type (:type "class") nil nil))
+                nil [10088 11651])
+            ("brcm_get_dev_info" function
+               (:arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11881 11901])
+                    ("devnum" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [11902 11923])
+                    ("devmode" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [11947 11969]))                  
+                :type "void")
+                nil [11858 12027])
+            ("proc_read_interrupts" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12219 12238])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12239 12247]))                  
+                :type "int")
+                nil [12187 13343])
+            ("proc_write_interrupts" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13535 13553])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13554 13573])
+                    ("" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13573 13580])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13581 13594])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13595 13608]))                  
+                :type "int")
+                nil [13502 13764])
+            ("proc_read_latency" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13950 13969])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13970 13978]))                  
+                :type "int")
+                nil [13921 14612])
+            ("proc_write_latency" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14798 14816])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14817 14836])
+                    ("" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14836 14843])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14848 14861])
+                    ("_pos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14862 14875]))                  
+                :type "int")
+                nil [14768 15022])
+            ("proc_read_version" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15205 15224])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15225 15233]))                  
+                :type "int")
+                nil [15176 16166])
+            ("proc_read_meminfo" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16349 16368])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16369 16377]))                  
+                :type "int")
+                nil [16320 17719])
+            ("proc_read_debug" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17899 17918])
+                    ("v" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17919 17927]))                  
+                :type "int")
+                nil [17872 17952])
+            ("proc_write_debug" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18137 18155])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18156 18175])
+                    ("" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18175 18182])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18183 18196])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18197 18210]))                  
+                :type "int")
+                nil [18109 18688])
+            ("g_interrupt_file" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("file" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [18815 18859])
+            ("b_get_euid" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18888 18893]))                  
+                :type "unsigned int")
+                nil [18861 19130])
+            ("brcm_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19337 19357])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19358 19376]))                  
+                :type "int")
+                nil [19316 19775])
+            ("brcm_close" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19984 20004])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20005 20023]))                  
+                :type "int")
+                nil [19962 20157])
+            ("access_node" type
+               (:members 
+                  ( ("access" variable (:type ("t_bcm_linux_mmap_access" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20184 20215])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("access_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [20220 20245]))                  
+                :type "struct")
+                nil [20159 20248])
+            ("g_state" variable
+               (:typemodifiers ("static")
+                :type ("" type
+                     (:members 
+                        ( ("access_list" variable
+                             (:pointer 1
+                              :type ("access_node" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [20269 20301])
+                          ("dynamic_regions" variable (:type ("b_memory_region_set" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20306 20342]))                        
+                      :type "struct")
+                      nil nil))
+                nil [20250 20353])
+            ("brcm_mmap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20376 20394])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20395 20422]))                  
+                :type "int")
+                nil [20355 23119])
+            ("brcm_init_mmap_access" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23155 23160]))                  
+                :type "void")
+                nil [23121 23196])
+            ("brcm_uninit_mmap_access" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23234 23239]))                  
+                :type "void")
+                nil [23198 23458])
+            ("brcm_set_mmap_access" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("access" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("t_bcm_linux_mmap_access" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23492 23530]))                  
+                :type "int")
+                nil [23460 25067])
+            ("brcm_ioctl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25557 25577])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25578 25597])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25598 25615])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [25616 25634]))                  
+                :type "int")
+                nil [25535 49268])
+            ("brcm_stb_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [50371 50376]))                  
+                :type "int")
+                nil [50346 55778])
+            ("__init_module" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [55812 55817]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [55791 55927])
+            ("module_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__init_module" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55940 55954]))                  
+                :type "int")
+                nil [55928 55955])
+            ("__cleanup_module" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [55993 55998]))                  
+                :type ("__exit" type (:type "class") nil nil))
+                nil [55969 57079])
+            ("module_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__cleanup_module" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57093 57110]))                  
+                :type "int")
+                nil [57081 57111])
+            ("BDBG_LOG" variable (:constant-flag t) nil [57121 57129])
+            ("BDBG_FILE_MODULE" variable (:constant-flag t) nil [57141 57157])
+            ("BDBG_MODULE_MSG" variable (:constant-flag t) nil [57189 57204])
+            ("BDBG_ASSERT" variable (:constant-flag t) nil [57227 57238])
+            ("BKNI_Memcmp" variable (:constant-flag t) nil [57277 57288])
+            ("BKNI_Free" variable (:constant-flag t) nil [57308 57317])
+            ("BKNI_Malloc" variable (:constant-flag t) nil [57338 57349])
+            ("b_memory_regions.inc" include nil nil [57377 57408])
+            ("b_vmalloc.inc" include nil nil [57409 57433]))          
+      :file "bcm_driver.c"
+      :pointmax 57539
+      :fsize 57538
+      :lastmodtime '(22684 21037 608872 920000)
+      :unmatched-syntax '((VOID 55964 . 55968) (STATIC 55957 . 55963) (INT 55787 . 55790) (STATIC 55780 . 55786) (punctuation 18174 . 18175) (punctuation 14835 . 14836) (punctuation 13572 . 13573) (string 7602 . 7608))
+      :lexical-table 
+        '(("BDBG_MODULE_MSG" (spp-arg-list ("x" "y") 57204 . 57209) . ((symbol "PDEBUG" 57210 . 57216) (symbol "y" 57217 . 57218)))
+          ("BKNI_Memcmp" . ((symbol "memcmp" 57293 . 57299)))
+          ("PWARN" (spp-arg-list ("fmt" "args...") 1715 . 1729) . ((symbol "printk" 1730 . 1736) (semantic-list "( KERN_WARNING \"BCMDRV: \" fmt, ## args)" 1736 . 1775)))
+          ("PERR" (spp-arg-list ("fmt" "args...") 1641 . 1655) . ((symbol "printk" 1656 . 1662) (semantic-list "( KERN_ERR \"BCMDRV: \" fmt, ## args)" 1662 . 1697)))
+          ("PDEBUG" (spp-arg-list ("fmt" "args...") 1869 . 1883) . ((symbol "printk" 1884 . 1890) (semantic-list "( KERN_DEBUG \"BCMDRV: \" fmt, ## args)" 1890 . 1927)))
+          ("BDBG_FILE_MODULE" (spp-arg-list ("x") 57157 . 57160) . 
+              ((EXTERN "extern" 57161 . 57167) (INT "int" 57168 . 57171) (symbol "__unused" 57172 . 57180)))
+          ("BKNI_Free" (spp-arg-list ("x") 57317 . 57320) . ((symbol "kfree" 57321 . 57326) (semantic-list "(x)" 57326 . 57329)))
+          ("PINFO_TRACE" (spp-arg-list ("fmt" "args...") 3201 . 3215))
+          ("PINFO" (spp-arg-list ("fmt" "args...") 1793 . 1807) . ((symbol "printk" 1808 . 1814) (semantic-list "( KERN_INFO \"BCMDRV: \" fmt, ## args)" 1814 . 1850)))
+          ("make_linux_irq" (spp-arg-list ("i") 2953 . 2956) . ((semantic-list "(i)" 2957 . 2960)))
+          ("KERNEL_MEM_SIZE" . ((semantic-list "(32*1024*1024)" 4859 . 4873)))
+          ("BDBG_ASSERT" (spp-arg-list ("x") 57238 . 57241) . ((semantic-list "((x) ? (void)0 : (void)0)" 57243 . 57268)))
+          ("BDBG_CWARNING" (spp-arg-list ("expr") 2417 . 2423) . 
+              ((DO "do" 2424 . 2426) (semantic-list "{if(0){int unused = 1/(expr);unused++;}}" 2427 . 2467) (WHILE "while" 2468 . 2473) (semantic-list "(0)" 2473 . 2476)))
+          ("unmake_linux_irq" (spp-arg-list ("i") 2985 . 2988) . ((semantic-list "(i)" 2989 . 2992)))
+          ("DEBUG_INFO_LEN" . ((number "256" 6210 . 6213)))
+          ("BVIRTADDR" (spp-arg-list ("offset") 2260 . 2268) . ((semantic-list "(KSEG1 + 0x10000000 + offset)" 2269 . 2298)))
+          ("brcm_magnum_spinlock" . ((symbol "g_magnum_spinlock" 6813 . 6830)))
+          ("BDBG_LOG" (spp-arg-list ("x") 57129 . 57132))
+          ("BKNI_Malloc" (spp-arg-list ("x") 57349 . 57352) . ((symbol "kmalloc" 57353 . 57360) (semantic-list "(x, GFP_KERNEL)" 57360 . 57375)))
+          ("DEBUG")
+          ("BRCM_MAJOR" . ((number "30" 4382 . 4384)))
+          ("BRCMSTB_H_VERSION" . ((number "0" 3055 . 3056)))
+          ("get_jiffies" (spp-arg-list nil 9693 . 9695) . ((semantic-list "(jiffies)" 9696 . 9705)))
+          ("BERR_TRACE" (spp-arg-list ("rc") 2325 . 2329) . 
+              ((DO "do" 2330 . 2332) (semantic-list "{if (rc) PERR(\"error %d at line %d\\n\", rc, __LINE__);}" 2333 . 2387) (WHILE "while" 2387 . 2392) (semantic-list "(0)" 2392 . 2395)))
+          ("MODULE_NAME" . ((string "\"bcmdriver\"" 4323 . 4334)))
+          ("INFINITE" . ((number "0xFFFFFFFF" 4352 . 4362)))
+          ("BOARD_MEM_SIZE" . ((semantic-list "(256*1024*1024)" 4902 . 4917)))
+          )
+)
+    (semanticdb-table "bcm_driver.h"
+      :file "bcm_driver.h"
+      :fsize 8815
+      :lastmodtime '(22684 21037 608872 920000))
+    (semanticdb-table "bcmdriver_common.h"
+      :file "bcmdriver_common.h"
+      :fsize 3787
+      :lastmodtime '(22684 21037 608872 920000))
+    (semanticdb-table "b_memory_regions.h"
+      :file "b_memory_regions.h"
+      :fsize 3262
+      :lastmodtime '(22684 21037 608872 920000))
+    (semanticdb-table "b_memory_regions.inc"
+      :file "b_memory_regions.inc"
+      :fsize 13549
+      :lastmodtime '(22684 21037 608872 920000))
+    (semanticdb-table "b_vmalloc.inc"
+      :file "b_vmalloc.inc"
+      :fsize 4384
+      :lastmodtime '(22684 21037 608872 920000)))
+  :file "!home!babel!work!drv!brcm_200!BcmLinuxDVB!DRV!unified_20160329!BSEAV!linux!driver!usermode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

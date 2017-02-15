@@ -1,0 +1,16 @@
+;; Object openpli5.0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "openpli5.0/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags nil
+      :file "Makefile"
+      :pointmax 5320
+      :fsize 5319
+      :lastmodtime '(22682 40516 270665 603000)
+      :unmatched-syntax nil))
+  :file "!home!babel!work!sdb!build!build!4d-pli!openpli5.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

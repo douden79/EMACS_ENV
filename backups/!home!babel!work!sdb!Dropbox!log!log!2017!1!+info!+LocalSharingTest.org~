@@ -1,0 +1,450 @@
+
++------------------------------------------------------------+
+* 서버 정보.
++------------------------------------------------------------+
+|-------------------------------|
+| http://www.ilovehobbysite.com |
+|-------------------------------|
+| id : iqsr4                    |
+| password : eortm14530         |
+|-------------------------------|
+
+
+
+
++------------------------------------------------------------+
+ATV 이미지를 Download한후 OSCAM으로 C Line을 넣어 동작확인
++------------------------------------------------------------+
+
+[ATV 이슈 : 2014/4/21 - 7335/7356 all models]
+
+ATV 팀에서 OSCam으로 C line을 넣은 후 PC Openwebif에서 다른 channel을 open하여 시청하다가
+Openwebif를 닫으면 settop에서 보던 channel도 끊기고 halt message가 나온다고 함.
+
+[동작 순서]
+1. ftp로 settop의 root에 softcam-feed-mipsel_1.0_all.ipk 파일을 넣고
+2. 텔렛으로 접속하여 install(opkg install softcam-feed-mipsel_1.0_all.ipk)시킨다.
+   (ipk는 안에 directory가 저장되므로 install시키는 위치는 의미없슴)
+   => 이 파일을 install시켜야 plugins->Download plugins 에서 Softcam 항목을 볼 수 있다.
+3. menu의 Plugins로 들어가서 하단 green(Download)를 눌러 download package을 받고,
+   Softcam폴더 밑의 oscam-atv-emu(1.2_9815)을 선택하여 download 받아 설치한다.
+   (oscam-atv(1.2_11214) 설치함)
+4. Menu의 Info Panel로 들어가면 Softcam Panel 항목과 Softcam-Panel Setup이 새로 생긴다.
+5. telnet으로 settop에 접속하여 oscam폴더를 찾는다.( $ telnet 192.168.1.142)
+6. find로 oscam.server파일을 찾는다.(version에 따라 저장위치가 달라질 수 있다)
+   root@force1:~# cd /
+   root@force1:/# find . -name oscam.server (find는 현재 폴더에서 하위로 검색하므로 주의)
+   결과 1: <atv image>
+	  /usr/keys/oscam_atv_emu/oscam.server (???)
+          /usr/keys/oscam_atv/oscam.server
+          <4d image>
+ 	  /etc/tuxbox/conig/oscam.server
+   결과 2: /usr/keys/oscam_atv/oscam.server
+	
+7. /usr/keys/oscam_atv/oscam.server를 open하여 [reader]들의 마지막부분에 보면
+   line_cccam 부분을 아래와 같이 수정한다.
+   label	= line_cccam
+   enable	= 1					(0 -> 1로 수정)
+   protocol	= cccam
+   device	= muzzy.zapto.org, 14314		(url 및 port 입력)
+   user		= richeuro3      			(id 입력)
+   password	= richeuro123   			(password 입력)
+   inactivitytimeout = 30
+   fallback	= 1
+   group	= 3
+   cccversion	= 2.3.0
+   ccckeepalive = 1
+
+8. SoftcamPanel로 들어가서 Select Cam 1을 oscam_atv_emu 1.2 9815로 맞추고 하단 Restart button을 누른다.
+9. settop에서 위 cccam line으로 풀리는 tp를 scan한 후 AC Off/On하여 풀리는 지 확인한다.
+   (TP : 28E 10862-H-22000 Disney Channel로 확인한다)
+   결과 2: SoftcamPanel로 들어가서 Select CAM 1을 oscam_atv 1.2 11214로 맞춘다.
+
+10. Key를 받는지 확인은 Info Panel->SoftcamPanel 로 들어가면 CW값 및 서버위치등이 Display된다.
+
+[Openwebif에서 확인시 아래 방법 사용]
+11. vlc가 깔렸는지 확인하고 vlc를 googling하여 vlc를 pc환경에 맞게 설치한다.(리눅스용 윈도용 구별)
+12. web에 settop ip을 넣어 openwebif을 띄우고 scan된 channel 의 TV그림을  누르면
+    해당 channel이 PC로 Display된다.
+13. vlc를 껏다켰다하고 channel 이동하여 box에서 풀리고 있는 channel이 계속 잘 풀리는 지 확인한다.
+14. 그외 필요한 Test를 진행한다. 
+
++------------------------------------------------------------+
+4D 이미지를 Download한후 OSCAM으로 C Line을 넣어 동작확인
++------------------------------------------------------------+
+[동작 순서]
+1. downloading plugin에서 oscam config 파일과 oscam-pli(1.2_10659)를 설치한다.
+2. Softcam setup menu로 가서 oscam_pli를 선택후 Restart softcam을 실행한다.
+3. 텔렛으로 접속하여 root로 가서 find . -name oscam*를 하여 oscam.server가 있는 
+   위치를 확인한다.
+   usr/keys/oscam_pli/oscam.server
+4. 위의 위치로 가서 oscam.server 파일을 open하고 [reader] 밑에 line_cccam이
+   있는 곳으로 가서 device와 user/password를 아래와 같이 수정한다.
+   enable =1로 만든뒤 다른 것 수정없이 저장한다.
+   label	= line_cccam
+   enable	= 1					(0 -> 1로 수정)
+   protocol	= cccam
+   device	= muzzy.zapto.org, 14314		(url 및 port 입력)
+   user		= richeuro3      			(id 입력)
+   password	= richeuro123   			(password 입력)
+   inactivitytimeout = 30
+   fallback	= 1
+   group	= 3
+   cccversion	= 2.3.0
+   ccckeepalive = 1
+
+5. settop에서 위 cccam line으로 풀리는 tp를 scan한 후 AC Off/On하여 풀리는 지 확인한다.
+   (TP : 28E 10862-H-22000 Disney Channel로 확인한다)
+
++------------------------------------------------------------+
+4D 이미지에서 최신 oscam Test (pmt_mode = 6 추가)
++------------------------------------------------------------+
+[이슈제기]
+fusionhd에서 최신 oscam 10988이 동작하지 않은다는 이슈에 의거
+확인 결과 oscam.conf 파일의 [dvbapi]에 pmt_mode = 6를 추가하여
+사용하고 있었음. 이 경우 kernel상의 문제로 동작하지 않는 것이 확인되어
+kernel을 수정하였으며, 기존 4D는 외부팀이 예전 이와 유사 문제로
+enigma를 수정하여 이미 사용하고 있으므로 이와 동일하게 enigma를 수정하여
+사용하고 향후 kernel4.20으로 옮길 경우 kernel적용 및 enigma2 수정한 것 삭제하는 것으로 결론.
+[확인 사항]
+위의 enigma나 kernel을 정상적으로 수정되었다면, enigma restart나 ac off/on후
+settop의 /tmp/ 폴더밑에 .listen.camd.socket 파일이 생성되어야 함.
+[동작 순서]
+1. plugin에서 oscam_config파일(1.0_r0)과 oscam-pli(1.2_10659)를 install한 뒤
+   softcam에서 oscam-pli로 설정후 softcam을 restart시킨다.
+2. box로 telnet접속 후, /usr/keys/oscam_pli/oscam.conf 파일을 열고
+   [dvbapi] 항목 끝에 pmt_mode = 6를 추가한다.
+3. 동일 folder의 oscam.server를 열고 cccam으로 찾으면 line_cccam이 있는데
+   이곳에 enable = 1로 수정후 device에 muzzy.zapto.org, 14314 을
+   user에 richeuro3를 password에 richeuro123을 넣고 softcam을 restart한다.
+4. 약 3~4분 정도 지나면 풀리기 시작한다.
+
++------------------------------------------------------------+
+4D 이미지에서 oscam Test (2016/10/26) --> vix issue
++------------------------------------------------------------+
+[재 검토 동작 순서]=> 2016/10/26 (test model : tmnanosecombo, fusionhd => driver image : 07/10/16 or 24/10/16 all ok)
+1. plugin에서 oscam_config파일(1.0_r0)과 oscam-pli(1.2_10659)를 install한 뒤
+   softcam에서 oscam-pli로 설정후 softcam을 restart시킨다.
+2. telnet으로 settop 접속후 /usr/keys/oscam_pli/oscam.server를 열고 cccam으로 찾으면 line_cccam이 있는데
+   이곳에 enable = 1로 수정후 device에 muzzy.zapto.org, 14314 을
+   user에 richeuro3를 password에 richeuro123을 넣고 저장후 telnet을 빠져나온다 softcam을 restart한다.
+3. menu에서 Select Softcam을 oscam_pli로 선택후 Restart softam을 실행한다.(약 3~4분 정도 지나면 풀리기 시작한다.)
+[검토 결과]
+ 7362 : tmnanosecombo : 4D Openpli4.0 24-10-2016(driver: 2016-10-07) : ok
+ 7356 : tmnano2super  : 4D Openpli4.0 24-10-2016(driver: 2016-10-07) : ok
+ 7335 : tmtwin        : 4D Openpli4.0 24-10-2016(driver: 2016-06-20) : ok 
+ 
++------------------------------------------------------------+
+vix 이미지에서 oscam Test (2016/10/26) --> vix issue
++------------------------------------------------------------+
+[재 검토 동작 순서]=> 2016/10/26 (test model : tmnanosecombo, fusionhd => driver image : 07/10/16 or 24/10/16 all ok)
+1. 우리 oscam_config파일을 settop에 넣고 install시킨다
+   (opkg install enigma2-pluin-softcams.config-oscam_1.0_r0_mips32el.ipk)
+   => /etc/tunbox/config/안에 oscam 관련 config 파일들이 생성된다.
+2. plugin 으로 들어가서 oscam_latest(1.20+svn11279-r1) 와 oscam_atv(1.2_11214)를 install 시킨다(7335는 oscam_atv package 없음)
+3. plugin에서 oscam_atv(1.2_11214)를 install하면 settop의 /usr/keys/oscam_atv/ 폴더아래에 oscam conf파일들이 생긴다.
+   (7335 모델은 다른 cpu 모델에 있는 것을 copy해 넣는다)
+4. telnet으로 접속하여 /usr/keys/oscam_atv/ 밑의 파일들을 /etc/tuxbox/cofing/ 아래에 copy해 넣는다
+5. telnet으로 들어가서 /etc/tuxbox/config/oscam.server를 vi open하여 아래와 같이 c-line을 넣는다
+   label	     = line_cccam
+   enable	     = 1					(0 -> 1로 수정)
+   protocol	     = cccam
+   device	     = muzzy.zapto.org, 14314			(url 및 port 입력)
+   user		     = richeuro3				(id 입력)
+   password	     = richeuro123				(password 입력)
+   inactivitytimeout = 30
+   fallback          = 1
+   group	     = 3
+   cccversion	     = 2.3.0
+   ccckeepalive      = 1
+
+6. settop을 off/on한다
+7. softcam and ci/Softcam Manager으로 들어가면 select:에 oscam_latest가 떠야 하고, 하단 green(start)를 누른다.
+   그러면 active: 에 oscam-latest가 뜬다.
+   (약 1분후 화면이 풀리기 시작한다)
+8. softcam and ci/Softcam Manager에서 blue(Enable Oscam)을 누르면 select: 단에 check가 되며, AC off/on시도에 풀린다
+   ( 이 blue키로 설정하지 않으면 off/on시 다시 green으로 start시켜야 풀리기 시작한다) 
+[검토 결과]
+ 7362 : tmnanosecombo : vix 2016-10-23 image(driver: 2016-10-07) : ok
+ 7356 : tmnano2super  : vix 2016-10-23 image(driver: 2016-10-07) : ok
+ 7335 : tmtwin        : vix 2016-10-23 image(driver: 2016-05-30) : ok
+
++------------------------------------------------------------+
+OpenPLi FusionHDSE 이미지에서 최신 oscam(svn11202-r0.10) Test (pmt_mode = 6 추가)
++------------------------------------------------------------+
+[이슈 제기]
+fusionhd에서 기존 oscam 11200 은 정상 동작하나, 11202 는 A/V가 멈추거나 
+green screen 뜨는 문제 제기하여 검토함
+[동작 순서]
+1. downloading plugin에서 oscam config 파일과 oscam(svn11202-r0.10)를 설치한다.
+2. Softcam setup menu로 가서 oscam을 선택후 Restart softcam을 실행한다.
+3. 텔렛으로 접속하여 root로 가서 find . -name oscam*를 하여 oscam.server가 있는 
+   위치를 확인한다.
+   ./etc/tuxbox/config/oscam/oscam.server
+4. 위의 위치로 가서 oscam.server 파일을 open하고 [reader] 밑에 CCcam-server이
+   있는 곳으로 가서 device와 user/password를 아래와 같이 수정한다.
+   enable =1로 만든뒤 다른 것 수정없이 저장한다.
+   label	= CCcam-server
+   enable	= 1					(0 -> 1로 수정)
+   protocol	= cccam
+   device	= muppets.game-server.cc ,19251		(url 및 port 입력)
+   user		= dags					(id 입력)
+   password	= dags123				(password 입력)
+   group	= 1
+   cccversion	= 2.3.0
+   ccckeepalive = 1
+   audisabled   = 1
+5. settop에서 위 cccam line으로 풀리는 tp를 scan한 후 AC Off/On하여 풀리는 지 확인한다.
+   (TP : 28E 10862-H-22000 Disney Channel로 확인한다)
+
++------------------------------------------------------------+
+OpenPLi FusionHDSE 최신 이미지에서 oscam(svn11202-r0.10)이 안풀리는 문제(2016/7/22 issue) 검토
++------------------------------------------------------------+
+[문제 제기] astrasat에서 약 1주일 전부터 oscam으로 channel이 풀리지 않는다는 issue 받음
+
+[확인 결과] fusionhdse openpli image로 2016/7/18일 이미지는 풀리나, 2016/7/27 이미지는 화면이 안나오며
+            키는 정상적으로 풀림.
+
+[2016/07/26 일자로 xsarius로 부터 제공받은 c-line]
+C: extra-biza.haiptv.com 21000 hassietest JHt2046 
+
+위의 c line과 23.5E Astra 1A1D 12090-V-29900 stream을 받아 확인시, 정상적으로 풀린다는 image에서도
+약 1시간에 1회 잠깐 풀렸다가 다시 안풀리는 증상이 있어, technomate에 c-line을 요청하여 받은 아래
+c line으로 점검함.
+
+[2016/07/27 일자로 technomate에서 받은 c-line]
+C: muzzy.zapto.org 14314 richeuro3 richeuro123
+
+[동작 순서]
+1. downloading plugin에서 oscam(svn11213-r0.2)를 설치한다.
+2. 텔렛으로 접속하여 root로 가서 find . -name oscam*를 하여 oscam.server가 있는 
+   위치를 확인한다.
+   ./etc/tuxbox/config/oscam/oscam.server
+3. 위의 위치로 가서 oscam.server 파일을 open하고 [reader] 밑에 CCcam-server이
+   있는 곳으로 가서 device와 user/password를 아래와 같이 수정한다.
+   enable =1로 만든뒤 다른 것 수정없이 저장한다.
+   label	= CCcam-server
+   enable	= 1					(0 -> 1로 수정)
+   protocol	= cccam
+   device	= muzzy.zapto.org, 14314		(url 및 port 입력)
+   user		= richeuro3				(id 입력)
+   password	= richeuro123				(password 입력)
+   group	= 1
+   cccversion	= 2.3.0
+   ccckeepalive = 1
+   audisabled   = 1
+4. Softcam setup menu로 가서 oscam을 선택후 Restart softcam을 실행한다.
+5. settop에서 위 cccam line으로 풀리는 tp를 scan한 후 AC Off/On하여 풀리는 지 확인한다.
+   (TP : 28E 10862-H-22000 Disney Channel로 확인한다)
+
+[문제 검토]
+1. driver 6/20일 것 까지는 정상이며, driver 7/18일자에서는 문제 발생
+2. dirver 수정사항 6/29일로 되돌아가서(git checkout 커밋숫자6자리 : fix kernel config) driver build하여
+   settop에 넣어 확인시 정상동작(source 복귀 : git checkout master)
+3. driver 수정사항 7/5일자로 되돌아가서(git checkout 커밋숫자6자리 : chane micom interface ~) driver build하여
+   settop에 넣어 확인시 문제 발생.
+4. driver 수정사항 6/30일로 되돌림(Exlude keyIVType setting ...) : 동일 증상 발생
+5. driver 수정사항 6/30일로 되돌림(Apply nexus get cis data ...) : 동일 증상 발생
+6. driver 수정사항 6/30일로 되돌림(Add e2 ciplus ioctl functions ...) : 동일 증상 발생
+[문제 확인]
+atv에서 universal로 요청한 ciplus code 적용한 부분에서 문제가 발생하여 이를 수정하여 해결하고 bsp update후 사장님께 멜 송부.
+
++------------------------------------------------------------+
+OpenPLi PureHD/FusionHD/FusionHDSE 최신 이미지에서 oscam(svn11213-r0.2) 에서 Smartcard Test(2016/11/1)
++------------------------------------------------------------+
+[이슈 내용] FusionHD에서 Card Activate가 안된다는 멜 받음 ( PureHD에서는 잘 된다고 함)
+[검토 내용]
+Card Activate는 card와 stream이 있어야 Test 가능하므로 현재 보유중인 viaccess 카드로 풀리는 지만 확인함.
+[검토 순서]
+1. viaccss cam을 끼우고 Hotbird-11296-H-27500-3/4 stream을 scan한다
+2. plugin에서 oscam(svn11213-r0.2)를 install한다.
+3. 잠시후 풀리기 시작한다(9번과 11번 안풀림)
+[검토 결과]
+PureHD/FursionHD/FusionHDSE 모두 viaccess card로는 문제없이 풀림.
++------------------------------------------------------------+
+OpenPLi FusionHDSE에서 oscam(svn11289-r0.0) 에서 Recording 된 channel을 Playback시 Video안나오는 현상(2016/12/19)
++------------------------------------------------------------+
+[이슈 내용] Fusionhd/FusionhdSE에서 Oscam으로 풀리는 channel을 Recording후 Playback시 
+            Video가 안나오고 audio만 나온다고 함. Oscam을 Off후 Playback하면 정상 동작한다고 함
+[검토 내용] 
+fusionhdse 2016/12/27 image 사용
+
+
+CCcamTest방법.txt
+
++-------------------------------------------------------------------------------+
+[Test TP 정보]
++-------------------------------------------------------------------------------+
+ cccam card server : 52번 n98s5(26210) 로 확인
+ stream : 28E의 11836-H-27500_2/3
+                10862-H-22000 (sky_digital 과 sky_digital2 가 있는데 sky_digital은 안깨지므로 
+                               이 stream 사용할 것)
+
++-------------------------------------------------------------------------------------+
+[4D Image 사용시] - 기본 설정이 CCcam2.2.1(2.2.1-r3)로 저장되어 있슴
++-------------------------------------------------------------------------------------+
+
+1. telnet으로 접속하여 ps를 누르면 CCcam 버젼 접속상태를 알 수 있다.
+  /usr/bin/CCcam221
+2. # find . -name CCcam* 로 CCcam.cfg 파일의 위치를 Root Directory에서 확인한다.
+  ./etc/ppanels/CCcam.xml
+  ./etc/CCcam.cfg
+  ./usr/bin/CCcam221
+3. vi로 CCcam.cfg 파일을 open하여 맨 하단에 아래와 같이 입력한다.
+   C: muppets.game-server.cc 19251 dags dags123 저장후 빠져나옴
+   C: muzzy.zapto.org 14314 richeuro3 richeuro123 [2016/07/27 working]
+4. 잠시후 Channel이 풀린다.(TP : 28E 10862-H-22000 Disney Channel로 확인한다)
+5. setup->Softcam/CI -> Softcam setup... 으로 들어가면 Select Softcam 은 CCcam221로 되어 있고,
+   Select Card Server 는 None으로 되어 있다.
+6. No menu 상태->Blue->PPanels->CCcam PPanel-> 각종 정보 검색 가능함.
+
+
+[CCcam214(2.1.4-r0)로 Test한다면]
+1. 위상태에서 mainmenu->plugin->Download Plugins->softcams->cccam214를 install시키고,
+   setup->Softcam/CI->Softcam setup...으로 들어가서 Select Softcam CCcam2104로 맞춘후
+   Restart both를 눌러 restart시킴
+2. tuner a/b로 channel을 잡아서 동작 확인
+3. PIP로 양쪽 Test시 Toggle하면 한쪽이 안나오는 문제 이외에는 정상임(AC Off/On도 정상동작)
+
++-------------------------------------------------------------------------------------+
+[OpenPLi FusionHDSE Image 사용시] -  CCcam2.3.0 으로 Test 진행
++-------------------------------------------------------------------------------------+
+1. CCcam2.3.0 Package을 Install후 menu->setup->CI/Softcam->Restart softcam을 한 뒤,
+   telnet으로 접속하여 ps를 누르면 마지믹에 CCcam 접속상태를 알 수 있다.
+  /usr/bin/CCcam
+2. # find . -name CCcam* 로 CCcam.cfg 파일의 위치를 Root Directory에서 확인한다.
+  ./etc/init.d/softcam.CCcam
+  ./etc/ppanels/CCcam.xml
+  ./etc/CCcam.cfg
+  ./var/volatile/tmp/.CCcam.nodeid
+  ./usr/bin/CCcam
+3. vi로 CCcam.cfg 파일을 open하여 맨 하단에 아래와 같이 입력한다.
+   C: dragonflytv.dyndns.org 12011 RICHARDTESTEjg olkduir90384owe 저장후 빠져나옴
+   C: muzzy.zapto.org 14314 richeuro3 richeuro123 [2016/07/27 working]
+4. 잠시후 Channel이 풀린다.(TP : 28E 10862-H-22000 Disney Channel로 확인한다)
+5. No menu 상태->Blue->PPanels->CCcam PPanel-> 각종 CCcam관련 정보 검색 가능함.
+
++-------------------------------------------------------------------------------------+
+[ATV Image 사용시]
++-------------------------------------------------------------------------------------+
+
+1. Menu의 Plugins에서 CCcam-2.3.0(2.3.0-r1)을 Install 한다.
+2. ftp로 settop의 root에 softcam-feed-mipsel_1.0_all.ipk 파일을 넣고
+3. 텔렛으로 접속하여 install(opkg install softcam-feed-mipsel_1.0_all.ipk)시킨다.
+   (ipk는 안에 directory가 저장되므로 install시키는 위치는 의미없슴)
+4. telnet으로 접속하여 루트로 가서 find . -name *CCcam*을 찾으면 
+   /usr/keys/CCcam.config.sample_230 이 있는데, 이 파일을 CCcam.cfg로 copy또는 move한다.
+5. vi로 CCcam.cfg 파일을 열고, 맨 마지막 라인에 아래 Cline을 입력하고 저장후 빠져나온다.
+   C: dragonflytv.dyndns.org 12011 RICHARDTESTEjg olkduir90384owe (technomate)[server card 없음]
+   C: monster2012.dyndns.org 13112 dags2015 open4d (edision) -> [server card 없음]
+   C: ridge.dyndns-ip.com 11100 zaloha4 zaloha4 (sapro) -> [server card 없음]
+   C: muppets.game-server.cc 19251 dags dags123 (vix) [server card 없음]
+   C: tubbytv.mine.nu 10040 edward1 edward1 (fusionhd) [seca(100), irdeto(604), nds(9c4)]
+   C: muzzy.zapto.org 14314 richeuro3 richeuro123 [2016/07/27 working]
+
+6. TP : 28E 10862-H-22000 Scan후  Disney Channel로 간다.
+7. Info Panel->Softcam Panel로 가서 Select Cam 1을 CCcam 2.3.0으로 맞추고 하단의 
+   Green(Start or Restart)키를 누른다.
+8. 잠시 기다리면 Channel이 풀린다.
+
++-------------------------------------------------------------------------------------+
+[Vix Image 사용시]
++-------------------------------------------------------------------------------------+
+
+1. Menu의 Plugins에서 CCcam-2.3.0(2.3.0-r4)을 Install 한다.
+2. telnet으로 접속하여 루트로 가서 find . -name CCcam을 찾으면 없음 
+   따라서  /etc/ 밑에 CCcam.cfg 파일을 신규로 만들어야 함. 
+   (PC에서 CCcam.cfg를 만들어 C: muppets.game-server.cc 19251 dags dags123 입력후 저장)
+3. ftp로 /etc/로 접속하여 만들어진 CCcam.cfg를 넣어준후 빠져나온다.  
+   C: dragonflytv.dyndns.org 12011 RICHARDTESTEjg olkduir90384owe
+   C: monster2012.dyndns.org 13112 dags2015 open4d
+   C: muppets.game-server.cc 19251 dags dags123
+   C: muzzy.zapto.org 14314 richeuro3 richeuro123 [2016/07/27 working]
+4. TP : 28E 10862-H-22000 Scan후  Disney Channel로 간다.
+6. Settop을 Off/On하면 화면이 풀린다.
+ 
++-------------------------------------------------------------------------------------+
+[softcamkey Test]
++-------------------------------------------------------------------------------------+
+1. 기본 설정된 CCcam-2.2.1에 No menu 상태에서 Red button을 계속 누르고 있으면 Update 
+   menu창이 뜬다.
+2. ORF 구 version의 Stream으로 확인한다.
+
+  
+
+
+LocalSharing_Test방법.txt
+
++-------------------------------------------------------------------------------+
+[Local Sharing PC 접속]
++-------------------------------------------------------------------------------+
+site : www.ilovehobbysite.com(77.235.51.213)  
+        id: prodigy
+        pass : 14530pro
+
++-------------------------------------------------------------------------------+
+[Local Sharing Test 유효 망 정보]
++-------------------------------------------------------------------------------+
+ cccam card server : 52번 n98s5(26210) 로 확인
+ stream : 28E의 11836-H-27500_2/3
+                10862-H-22000 (sky_digital 과 sky_digital2 가 있는데 sky_digital은 안깨지므로 
+                               이 stream 사용할 것)
+
++-------------------------------------------------------------------------------+
+[Local Sharing Client Test Macaddress] - test macaddr 사용 : cfe>macprog2 0c-c6-ac-01-1d-00 
++-------------------------------------------------------------------------------+
+   tmnano2super : 0c-c6-ac-01-1d-00
+   tmnano3tcombo: 0c-c6-ac-01-ce-ef -> 01-d0-9c -> 01-22-33(ok)
+   tmsingle : 0c-c6-ac-00-5b-35(ok)
+   tmnano2t : 0c-c6-ac-01-6f-23
+   tmtwinoe : 0c-c6-ac-01-23-45
+   tm2toe: 0c-c6-ac-01-6f-23                                                
+   tmnanooe: 0c-c6-ac-00-12-6c
+   tmnanose : 0c-c6-ac-00-5b-f0
+   tmnanocombo : 0c-c6-ac-02-45-90
+   tmnanoeco : 0c-c6-ac-01-1d-00
+ 
++-------------------------------------------------------------------------------+
+[Local Sharing Client Test Macaddress 입력 방법]
++-------------------------------------------------------------------------------+
+debug message창에서 settop의 AC Power Off/On후 즉시 Ctrl+C를 입력하여 cfe> 모드로 진입한후
+위의 모델에 대한 Test Macaddress를 입력한다.
+
+cfe>macprog2 0c-c6-ac-01-1d-00 
+
++-------------------------------------------------------------------------------+
+[Local Sharing Client Test 방법]
++-------------------------------------------------------------------------------+
+1. Information -> About으로 들어가서 Info+Info+ 123를 누른다.
+   LAN Setting On/Off 항목에서 On으로 하고 Save를 누르면 System 이 rebooting하면서 접속가능상태로 된다.
+2. PC에서 http://ilovehobbysite.com/ursr2/loader.php 에 접속한다(id:prodigy, pass:14530pro)
+3. 최상단의 admin을 누른다.
+4. C-Server에서 Test로 사용할 Number(18번 n98s5)을 누르면 Setting Up LOADER-C Menu가 Display된다.
+5. 상단의 Loader<>Settings 누르면 Mac을 넣을 수 있는 Menu로 진입한다.
+6. Mac을 넣어서 Add하든지, Add하여 Test 완료후 해당 Mac을 지울때 여기서 작업한다.
+   (지울때는 Ct기+F 로 찾기를 열어 해당 맥의 뒷번호(011d00)로 찾아서 Delete시킨다)
+7. Settop의 Information->About에서 Info+Info+123을 눌러 LAN Setting Menu로 들어가서 하단 Download Key를
+   누르면 PC로 넣은 Master Settop(Customer가 관리하는 SD card 서버)과 연결을 시도한다.
+8. 상단의 Loader<>Settings를 눌러 Settings Up LOADER-C Menu로 돌아가서 아래와 같이 정보를 확인한다.
+9. 오른쪽의 click for monitoring을 누르고 id/pass를 52번의 id인 n98s5 , pass를 n98s5 로 동일하게 넣으면 
+   Welcome to Cccam 2.1.4 server 로 정보가 display된다.
+   (Active Client를 보면 넣은 맥 Address 의 접속상태 확인, Provider를 눌러 접속된 Card 확인)
+10. 실제 28E의 stream(11836-H-27500_2/3)으로 풀리는지 확인한 후, 위의 6번항을 이용하여 Test한 Mac을 Delete한다.
+
++-------------------------------------------------------------------------------+
+[주의사항]
++-------------------------------------------------------------------------------+
+[망 접속후, telnet 입력 password]
+Local Sharing을 사용하는 경우는 client settop내의 정보가 유출되는 것을 막기 위해, telnet으로 접속시 
+기존에는 root에 no pass로 들어갔으나, (shift누른상태에서1234)+qwer+일+월+년(뒤의두자리)를 넣어야만 접속하게 된다.
+(위의 일월년은 Enigma build된 날짜에서 따온다. Information->About : Enigma:03-19-2014인 경우 (shift+1234)+qwer190314로 된다)
+
+[망 사용후, password 삭제]
+이 password는 Information->About에서 Info+Info+123을 눌러 LAN Setting On/Off를 Off로 하고 저장후 yes를 눌러 restart시킨후
+full factory reset를 하면 no password상태로 복귀한다.
+
++-------------------------------------------------------------------------------+
+[기타]
++-------------------------------------------------------------------------------+
+Security Chip : 코아리버 SC50CR ( SO Type - 8pin)
+mo 파일을 po파일로 변환방법 : msgunfmt [path_to_file.mo] > [path_to_file.po]

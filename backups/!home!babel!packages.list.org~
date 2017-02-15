@@ -1,0 +1,6 @@
+- skinpack 관련 사항 지움
+  - [ ] openatv metrix skin component 관련 사항으로 설치시 셋트가 죽음.
+- display
+  - [ ] lcd skin 은 관련사항에 포함안되므로 지움.
+- po
+  - [ ] 언어팩 관련 패키지는 필요 없으므로 지움. ( vuplus 도 po 관련사항 없슴 )

@@ -1,0 +1,2074 @@
+;; Object graphics/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "graphics/"
+  :tables
+  (list
+    (semanticdb-table "brcmfb.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linuxcommon.h" include nil nil [152 176])
+            ("linux/fb.h" include (:system-flag t) nil [177 198])
+            ("linux/platform_device.h" include (:system-flag t) nil [199 233])
+            ("linux/dma-mapping.h" include (:system-flag t) nil [234 264])
+            ("linux/kthread.h" include (:system-flag t) nil [265 291])
+            ("nexus_picture_ctrl.h" include nil nil [292 323])
+            ("nexus_video_adj.h" include nil nil [324 352])
+            ("nexus_video_window.h" include nil nil [353 384])
+            ("nexus_mosaic_video_decoder.h" include nil nil [385 424])
+            ("nexus_mosaic_display.h" include nil nil [425 458])
+            ("nexus_ac3_encode.h" include nil nil [459 488])
+            ("nexus_still_decoder.h" include nil nil [489 521])
+            ("nexus_playpump.h" include nil nil [522 549])
+            ("nexus_recpump.h" include nil nil [550 576])
+            ("project.h" include nil nil [840 860])
+            ("brcmfb.h" include nil nil [861 880])
+            ("comm_brcmfb.h" include nil nil [881 905])
+            ("comm_brcmdvb_av.h" include nil nil [906 934])
+            ("comm_demux.h" include nil nil [935 958])
+            ("comm_frontuart.h" include nil nil [959 986])
+            ("comm_sat.h" include nil nil [987 1008])
+            ("bcmdebug.h" include nil nil [1009 1030])
+            ("S_E1" variable (:constant-flag t) nil [1039 1043])
+            ("S_OK" variable (:constant-flag t) nil [1055 1059])
+            ("UI_PIXEL_FORMAT" variable (:constant-flag t) nil [1070 1085])
+            ("FBIO_SET_MANUAL_BLIT" variable (:constant-flag t) nil [1128 1148])
+            ("FBIO_WAITFORVSYNC" variable (:constant-flag t) nil [1179 1196])
+            ("FBIO_BLIT" variable (:constant-flag t) nil [1228 1237])
+            ("FBIO_ACCEL" variable (:constant-flag t) nil [1251 1261])
+            ("B_PVR_ATOM_SIZE" variable (:constant-flag t) nil [1275 1290])
+            ("HDFB" variable (:constant-flag t) nil [1416 1420])
+            ("SDFB" variable (:constant-flag t) nil [1432 1436])
+            ("MAXFB" variable (:constant-flag t) nil [1448 1453])
+            ("NUM_CHILD_PROCESSES" variable (:constant-flag t) nil [1465 1484])
+            ("DEFAULT_POSTION" variable (:constant-flag t) nil [1495 1510])
+            ("FBSDWIDTH_OFFSET" variable (:constant-flag t) nil [1776 1792])
+            ("FBSDHEIGHT_OFFSET" variable (:constant-flag t) nil [1804 1821])
+            ("FBSDX_OFFSET" variable (:constant-flag t) nil [1832 1844])
+            ("FBSDY_OFFSET" variable (:constant-flag t) nil [1860 1872])
+            ("FBHDWIDTH_OFFSET" variable (:constant-flag t) nil [1889 1905])
+            ("FBHDHEIGHT_OFFSET" variable (:constant-flag t) nil [1917 1934])
+            ("FBHDX_OFFSET" variable (:constant-flag t) nil [1945 1957])
+            ("FBHDY_OFFSET" variable (:constant-flag t) nil [1973 1985])
+            ("OFFSET_WHDRES" variable (:constant-flag t) nil [2066 2079])
+            ("OFFSET_HHDRES" variable (:constant-flag t) nil [2094 2107])
+            ("offset_hdwidth" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2177 2225])
+            ("offset_hdheight" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2177 2225])
+            ("OFFSET_WRES" variable (:constant-flag t) nil [2241 2252])
+            ("OFFSET_HRES" variable (:constant-flag t) nil [2267 2278])
+            ("OFFSET_SDWRES" variable (:constant-flag t) nil [2342 2355])
+            ("OFFSET_SDHRES" variable (:constant-flag t) nil [2369 2382])
+            ("MAX_OFFSET" variable (:constant-flag t) nil [2397 2407])
+            ("g_offset" variable
+               (:pointer 1
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2581 2600])
+            ("xoffset" variable
+               (:dereference 1
+                :default-value "{0,0}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2601 2627])
+            ("yoffset" variable
+               (:dereference 1
+                :default-value "{0,0}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2628 2654])
+            ("xresoffset" variable
+               (:dereference 1
+                :default-value "{0,0}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2655 2684])
+            ("yresoffset" variable
+               (:dereference 1
+                :default-value "{0,0}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2685 2714])
+            ("clearxoffset" variable
+               (:dereference 1
+                :default-value "{0,0}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2717 2748])
+            ("clearyoffset" variable
+               (:dereference 1
+                :default-value "{0,0}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2749 2780])
+            ("clearxresoffset" variable
+               (:dereference 1
+                :default-value "{0,0}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2781 2815])
+            ("clearyresoffset" variable
+               (:dereference 1
+                :default-value "{0,0}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2816 2850])
+            ("__hdmi_trace__" variable (:constant-flag t) nil [2888 2902])
+            ("wakeup_resolution" variable
+               (:typemodifiers ("static")
+                :type ("VIDEO_RESOLUTION_L" type (:type "class") nil nil))
+                nil [2940 2984])
+            ("wakeup_video_format" variable
+               (:typemodifiers ("static")
+                :type ("VIDEO_FORMAT_L" type (:type "class") nil nil))
+                nil [2985 3027])
+            ("fixwidth" variable
+               (:default-value "720"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3029 3051])
+            ("fixheight" variable
+               (:default-value "576"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3052 3075])
+            ("width" variable
+               (:typemodifiers ("static")
+                :default-value "720"
+                :type "unsigned int")
+                nil [3077 3109])
+            ("height" variable
+               (:typemodifiers ("static")
+                :default-value "576"
+                :type "unsigned int")
+                nil [3110 3142])
+            ("modeChange" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [3144 3175])
+            ("colourChange" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [3176 3209])
+            ("num_fb" variable
+               (:typemodifiers ("static")
+                :default-value "2"
+                :type "unsigned int")
+                nil [3210 3241])
+            ("dest_rect" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{ 0, 0, 0, 0 }"
+                :type "unsigned int")
+                nil [3242 3292])
+            ("interlaced" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [3324 3347])
+            ("renderer_width" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [3348 3379])
+            ("renderer_height" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [3380 3412])
+            ("background" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "unsigned int")
+                nil [3413 3448])
+            ("double_buffered" variable
+               (:typemodifiers ("static")
+                :default-value "1"
+                :type "int")
+                nil [3449 3480])
+            ("init_fb" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [3481 3502])
+            ("use_kernel_buffmgr" variable
+               (:typemodifiers ("static")
+                :default-value "1"
+                :type "int")
+                nil [3503 3537])
+            ("gfx_memory_size" variable
+               (:typemodifiers ("static")
+                :default-value "2 * GFX_MEM_ALLOC_SIZE"
+                :type "int")
+                nil [3538 3590])
+            ("gfx_display_mode" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "\"ARGB\""
+                :type "char")
+                nil [3591 3630])
+            ("_bsp" variable
+               (:typemodifiers ("static")
+                :type ("Grp_S" type (:type "class") nil nil))
+                nil [3631 3649])
+            ("bsp_p" variable
+               (:pointer 1
+                :default-value "&_bsp"
+                :type ("Grp_S" type (:type "class") nil nil))
+                nil [3650 3672])
+            ("GrpMode" variable (:type "int") nil [3673 3685])
+            ("IsAvStandBymode" variable
+               (:default-value "false"
+                :type "bool")
+                nil [3686 3713])
+            ("init_Dma" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3735 3740]))                  
+                :type "void")
+                nil [3714 3741])
+            ("SPIN_LOCK" variable (:constant-flag t) nil [3750 3759])
+            ("NexusAspect" variable (:type ("NEXUS_AspectRatio" type (:type "class") nil nil)) nil [3833 3863])
+            ("blitCanvas" variable
+               (:typemodifiers ("static")
+                :type ("SURFACE_S" type (:type "class") nil nil))
+                nil [3864 3892])
+            ("checkValue" variable
+               (:typemodifiers ("static")
+                :default-value "1"
+                :type "int")
+                nil [3894 3920])
+            ("accel_fillCommand" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [3921 3959])
+            ("accel_accelDoit" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [3960 3996])
+            ("accel_fillColor" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [3997 4028])
+            ("accel_blendflag" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4029 4059])
+            ("accel_xPosition" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4060 4091])
+            ("accel_yPosition" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4092 4123])
+            ("accel_xWidth" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4124 4152])
+            ("accel_yHeight" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4153 4182])
+            ("accel_srcStride" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4184 4215])
+            ("accel_srcWidth" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4216 4246])
+            ("accel_srcHeight" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4247 4278])
+            ("accel_srcFormatIndex" variable
+               (:typemodifiers ("static")
+                :default-value "0x0"
+                :type "int")
+                nil [4280 4318])
+            ("accel_srcFormat" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4319 4350])
+            ("accel_srcFormatPaladdr" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4351 4388])
+            ("accel_srcFormatPaladdr1" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4389 4428])
+            ("accel_srcSetSurface" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [4429 4469])
+            ("accel_setSrcRect" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [4471 4508])
+            ("accel_dstXposition" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4509 4543])
+            ("accel_dstYposition" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4544 4578])
+            ("accel_dstXwidth" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4579 4610])
+            ("accel_dstYheight" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4611 4643])
+            ("accel_blitSrcAddress" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4645 4681])
+            ("accel_blitDstAddress" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4682 4718])
+            ("Set_AvStandbymode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bOn" variable (:type "bool") (reparse-symbol arg-sub-list) [4742 4751]))                  
+                :type "void")
+                nil [4719 4752])
+            ("blitAuto_txtfunction" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [4786 4797]))                  
+                :type "bool")
+                nil [4753 4798])
+            ("FHD_VIDEOHSIZEOFFSET" variable (:constant-flag t) nil [4860 4880])
+            ("FHD_VIDEOHOFFSET" variable (:constant-flag t) nil [4892 4908])
+            ("tux_x" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4959 4980])
+            ("tux_y" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4981 5002])
+            ("tux_width" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [5003 5028])
+            ("tux_height" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [5029 5055])
+            ("tux_blit" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [5057 5081])
+            ("tux_blitup" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [5082 5108])
+            ("gDspInitialize" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [5116 5146])
+            ("disp_command" type
+               (:members 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [5218 5228])
+                    ("len" variable (:type "int") (reparse-symbol classsubparts) [5233 5241]))                  
+                :type "struct")
+                nil [5184 5251])
+            ("bit_cmd" type
+               (:typedef ("disp_command" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [5184 5251])
+            ("fb_info_bcm97335" type
+               (:members 
+                  ( ("pfb_info" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5282 5326])
+                    ("fb_size" variable
+                       (:dereference 1
+                        :type "unsigned long")
+                        (reparse-symbol classsubparts) [5331 5372])
+                    ("membase_virt" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5377 5399])
+                    ("fb_allocated" variable (:type "unsigned long") (reparse-symbol classsubparts) [5404 5431]))                  
+                :type "struct")
+                nil [5252 5434])
+            ("gphStbFB_info" variable
+               (:typemodifiers ("static")
+                :type ("fb_info_bcm97335" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5435 5480])
+            ("blit_prepare_surface" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [5537 5546]))                  
+                :type "int")
+                nil [5505 5547])
+            ("blit_execute" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [5573 5582]))                  
+                :type "void")
+                nil [5548 5583])
+            ("blit_destroy_surface" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5617 5622]))                  
+                :type "void")
+                nil [5584 5623])
+            ("get_frame_buffer_mode" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [5705 5714]))                  
+                :type "int")
+                nil [5672 5715])
+            ("GetBrowserMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5737 5742]))                  
+                :type "bool")
+                nil [5717 5743])
+            ("fill_rect" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("surface" variable (:type ("NEXUS_SurfaceHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5767 5795])
+                    ("color" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5796 5811])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5811 5817])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5817 5823])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [5823 5829])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [5829 5835]))                  
+                :type "void")
+                nil [5745 5836])
+            ("fill" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("surface" variable (:type ("NEXUS_SurfaceHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5854 5882])
+                    ("color" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5883 5898]))                  
+                :type "void")
+                nil [5837 5899])
+            ("videoContrast_DefaultGain" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [5938 5948]))                  
+                :type "void")
+                nil [5900 5949])
+            ("blitAuto_function" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [6002 6013]))                  
+                :type "bool")
+                nil [5979 6014])
+            ("display_Initialize__AV" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6051 6056]))                  
+                :type "void")
+                nil [6022 6057])
+            ("display_Initialize__bsp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("resolution" variable (:type ("VIDEO_RESOLUTION_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6086 6116])
+                    ("video_format" variable (:type ("VIDEO_FORMAT_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6117 6146]))                  
+                :type "int")
+                nil [6058 6147])
+            ("_display_resolution_Set" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [6184 6194])
+                    ("resolution" variable (:type ("VIDEO_RESOLUTION_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6195 6225])
+                    ("video_format" variable (:type ("VIDEO_FORMAT_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6226 6254])
+                    ("dsp" variable
+                       (:pointer 1
+                        :type ("NEXUS_DisplaySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6255 6282]))                  
+                :type "void")
+                nil [6148 6283])
+            ("_video_resolution" variable
+               (:typemodifiers ("static")
+                :default-value "VIDEO_RESOLUTION_COUNT"
+                :type ("VIDEO_RESOLUTION_L" type (:type "class") nil nil))
+                nil [6284 6353])
+            ("_video_format" variable
+               (:typemodifiers ("static")
+                :default-value "VIDEO_FORMAT_COUNT"
+                :type ("VIDEO_FORMAT_L" type (:type "class") nil nil))
+                nil [6354 6411])
+            ("offset_resolution_Set" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [6446 6455])
+                    ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [6455 6464]))                  
+                :type "void")
+                nil [6412 6465])
+            ("canvas_init_memory" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [6497 6506]))                  
+                :type "void")
+                nil [6466 6507])
+            ("enable_blit" variable
+               (:default-value "false"
+                :type "bool")
+                nil [6508 6531])
+            ("vidresolution" variable (:type ("VIDEO_RESOLUTION_L" type (:type "class") nil nil)) nil [6532 6565])
+            ("g_vidaspect" variable
+               (:dereference 1
+                :type "char")
+                nil [6566 6587])
+            ("display_resolution_Set__" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("resolution" variable (:type ("VIDEO_RESOLUTION_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6624 6654])
+                    ("video_format" variable (:type ("VIDEO_FORMAT_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6655 6683])
+                    ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [6683 6694]))                  
+                :type "int")
+                nil [6588 6695])
+            ("blit_osdclear" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [6715 6721])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [6721 6727])
+                    ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [6727 6736])
+                    ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [6736 6745]))                  
+                :type "void")
+                nil [6696 6746])
+            ("SrcRect" variable
+               (:typemodifiers ("static")
+                :type ("NEXUS_Rect" type (:type "class") nil nil))
+                nil [6747 6773])
+            ("Shutdown_AV" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("off" variable (:type "bool") (reparse-symbol arg-sub-list) [6798 6807]))                  
+                :type "void")
+                nil [6774 6808])
+            ("videoFmt" variable (:type ("VIDEO_FORMAT_L" type (:type "class") nil nil)) nil [6809 6833])
+            ("init_recypump" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6860 6865]))                  
+                :type "void")
+                nil [6834 6866])
+            ("init_playpump" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6893 6898]))                  
+                :type "void")
+                nil [6867 6899])
+            ("normalStandby_onOff" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [6900 6932])
+            ("RestartE2Mode" variable (:type "int") nil [6933 6951])
+            ("RestartE2VFDMode" variable (:type "int") nil [6952 6973])
+            ("RestartFB" variable (:type "bool") nil [6974 6989])
+            ("nexus_ret" variable (:type ("NEXUS_Error" type (:type "class") nil nil)) nil [6990 7012])
+            ("canvas_fix_width" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [7055 7089])
+            ("canvas_fix_height" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [7090 7124])
+            ("canvas_fix_set" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [7125 7159])
+            ("change_resolution_by_autoblit" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [7160 7205])
+            ("canvas_destroy_surface" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [7328 7337]))                  
+                :type "void")
+                nil [7293 7338])
+            ("create_syncChannel" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7363 7368]))                  
+                :type "void")
+                nil [7339 7369])
+            ("set_video_size_video1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [7397 7403])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [7403 7409])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [7409 7415])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [7415 7421])
+                    ("aspect" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7421 7434]))                  
+                :type "void")
+                nil [7370 7435])
+            ("fb_variable_print" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7516 7521]))                  
+                :type "void")
+                nil [7486 10342])
+            ("hbbtv_press_redkey" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [10384 10418])
+            ("brcmfb_store_hbbtv_key" function
+               (:arguments 
+                  ( ("startkey" variable (:type "int") (reparse-symbol arg-sub-list) [10447 10460]))                  
+                :type "void")
+                nil [10419 10500])
+            ("get_hbbtv_key_state" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10532 10537]))                  
+                :type "int")
+                nil [10501 10572])
+            ("canvas_w_h_resolution_reset" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10663 10668]))                  
+                :type "void")
+                nil [10623 10756])
+            ("canvas_w_h_resolution_set" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [10838 10844])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [10845 10851]))                  
+                :type "void")
+                nil [10800 10939])
+            ("blit_thread" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11244 11256]))                  
+                :type "int")
+                nil [11220 11724])
+            ("get_dolbyVol258Handle" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11892 11897]))                  
+                :type ("NEXUS_DolbyVolume258Handle" type (:type "class") nil nil))
+                nil [11843 11941])
+            ("get_videoReslotion" function (:type "int") nil [11949 12003])
+            ("video_EncFmt_Set" function
+               (:arguments 
+                  ( ("video_format" variable (:type ("VIDEO_FORMAT_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12026 12054]))                  
+                :type "void")
+                nil [12004 13497])
+            ("video_EncFmt_Get" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13579 13584]))                  
+                :type ("VIDEO_FORMAT_L" type (:type "class") nil nil))
+                nil [13547 13668])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("video_EncFmt_Get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13683 13700]))                  
+                :type "int")
+                nil [13669 13701])
+            ("is_rgb_576i" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13761 13766]))                  
+                :type "bool")
+                nil [13744 14123])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_rgb_576i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14138 14150]))                  
+                :type "int")
+                nil [14124 14151])
+            ("fb_SetAlpahperty" function
+               (:arguments 
+                  ( ("alpha" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14175 14189]))                  
+                :type "void")
+                nil [14153 15097])
+            ("fb_Setproperty" function
+               (:arguments 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15870 15881])
+                    ("y" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15881 15892])
+                    ("xres" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15893 15907])
+                    ("yres" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15907 15921])
+                    ("ClearFB" variable (:type "bool") (reparse-symbol arg-sub-list) [15921 15934]))                  
+                :type "void")
+                nil [15850 16448])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("fb_Setproperty" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16463 16478]))                  
+                :type "int")
+                nil [16449 16479])
+            ("gfx_complete" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18902 18913])
+                    ("unused" variable (:type "int") (reparse-symbol arg-sub-list) [18914 18925]))                  
+                :type "void")
+                nil [18877 18997])
+            ("hotplug_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pParam" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19027 19040])
+                    ("iParam" variable (:type "int") (reparse-symbol arg-sub-list) [19041 19052]))                  
+                :type "void")
+                nil [18998 22175])
+            ("get_frame_buffer_mode" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [22251 22260]))                  
+                :type "int")
+                nil [22218 22366])
+            ("blit_osdclear" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [22386 22392])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [22392 22398])
+                    ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [22398 22407])
+                    ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [22407 22416]))                  
+                :type "void")
+                nil [22367 24031])
+            ("initfb" variable
+               (:default-value "false"
+                :type "bool")
+                nil [24032 24051])
+            ("blit_tuxosd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [24076 24082])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [24082 24088])
+                    ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [24088 24097])
+                    ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [24097 24106]))                  
+                :type "void")
+                nil [24052 26373])
+            ("blit_osd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [26395 26401])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [26401 26407])
+                    ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [26407 26416])
+                    ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [26416 26425]))                  
+                :type "void")
+                nil [26374 29462])
+            ("get_PlaypumpEvent" function
+               (:arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [29498 29506]))                  
+                :type ("BKNI_EventHandle" type (:type "class") nil nil))
+                nil [29463 29549])
+            ("get_Playpump" function
+               (:arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [29584 29592]))                  
+                :type ("NEXUS_PlaypumpHandle" type (:type "class") nil nil))
+                nil [29550 29630])
+            ("get_stillenvent" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29664 29669]))                  
+                :type ("BKNI_EventHandle" type (:type "class") nil nil))
+                nil [29631 29713])
+            ("get_vid1Handle" function
+               (:arguments 
+                  ( ("" variable (:type ("voi" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29754 29758]))                  
+                :type ("NEXUS_StillDecoderHandle" type (:type "class") nil nil))
+                nil [29714 29795])
+            ("get_vidHandle" function
+               (:arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [29835 29845]))                  
+                :type ("NEXUS_VideoDecoderHandle" type (:type "class") nil nil))
+                nil [29796 29895])
+            ("get_hdmiDacHandle" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30057 30062]))                  
+                :type ("NEXUS_HdmiOutputHandle" type (:type "class") nil nil))
+                nil [30016 30117])
+            ("get_spdifDacHandle" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30161 30166]))                  
+                :type ("NEXUS_SpdifOutputHandle" type (:type "class") nil nil))
+                nil [30118 30222])
+            ("get_componentDacHandle" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30275 30280]))                  
+                :type ("NEXUS_ComponentOutputHandle" type (:type "class") nil nil))
+                nil [30224 30340])
+            ("get_compositeDacHandle" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30392 30397]))                  
+                :type ("NEXUS_CompositeOutputHandle" type (:type "class") nil nil))
+                nil [30341 30456])
+            ("get_audDacHandle" function
+               (:arguments 
+                  ( ("type" variable (:type "int") (reparse-symbol arg-sub-list) [30497 30506]))                  
+                :type ("NEXUS_AudioDacHandle" type (:type "class") nil nil))
+                nil [30459 30566])
+            ("get_audHandle" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30607 30612]))                  
+                :type ("NEXUS_AudioDecoderHandle" type (:type "class") nil nil))
+                nil [30568 30724])
+            ("isPalMode" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30747 30752]))                  
+                :type "bool")
+                nil [30725 31040])
+            ("phStbVideoRenderer_FrameRate" type
+               (:members 
+                  ( ("phStbVideoRenderer_FrameRateNone" variable
+                       (:constant-flag t
+                        :default-value (31196 31200)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31157 31200])
+                    ("phStbVideoRenderer_FrameRate_23_97" variable
+                       (:constant-flag t
+                        :default-value (31245 31249)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31206 31249])
+                    ("phStbVideoRenderer_FrameRate_24" variable
+                       (:constant-flag t
+                        :default-value (31294 31298)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31255 31298])
+                    ("phStbVideoRenderer_FrameRate_25" variable
+                       (:constant-flag t
+                        :default-value (31343 31347)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31304 31347])
+                    ("phStbVideoRenderer_FrameRate_29_97" variable
+                       (:constant-flag t
+                        :default-value (31392 31396)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31353 31396])
+                    ("phStbVideoRenderer_FrameRate_30" variable
+                       (:constant-flag t
+                        :default-value (31441 31445)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31402 31445])
+                    ("phStbVideoRenderer_FrameRate_50" variable
+                       (:constant-flag t
+                        :default-value (31490 31494)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31451 31494])
+                    ("phStbVideoRenderer_FrameRate_59_94" variable
+                       (:constant-flag t
+                        :default-value (31539 31543)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31500 31543])
+                    ("phStbVideoRenderer_FrameRate_60" variable
+                       (:constant-flag t
+                        :default-value (31588 31592)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31549 31592])
+                    ("phStbVideoRenderer_FrameRate_75" variable
+                       (:constant-flag t
+                        :default-value (31637 31641)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31598 31641]))                  
+                :type "enum")
+                nil [31109 31675])
+            ("phStbVideoRenderer_FrameRate_t" type
+               (:typedef ("phStbVideoRenderer_FrameRate" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [31109 31675])
+            ("renderer_framerate" variable
+               (:typemodifiers ("static")
+                :type ("phStbVideoRenderer_FrameRate_t" type (:type "class") nil nil))
+                nil [31676 31733])
+            ("phStbVideoRenderer_GfxMode" type
+               (:members 
+                  ( ("phStbVideoRenderer_GfxMode_Clut256" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31781 31816])
+                    ("phStbVideoRenderer_GfxMode_RGB565" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31821 31855])
+                    ("phStbVideoRenderer_GfxMode_ARGB1555" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31860 31896])
+                    ("phStbVideoRenderer_GfxMode_ARGB4444" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31901 31937])
+                    ("phStbVideoRenderer_GfxMode_ARGB8888" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31942 31978])
+                    ("phStbVideoRenderer_GfxMode_Invalid" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [31983 32019]))                  
+                :type "enum")
+                nil [31735 32048])
+            ("phStbVideoRenderer_GfxMode_t" type
+               (:typedef ("phStbVideoRenderer_GfxMode" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [31735 32048])
+            ("phStbVideoRenderer_GfxClut" type
+               (:members 
+                  ( ("gfxClutSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32134 32155])
+                    ("gfxClutStart" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32160 32182])
+                    ("gfxClutData" variable
+                       (:dereference 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32187 32213]))                  
+                :type "struct")
+                nil [32086 32245])
+            ("phStbVideoRenderer_GfxClut_t" type
+               (:typedef ("phStbVideoRenderer_GfxClut" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [32086 32245])
+            ("event" variable (:type ("BKNI_EventHandle" type (:type "class") nil nil)) nil [32246 32269])
+            ("fill" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("surface" variable (:type ("NEXUS_SurfaceHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32287 32315])
+                    ("color" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32316 32331]))                  
+                :type "void")
+                nil [32270 32332])
+            ("phStbFB_setPixel" function
+               (:prototype-flag t
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mode" variable (:type ("phStbVideoRenderer_GfxMode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32369 32403])
+                    ("value" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32404 32414])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("u8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32415 32423]))                  
+                :type "void")
+                nil [32333 32424])
+            ("PHSTBFB_REQUIRED_MEMORY" variable (:constant-flag t) nil [32434 32457])
+            ("gphStbFB_fix" variable
+               (:typemodifiers ("static")
+                :default-value "{
+#if BCHP_CHIP == 7346
+    #if 1   /* atv requirement for hbbtv2.0 support wslee_20160307 */
+    .id =       \"bcmfb\",
+    #else
+    .id =       \"BCM97356 FB\",
+    #endif
+#elif (BCHP_CHIP == 7362 || BCHP_CHIP == 73625)       /* (at_7362_initial_work) */
+    #if 1   /* atv requirement for hbbtv2.0 support wslee_20160307 */
+    .id =       \"bcmfb\",
+    #else
+    .id =       \"BCM97362 FB\",
+    #endif
+#elif (BCHP_CHIP == 7439)	/* iqon-uhd */
+	.id =       \"bcmfb\",
+#else
+    #if 1   /* atv requirement for hbbtv2.0 support wslee_20160307 */
+    .id =       \"bcmfb\",
+    #else
+    .id =       \"BCM97335 FB\",
+    #endif
+#endif
+    .type =     FB_TYPE_PACKED_PIXELS,
+    .visual =   FB_VISUAL_TRUECOLOR,
+    .xpanstep = 0,
+    .ypanstep = 1,
+    .ywrapstep = 1,
+    .accel =    FB_ACCEL_NONE,
+}"
+                :type ("fb_fix_screeninfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [32552 33390])
+            ("get_stcPIPHandle" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [33481 33486]))                  
+                :type ("NEXUS_StcChannelHandle" type (:type "class") nil nil))
+                nil [33441 33523])
+            ("get_stcHandle" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [33561 33566]))                  
+                :type ("NEXUS_StcChannelHandle" type (:type "class") nil nil))
+                nil [33524 33600])
+            ("Set_StcVideoMode" function
+               (:arguments 
+                  ( ("videoMode" variable (:type "bool") (reparse-symbol arg-sub-list) [33623 33638]))                  
+                :type "void")
+                nil [33601 34527])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Set_StcVideoMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34542 34559]))                  
+                :type "int")
+                nil [34528 34560])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("get_stcHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34575 34589]))                  
+                :type "int")
+                nil [34561 34590])
+            ("canvas_init_memory" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [34622 34631]))                  
+                :type "void")
+                nil [34591 35610])
+            ("phStbFB_init_memory" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [35642 35647]))                  
+                :type "int")
+                nil [35611 36223])
+            ("phStbFB_free_memory" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [36292 36297]))                  
+                :type "void")
+                nil [36260 37432])
+            ("phStbFB_reset_destination_rect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [37731 37736]))                  
+                :type "void")
+                nil [37688 37855])
+            ("phStbFb_setDefaultCLUT" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pFbInfo" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37997 38021]))                  
+                :type "void")
+                nil [37962 38755])
+            ("phStbFB_type" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("var" variable
+                       (:pointer 1
+                        :type ("fb_var_screeninfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38805 38835]))                  
+                :type ("phStbVideoRenderer_GfxMode_t" type (:type "class") nil nil))
+                nil [38756 41159])
+            ("bcm7335_fb_check_var" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("var" variable
+                       (:pointer 1
+                        :type ("fb_var_screeninfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41192 41222])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41223 41244]))                  
+                :type "int")
+                nil [41160 43752])
+            ("bcm7335_fb_set_par" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43783 43804]))                  
+                :type "int")
+                nil [43753 48756])
+            ("bcm7335_fb_setcolreg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("regno" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48790 48805])
+                    ("red" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48806 48819])
+                    ("green" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48820 48835])
+                    ("blue" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48844 48858])
+                    ("transp" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48859 48875])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48884 48905]))                  
+                :type "int")
+                nil [48758 49209])
+            ("bcm7335_setcmap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cmap" variable
+                       (:pointer 1
+                        :type ("fb_cmap" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49238 49259])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49260 49281]))                  
+                :type "int")
+                nil [49211 49336])
+            ("bcm7335_fb_pan_display" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("var" variable
+                       (:pointer 1
+                        :type ("fb_var_screeninfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49373 49403])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49412 49433]))                  
+                :type "int")
+                nil [49339 50551])
+            ("bcm7335_fb_blank" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("blank_mode" variable (:type "int") (reparse-symbol arg-sub-list) [50582 50597])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50598 50619]))                  
+                :type "int")
+                nil [50553 50906])
+            ("bcm7335_ACCEL_" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [50933 50941])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [50941 50951]))                  
+                :type "int")
+                nil [50907 54712])
+            ("bcm7335_fb_ioctl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [54743 54764])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [54764 54781])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [54781 54799]))                  
+                :type "int")
+                nil [54714 59753])
+            ("blit_prepare_surface" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [59810 59819]))                  
+                :type "int")
+                nil [59778 62674])
+            ("canvas_destroy_surface" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [62758 62767]))                  
+                :type "void")
+                nil [62723 62934])
+            ("blit_destroy_surface" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [62976 62981]))                  
+                :type "void")
+                nil [62943 63075])
+            ("blit_execute" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [63102 63111]))                  
+                :type "void")
+                nil [63077 64821])
+            ("restartFlag" variable
+               (:default-value "false"
+                :type "bool")
+                nil [64829 64852])
+            ("bcm7355_fb_mmap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [64880 64901])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [64902 64929]))                  
+                :type "int")
+                nil [64853 66720])
+            ("bcm7335_fb_syc" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [66741 66759]))                  
+                :type "int")
+                nil [66721 66778])
+            ("bcm7335_fbread" function
+               (:arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [66802 66823])
+                    ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [66824 66837])
+                    ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66837 66841])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66841 66854])
+                    ("ppos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66855 66868]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [66779 66927])
+            ("bcm7335_fbwrite" function
+               (:arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [66952 66973])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [66974 66993])
+                    ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66993 66997])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66997 67010])
+                    ("ppos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67011 67024]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [66928 67292])
+            ("bcm7355_fb_release" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [67323 67344])
+                    ("user" variable (:type "int") (reparse-symbol arg-sub-list) [67345 67354]))                  
+                :type "int")
+                nil [67293 67867])
+            ("gphStbFB_ops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .owner          = THIS_MODULE,
+    .fb_write   = bcm7335_fbwrite,
+    .fb_read   = bcm7335_fbread,
+    .fb_check_var   = bcm7335_fb_check_var,
+    .fb_set_par     = bcm7335_fb_set_par,
+    .fb_setcolreg   = bcm7335_fb_setcolreg,
+    .fb_setcmap     = bcm7335_setcmap,
+    .fb_blank       = bcm7335_fb_blank,
+    .fb_pan_display = bcm7335_fb_pan_display,
+    .fb_mmap        = bcm7355_fb_mmap,
+    .fb_release     = bcm7355_fb_release,
+    .fb_sync        = bcm7335_fb_syc,
+    .fb_ioctl       = bcm7335_fb_ioctl
+}"
+                :type ("fb_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [68128 68684])
+            ("phStbFB_show_memsize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [68722 68741])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [68742 68772])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [68773 68783]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [68686 68929])
+            ("DEVICE_ATTR" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68950 68955])
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68956 68964])
+                    ("" variable (:type ("phStbFB_show_memsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68965 68986])
+                    ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68987 68992]))                  
+                :type "int")
+                nil [68931 68993])
+            ("phStbFB_show_rev" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69027 69046])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69047 69077])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [69078 69088]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [68995 69140])
+            ("DEVICE_ATTR" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("revision" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69161 69170])
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69171 69179])
+                    ("" variable (:type ("phStbFB_show_rev" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69180 69197])
+                    ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69198 69203]))                  
+                :type "int")
+                nil [69142 69204])
+            ("phStbFB_show_vendor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69242 69261])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69262 69292])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [69293 69303]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [69207 69362])
+            ("DEVICE_ATTR" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("vendor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69383 69390])
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69391 69399])
+                    ("" variable (:type ("phStbFB_show_vendor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69400 69420])
+                    ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69421 69426]))                  
+                :type "int")
+                nil [69364 69427])
+            ("phStbFB_show_device" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69464 69483])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69484 69514])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [69515 69525]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [69429 69584])
+            ("DEVICE_ATTR" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("device" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69605 69612])
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69613 69621])
+                    ("" variable (:type ("phStbFB_show_device" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69622 69642])
+                    ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69643 69648]))                  
+                :type "int")
+                nil [69586 69649])
+            ("phStbFB_remove_sysfs" function
+               (:arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69827 69846]))                  
+                :type ("__devexit" type (:type "class") nil nil))
+                nil [69796 70045])
+            ("phStbFb_create_sysfs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [70080 70099]))                  
+                :type "void")
+                nil [70047 70291])
+            ("phStbFB_setPixel" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mode" variable (:type ("phStbVideoRenderer_GfxMode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70328 70362])
+                    ("value" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70363 70373])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("u8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70374 70382]))                  
+                :type "void")
+                nil [70292 71526])
+            ("phStbFb_setGraphicsMode" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pFbInfo" variable
+                       (:pointer 1
+                        :type ("fb_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [71587 71611]))                  
+                :type ("phStbVideoRenderer_GfxMode_t" type (:type "class") nil nil))
+                nil [71527 75302])
+            ("phStbFB_probe" function
+               (:arguments 
+                  ( ("p_dev" variable
+                       (:pointer 1
+                        :type ("platform_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [75381 75411]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [75360 78984])
+            ("phStbFB_remove" function
+               (:arguments 
+                  ( ("p_dev" variable
+                       (:pointer 1
+                        :type ("platform_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [79174 79204]))                  
+                :type ("__devexit" type (:type "class") nil nil))
+                nil [79149 79818])
+            ("gphStbFB_driver" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    {
+        .driver = {
+            .name = \"fb0\"
+        },
+        .probe = phStbFB_probe,
+        #if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 14, 0)    /* kernel-up */        
+        .remove = phStbFB_remove,
+        #else
+        .remove = __devexit_p(phStbFB_remove),
+        #endif
+    },
+    {
+        .driver = {
+            .name = \"fb1\"
+        },
+        .probe = phStbFB_probe,
+        #if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 14, 0)    /* kernel-up */        
+        .remove = phStbFB_remove,
+        #else
+        .remove = __devexit_p(phStbFB_remove),
+        #endif
+    }
+}"
+                :type ("platform_driver" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [79819 80485])
+            ("gphStbFB_device" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    {
+        .name = \"fb0\",
+    },
+    {
+        .name = \"fb1\",
+    }
+}"
+                :type ("platform_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [80487 80629])
+            ("phStbFB_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [80649 80654]))                  
+                :type "int")
+                nil [80632 81256])
+            ("phStbFB_exit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [81276 81281]))                  
+                :type "void")
+                nil [81258 81428])
+            ("fill_rect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("surface" variable (:type ("NEXUS_SurfaceHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81581 81609])
+                    ("color" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81610 81625])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [81625 81631])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [81631 81637])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [81637 81643])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [81643 81649]))                  
+                :type "void")
+                nil [81559 83324])
+            ("fill" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("surface" variable (:type ("NEXUS_SurfaceHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83343 83371])
+                    ("color" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83372 83387]))                  
+                :type "void")
+                nil [83326 84335])
+            ("get_displayHandle" function
+               (:arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [84376 84384]))                  
+                :type ("NEXUS_DisplayHandle" type (:type "class") nil nil))
+                nil [84337 84421])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("get_displayHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84436 84454]))                  
+                :type "int")
+                nil [84422 84455])
+            ("offset_resolution_Set" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [84490 84499])
+                    ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [84499 84508]))                  
+                :type "void")
+                nil [84456 87051])
+            ("_display_resolution_Set" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [87089 87099])
+                    ("resolution" variable (:type ("VIDEO_RESOLUTION_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87100 87130])
+                    ("video_format" variable (:type ("VIDEO_FORMAT_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87131 87159])
+                    ("dsp" variable
+                       (:pointer 1
+                        :type ("NEXUS_DisplaySettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87160 87187]))                  
+                :type "void")
+                nil [87053 92010])
+            ("dsp_ResetAspectRatio" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [92037 92042]))                  
+                :type "void")
+                nil [92011 92215])
+            ("Auto_wss" variable
+               (:default-value "0"
+                :type "bool")
+                nil [92216 92232])
+            ("dsp_AspectRatio" function
+               (:arguments 
+                  ( ("aspect" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92254 92267]))                  
+                :type "void")
+                nil [92233 93620])
+            ("Remove_Display" function
+               (:arguments 
+                  ( ("remove" variable (:type "bool") (reparse-symbol arg-sub-list) [93641 93653]))                  
+                :type "void")
+                nil [93621 97125])
+            ("Shutdown_AV" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("off" variable (:type "bool") (reparse-symbol arg-sub-list) [97150 97159]))                  
+                :type "void")
+                nil [97126 99238])
+            ("Set_AvStandbymode" function
+               (:arguments 
+                  ( ("bOn" variable (:type "bool") (reparse-symbol arg-sub-list) [99262 99271]))                  
+                :type "void")
+                nil [99239 99300])
+            ("Get_AvStandbymodeStatus" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [99331 99336]))                  
+                :type "bool")
+                nil [99302 99368])
+            ("display_resolution_Set__" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("resolution" variable (:type ("VIDEO_RESOLUTION_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99436 99466])
+                    ("video_format" variable (:type ("VIDEO_FORMAT_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99467 99495])
+                    ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [99495 99506]))                  
+                :type "int")
+                nil [99400 105334])
+            ("display_resolution_Set" function
+               (:arguments 
+                  ( ("resolution" variable (:type ("VIDEO_RESOLUTION_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [105362 105392])
+                    ("video_format" variable (:type ("VIDEO_FORMAT_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [105393 105421]))                  
+                :type "int")
+                nil [105335 105525])
+            ("Remove_AudiInputs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [105556 105561]))                  
+                :type "void")
+                nil [105526 106520])
+            ("pcm_DownMixMode" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [106549 106554]))                  
+                :type "void")
+                nil [106521 108134])
+            ("set_spdif_passthrough" function
+               (:arguments 
+                  ( ("downmix" variable (:type "bool") (reparse-symbol arg-sub-list) [108163 108176])
+                    ("audioCodec" variable (:type ("NEXUS_AudioCodec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [108177 108205]))                  
+                :type "void")
+                nil [108136 120600])
+            ("videoColor_Settings" function
+               (:arguments 
+                  ( ("val" variable (:type ("NEXUS_PictureCtrlCommonSettings" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120627 120663])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [120664 120674]))                  
+                :type "void")
+                nil [120601 121509])
+            ("videoColor_Adv_Settings" function
+               (:arguments 
+                  ( ("val" variable (:type ("NEXUS_PictureCtrlAdvColorSettings" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121542 121580])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [121581 121591]))                  
+                :type "void")
+                nil [121511 122038])
+            ("videoScreen_Split" function
+               (:arguments 
+                  ( ("val" variable (:type ("NEXUS_VideoWindowSplitScreenSettings" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122063 122104])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [122105 122115]))                  
+                :type "void")
+                nil [122039 122984])
+            ("videoDnr_Settings" function
+               (:arguments 
+                  ( ("val" variable (:type ("NEXUS_VideoWindowDnrSettings" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123010 123043])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [123044 123054]))                  
+                :type "void")
+                nil [122986 123408])
+            ("videoContrast_DefaultGain" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [123447 123457]))                  
+                :type "void")
+                nil [123409 123989])
+            ("videoContrast_Stretch" function
+               (:arguments 
+                  ( ("val" variable (:type ("NEXUS_PictureCtrlContrastStretch" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124017 124054])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [124055 124065]))                  
+                :type "void")
+                nil [123990 124513])
+            ("create_syncChannel" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [124538 124543]))                  
+                :type "void")
+                nil [124514 124699])
+            ("set_syncChannel" function
+               (:arguments 
+                  ( ("synon" variable (:type "bool") (reparse-symbol arg-sub-list) [124721 124732]))                  
+                :type "void")
+                nil [124700 125735])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("set_syncChannel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125750 125766]))                  
+                :type "int")
+                nil [125736 125767])
+            ("get_dma" function (:type ("NEXUS_DmaHandle" type (:type "class") nil nil)) nil [125768 125820])
+            ("DMA_BLOCK" variable (:constant-flag t) nil [125863 125872])
+            ("DMA_JOBS" variable (:constant-flag t) nil [125895 125903])
+            ("init_Dma" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [125930 125935]))                  
+                :type "void")
+                nil [125909 126659])
+            ("Set_RecPumpDescramabler" function
+               (:arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [126689 126697])
+                    ("slotid" variable (:type "int") (reparse-symbol arg-sub-list) [126697 126708]))                  
+                :type "void")
+                nil [126660 126760])
+            ("Get_RecPumpDescramabler" function
+               (:arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [126789 126797]))                  
+                :type "int")
+                nil [126761 126849])
+            ("Set_RecPumpState" function
+               (:arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [126872 126880])
+                    ("started" variable (:type "bool") (reparse-symbol arg-sub-list) [126880 126893]))                  
+                :type "void")
+                nil [126850 126939])
+            ("BspStatus_OnRecording_State" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [127169 127174]))                  
+                :type "bool")
+                nil [127136 127365])
+            ("Get_FreePump" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [127388 127393]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [127367 127558])
+            ("Get_RecPumpState" function
+               (:arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [127581 127589]))                  
+                :type "bool")
+                nil [127559 127634])
+            ("get_recpump" function
+               (:arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [127667 127675]))                  
+                :type ("NEXUS_RecpumpHandle" type (:type "class") nil nil))
+                nil [127635 127711])
+            ("init_recypump" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [127738 127743]))                  
+                :type "void")
+                nil [127712 128070])
+            ("Astm_Sync" function
+               (:arguments 
+                  ( ("start" variable (:type "bool") (reparse-symbol arg-sub-list) [128086 128097])
+                    ("audioCodec" variable (:type ("NEXUS_AudioCodec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128097 128125]))                  
+                :type "void")
+                nil [128071 129250])
+            ("Astm_SyncMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [129270 129275]))                  
+                :type "void")
+                nil [129251 129852])
+            ("init_playpump" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [129880 129885]))                  
+                :type "void")
+                nil [129854 130977])
+            ("display_Initialize__AV" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [131008 131013]))                  
+                :type "void")
+                nil [130979 138404])
+            ("avsync_Livemode" function
+               (:arguments 
+                  ( ("live" variable (:type "int") (reparse-symbol arg-sub-list) [138426 138435])
+                    ("channelHandle" variable (:type ("NEXUS_PidChannelHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [138435 138472]))                  
+                :type "void")
+                nil [138405 139321])
+            ("Stc_Pause" function
+               (:arguments 
+                  ( ("frozen" variable (:type "bool") (reparse-symbol arg-sub-list) [139337 139349]))                  
+                :type "void")
+                nil [139322 139557])
+            ("Close_Pip" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [139573 139578]))                  
+                :type "void")
+                nil [139558 139690])
+            ("Open_Pip" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [139705 139710]))                  
+                :type "void")
+                nil [139691 139806])
+            ("display_Initialize__bsp" function
+               (:arguments 
+                  ( ("resolution" variable (:type ("VIDEO_RESOLUTION_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [139835 139865])
+                    ("video_format" variable (:type ("VIDEO_FORMAT_L" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [139866 139895]))                  
+                :type "int")
+                nil [139807 158490])
+            ("set_video_size_video1" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [158518 158524])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [158524 158530])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [158530 158536])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [158536 158542])
+                    ("aspect" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [158542 158555]))                  
+                :type "void")
+                nil [158491 163023])
+            ("set_video_zoomReset" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [163049 163054]))                  
+                :type "void")
+                nil [163024 164686])
+            ("set_video_zoom" function
+               (:arguments 
+                  ( ("zoomin" variable (:type "int") (reparse-symbol arg-sub-list) [164707 164718])
+                    ("rate" variable (:type "int") (reparse-symbol arg-sub-list) [164718 164727]))                  
+                :type "void")
+                nil [164687 170171])
+            ("reset_FHDVideo" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [170192 170197]))                  
+                :type "void")
+                nil [170172 170456])
+            ("set_video_size_video0" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [170486 170492])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [170492 170498])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [170498 170504])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [170504 170510])
+                    ("aspect" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [170510 170523]))                  
+                :type "void")
+                nil [170459 177811])
+            ("VideoVisibleOff" function (:type "void") nil [177848 178175])
+            ("VideoVisibleOn" function (:type "void") nil [178177 178502])
+            ("HD_VideoClip" function (:type "void") nil [178504 183782])
+            ("HD_VideoClip2" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [183991 183996]))                  
+                :type "void")
+                nil [183972 186671])
+            ("set_resolution" function
+               (:arguments 
+                  ( ("vid_res" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [186708 186723])
+                    ("aspect" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [186723 186736]))                  
+                :type "void")
+                nil [186688 190269])
+            ("set_aspect" function
+               (:arguments 
+                  ( ("vid_aspect" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [190286 190304]))                  
+                :type "void")
+                nil [190270 192290])
+            ("blitAuto_function" function
+               (:arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [192343 192354]))                  
+                :type "bool")
+                nil [192320 192898])
+            ("blitAuto_txtfunction" function
+               (:arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [192925 192936]))                  
+                :type "bool")
+                nil [192899 193312])
+            ("GetBrowserMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [193333 193338]))                  
+                :type "bool")
+                nil [193313 193527])
+            ("GetBlitMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [193546 193551]))                  
+                :type "bool")
+                nil [193529 193576])
+            ("font_sun8x16.h" include nil nil [193675 193700])
+            ("SPACE" variable (:constant-flag t) nil [193717 193722])
+            ("BAR_STEP" variable (:constant-flag t) nil [193739 193747])
+            ("x_bytes_per_font" function
+               (:arguments 
+                  ( ("xpixels" variable (:type "int") (reparse-symbol arg-sub-list) [193773 193785]))                  
+                :type "int")
+                nil [193752 193851])
+            ("y_bytes_per_font" function
+               (:arguments 
+                  ( ("ypixels" variable (:type "int") (reparse-symbol arg-sub-list) [193874 193886]))                  
+                :type "int")
+                nil [193853 193910])
+            ("bytes_per_font" function
+               (:arguments 
+                  ( ("xpixels" variable (:type "int") (reparse-symbol arg-sub-list) [193931 193943])
+                    ("ypixels" variable (:type "int") (reparse-symbol arg-sub-list) [193944 193956]))                  
+                :type "int")
+                nil [193912 194026])
+            ("draw_progress" function
+               (:arguments 
+                  ( ("percent" variable (:type "int") (reparse-symbol arg-sub-list) [194047 194059]))                  
+                :type "void")
+                nil [194028 200250])
+            ("set_stanbymode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [200271 200276]))                  
+                :type "void")
+                nil [200251 201416]))          
+      :file "brcmfb.c"
+      :pointmax 206977
+      :fsize 206976
+      :lastmodtime '(22689 19556 721678 19000)
+      :unmatched-syntax '((INT 79145 . 79148) (STATIC 79138 . 79144) (INT 75356 . 75359) (STATIC 75349 . 75355) (VOID 69791 . 69795) (STATIC 69784 . 69790) (punctuation 66992 . 66993) (punctuation 66836 . 66837))
+      :lexical-table 
+        '(("NUM_CHILD_PROCESSES" . ((number "2" 1485 . 1486)))
+          ("FBSDHEIGHT_OFFSET" . ((number "0" 1822 . 1823)))
+          ("FBSDX_OFFSET" . ((number "0" 1850 . 1851)))
+          ("OFFSET_SDWRES" . ((number "720" 2357 . 2360)))
+          ("SPIN_LOCK" . ((number "0" 3760 . 3761)))
+          ("DMA_JOBS" . ((number "1" 125907 . 125908)))
+          ("SPACE" . ((number "1" 193729 . 193730)))
+          ("BAR_STEP" . ((number "20" 193748 . 193750)))
+          ("S_OK" . ((number "0" 1060 . 1061)))
+          ("FHD_VIDEOHOFFSET" . ((symbol "FHD_VIDEOHSIZEOFFSET" 4909 . 4929)))
+          ("B_PVR_ATOM_SIZE" . ((semantic-list "((188/4)*4096)" 1291 . 1305)))
+          ("FBSDWIDTH_OFFSET" . ((number "0" 1794 . 1795)))
+          ("FBHDHEIGHT_OFFSET" . ((number "0" 1935 . 1936)))
+          ("FBIO_WAITFORVSYNC" . ((symbol "_IOW" 1197 . 1201) (semantic-list "('F', 0x20, __u32)" 1201 . 1219)))
+          ("FBSDY_OFFSET" . ((number "0" 1878 . 1879)))
+          ("OFFSET_WHDRES" . ((number "1920" 2081 . 2085)))
+          ("OFFSET_HRES" . ((number "720" 2280 . 2283)))
+          ("FBIO_BLIT" . ((number "0x22" 1238 . 1242)))
+          ("MAX_OFFSET" . ((number "10" 2408 . 2410)))
+          ("__hdmi_trace__" . ((number "0" 2904 . 2905)))
+          ("PHSTBFB_REQUIRED_MEMORY" (spp-arg-list ("_width" "_height" "_bpp") 32457 . 32480) . ((semantic-list "((num_fb * _width * _height  * (double_buffered ? 2 : 1) * _bpp) / 8)" 32481 . 32550)))
+          ("FBIO_SET_MANUAL_BLIT" . ((symbol "_IOW" 1149 . 1153) (semantic-list "('F', 0x21, __u8)" 1153 . 1170)))
+          ("DEFAULT_POSTION" . ((number "0" 1511 . 1512)))
+          ("OFFSET_WRES" . ((number "1280" 2254 . 2258)))
+          ("FBHDX_OFFSET" . ((number "0" 1963 . 1964)))
+          ("FBHDWIDTH_OFFSET" . ((number "0" 1907 . 1908)))
+          ("SDFB" . ((number "1" 1438 . 1439)))
+          ("DMA_BLOCK" . 
+              ((number "1" 125875 . 125876) (punctuation "*" 125876 . 125877) (number "1024" 125877 . 125881) (punctuation "*" 125881 . 125882) (number "1024" 125882 . 125886)))
+          ("FBIO_ACCEL" . ((number "0x23" 1262 . 1266)))
+          ("FBHDY_OFFSET" . ((number "0" 1991 . 1992)))
+          ("FHD_VIDEOHSIZEOFFSET" . ((number "40" 4881 . 4883)))
+          ("S_E1" . ((punctuation "-" 1044 . 1045) (number "1" 1045 . 1046)))
+          ("UI_PIXEL_FORMAT" . ((symbol "NEXUS_PixelFormat_eA8_R8_G8_B8" 1089 . 1119)))
+          ("HDFB" . ((number "0" 1422 . 1423)))
+          ("MAXFB" . ((number "2" 1454 . 1455)))
+          ("OFFSET_HHDRES" . ((number "1080" 2109 . 2113)))
+          ("OFFSET_SDHRES" . ((number "576" 2384 . 2387)))
+          )
+)
+    (semanticdb-table "brcmfb.h"
+      :file "brcmfb.h"
+      :fsize 6963
+      :lastmodtime '(22684 20995 992871 195000))
+    (semanticdb-table "font_sun8x16.h"
+      :file "font_sun8x16.h"
+      :fsize 22423
+      :lastmodtime '(22684 20995 996871 195000)))
+  :file "!home!babel!work!drv!brcm_200!BcmLinuxDVB!DRV!unified_20160329!brcmlinuxdvbvix!graphics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

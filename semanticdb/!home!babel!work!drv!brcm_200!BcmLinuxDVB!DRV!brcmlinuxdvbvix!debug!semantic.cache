@@ -1,0 +1,83 @@
+;; Object debug/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "debug/"
+  :tables
+  (list
+    (semanticdb-table "bcmdebug.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("DBGON" variable (:constant-flag t) nil [47 52])
+            ("DBGON" variable (:constant-flag t) nil [83 88])
+            ("DBGON" variable (:constant-flag t) nil [83 88])
+            ("E2_STD" variable (:constant-flag t) nil [99 105])
+            ("E2_STD" variable (:constant-flag t) nil [99 105])
+            ("debug_dmx" variable (:constant-flag t) nil [149 158])
+            ("debug_dvbdmx" variable (:constant-flag t) nil [185 197])
+            ("dprintk" variable (:constant-flag t) nil [224 231])
+            ("debug_proc" variable (:constant-flag t) nil [258 268])
+            ("debug_fb" variable (:constant-flag t) nil [295 303])
+            ("debug_av" variable (:constant-flag t) nil [330 338])
+            ("debug_cam" variable (:constant-flag t) nil [366 375])
+            ("debug_pip" variable (:constant-flag t) nil [403 412])
+            ("debug_fp" variable (:constant-flag t) nil [439 447])
+            ("debug_ca" variable (:constant-flag t) nil [475 483])
+            ("debug_avinfo" variable (:constant-flag t) nil [511 523])
+            ("debug_demuxca" variable (:constant-flag t) nil [551 564])
+            ("debug_hdmi" variable (:constant-flag t) nil [592 602])
+            ("debug_sat" variable (:constant-flag t) nil [630 639])
+            ("debug_sci" variable (:constant-flag t) nil [667 676])
+            ("debug_ci" variable (:constant-flag t) nil [704 712])
+            ("debug_vt" variable (:constant-flag t) nil [740 748])
+            ("eprintk" variable (:constant-flag t) nil [776 783])
+            ("DBG_LINE" variable (:constant-flag t) nil [810 818]))          
+      :file "bcmdebug.h"
+      :pointmax 908
+      :fsize 907
+      :lastmodtime '(22689 13723 289436 179000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("debug_ca" . 
+              ((IF "if" 486 . 488) (semantic-list "(DBGON)" 488 . 495) (symbol "printk" 496 . 502)))
+          ("debug_demuxca" . 
+              ((IF "if" 567 . 569) (semantic-list "(DBGON)" 569 . 576) (symbol "printk" 577 . 583)))
+          ("DBG_LINE" (spp-arg-list ("x") 818 . 821) . 
+              ((IF "if" 822 . 824) (semantic-list "(DBGON)" 825 . 832) (symbol "printk" 833 . 839) (semantic-list "(\"###########[%s] (%d) val<%x>#############\\n\",__func__,__LINE__,x)" 839 . 906) (punctuation ";" 906 . 907)))
+          ("debug_av" . 
+              ((IF "if" 341 . 343) (semantic-list "(DBGON)" 343 . 350) (symbol "printk" 351 . 357)))
+          ("DBGON" . ((number "1" 89 . 90)))
+          ("debug_dvbdmx" . 
+              ((IF "if" 198 . 200) (semantic-list "(DBGON)" 201 . 208) (symbol "printk" 209 . 215)))
+          ("debug_cam" . 
+              ((IF "if" 378 . 380) (semantic-list "(DBGON)" 380 . 387) (symbol "printk" 388 . 394)))
+          ("debug_pip" . 
+              ((IF "if" 413 . 415) (semantic-list "(DBGON)" 416 . 423) (symbol "printk" 424 . 430)))
+          ("debug_avinfo" . 
+              ((IF "if" 526 . 528) (semantic-list "(DBGON)" 528 . 535) (symbol "printk" 536 . 542)))
+          ("debug_hdmi" . 
+              ((IF "if" 605 . 607) (semantic-list "(DBGON)" 607 . 614) (symbol "printk" 615 . 621)))
+          ("debug_sci" . 
+              ((IF "if" 679 . 681) (semantic-list "(DBGON)" 681 . 688) (symbol "printk" 689 . 695)))
+          ("debug_dmx" . 
+              ((IF "if" 159 . 161) (semantic-list "(DBGON)" 162 . 169) (symbol "printk" 170 . 176)))
+          ("debug_ci" . 
+              ((IF "if" 715 . 717) (semantic-list "(DBGON)" 717 . 724) (symbol "printk" 725 . 731)))
+          ("E2_STD")
+          ("dprintk" . 
+              ((IF "if" 232 . 234) (semantic-list "(DBGON)" 235 . 242) (symbol "printk" 243 . 249)))
+          ("debug_proc" . 
+              ((IF "if" 269 . 271) (semantic-list "(DBGON)" 272 . 279) (symbol "printk" 280 . 286)))
+          ("debug_fb" . 
+              ((IF "if" 304 . 306) (semantic-list "(DBGON)" 307 . 314) (symbol "printk" 315 . 321)))
+          ("debug_fp" . 
+              ((IF "if" 450 . 452) (semantic-list "(DBGON)" 452 . 459) (symbol "printk" 460 . 466)))
+          ("debug_sat" . 
+              ((IF "if" 642 . 644) (semantic-list "(DBGON)" 644 . 651) (symbol "printk" 652 . 658)))
+          ("debug_vt" . 
+              ((IF "if" 751 . 753) (semantic-list "(DBGON)" 753 . 760) (symbol "printk" 761 . 767)))
+          ("eprintk" . 
+              ((IF "if" 784 . 786) (semantic-list "(DBGON)" 787 . 794) (symbol "printk" 795 . 801)))
+          )
+))
+  :file "!home!babel!work!drv!brcm_200!BcmLinuxDVB!DRV!brcmlinuxdvbvix!debug!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

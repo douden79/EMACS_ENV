@@ -1,0 +1,936 @@
+;; Object linuxkernel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "linuxkernel/"
+  :tables
+  (list
+    (semanticdb-table "nexus_driver.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("nexus_platform_priv.h" include nil nil [2677 2709])
+            ("linux/version.h" include (:system-flag t) nil [2710 2736])
+            ("nexus_base_ioctl.h" include nil nil [2737 2766])
+            ("generated/autoconf.h" include (:system-flag t) nil [2927 2958])
+            ("linux/module.h" include (:system-flag t) nil [2967 2992])
+            ("linux/fs.h" include (:system-flag t) nil [2993 3014])
+            ("linux/ioctl.h" include (:system-flag t) nil [3015 3039])
+            ("linux/sched.h" include (:system-flag t) nil [3040 3064])
+            ("linux/mm.h" include (:system-flag t) nil [3065 3086])
+            ("linux/signal.h" include (:system-flag t) nil [3087 3112])
+            ("linux/kernel.h" include (:system-flag t) nil [3113 3138])
+            ("bchp_common.h" include nil nil [3139 3163])
+            ("asm/brcmstb/common/brcmstb.h" include (:system-flag t) nil [3623 3666])
+            ("priv/nexus_generic_driver.h" include nil nil [3854 3892])
+            ("nexus_driver_open" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4026 4046])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4047 4065]))                  
+                :type "int")
+                nil [3992 4066])
+            ("nexus_driver_close" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4102 4122])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4123 4142]))                  
+                :type "int")
+                nil [4067 4143])
+            ("nexus_driver_ioctl" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4347 4366])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4367 4384])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4385 4403]))                  
+                :type "int")
+                nil [4312 4404])
+            ("nexus_driver_mmap" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4446 4464])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4465 4492]))                  
+                :type "int")
+                nil [4412 4493])
+            ("nexus_driver_fops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    owner:          THIS_MODULE,
+    read:           NULL,
+    write:          NULL,
+#if LINUX_VERSION_CODE < KERNEL_VERSION(2,6,36)
+    ioctl:          nexus_driver_ioctl,
+#else
+    unlocked_ioctl: nexus_driver_ioctl,
+#endif
+    mmap:           nexus_driver_mmap,
+    open:           nexus_driver_open,
+    release:        nexus_driver_close
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4495 4892])
+            ("b_env" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "\"\""
+                :type "char")
+                nil [4894 4920])
+            ("b_devname" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "\"nexus\""
+                :type "char")
+                nil [4921 4955])
+            ("b_parse_env" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5348 5358]))                  
+                :type "void")
+                nil [5324 6113])
+            ("nexus_driver_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6144 6164])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6165 6183]))                  
+                :type "int")
+                nil [6115 6813])
+            ("nexus_driver_close" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6845 6865])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6866 6884]))                  
+                :type "int")
+                nil [6815 6982])
+            ("B_IS_INTERSECT" variable (:constant-flag t) nil [6992 7006])
+            ("nexus_driver_mmap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7122 7140])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7141 7168]))                  
+                :type "int")
+                nil [7093 8602])
+            ("nexus_driver_ioctl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8818 8837])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8859 8876])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8877 8895]))                  
+                :type "int")
+                nil [8788 9369])
+            ("nexus_init_module" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9393 9398]))                  
+                :type "int")
+                nil [9371 12109])
+            ("nexus_cleanup_module" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12137 12142]))                  
+                :type "void")
+                nil [12111 12368])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("nexus_generic_driver_open" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12423 12449]))                  
+                :type "int")
+                nil [12409 12450])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("nexus_generic_driver_close" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12465 12492]))                  
+                :type "int")
+                nil [12451 12493])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [12660 12690]))          
+      :file "nexus_driver.c"
+      :pointmax 12815
+      :fsize 12814
+      :lastmodtime '(22684 21049 444873 411000)
+      :unmatched-syntax '((string 12785 . 12800) (symbol 12779 . 12784) (punctuation 12778 . 12779) (string 12675 . 12688))
+      :lexical-table 
+        '(("B_IS_INTERSECT" (spp-arg-list ("off1" "len1" "off2" "len2") 7006 . 7030) . ((semantic-list "((off1) <= ((off2)+(len2)-1) && (off2) <= ((off1)+(len1)-1))" 7031 . 7091)))
+          )
+)
+    (semanticdb-table "nexus_generic_driver.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("nexus_base_driver.h" include nil nil [2613 2643])
+            ("nexus_base_mmap.h" include nil nil [2644 2672])
+            ("nexus_base_os.h" include nil nil [2673 2699])
+            ("nexus_platform_priv.h" include nil nil [2700 2732])
+            ("bkni.h" include nil nil [2733 2750])
+            ("nexus_generic_driver_impl.h" include nil nil [2751 2789])
+            ("nexus_driver_procfs.h" include nil nil [2790 2822])
+            ("nexus_driver_ioctl.h" include nil nil [2823 2854])
+            ("nexus_platform_ioctl.h" include nil nil [2855 2888])
+            ("BDBG_MODULE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("nexus_generic_driver" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3121 3142]))                  
+                :type "int")
+                nil [3109 3143])
+            ("BDBG_MSG_TRACE" variable (:constant-flag t) nil [3153 3167])
+            ("LOCK" variable (:constant-flag t) nil [3195 3199])
+            ("UNLOCK" variable (:constant-flag t) nil [3253 3259])
+            ("NEXUS_PLATFORM_P_DRIVER_MODULE" variable (:constant-flag t) nil [3363 3393])
+            ("nexus_driver_modules.h" include nil nil [3629 3662])
+            ("nexus_driver_proxy_ioctl" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3738 3752])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3753 3770])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3771 3789])
+                    ("type" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3790 3809])
+                    ("unlocked" variable (:type "bool") (reparse-symbol arg-sub-list) [3810 3824]))                  
+                :type "int")
+                nil [3702 3825])
+            ("g_nexus_driver_ioctl_handlers" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+#define NEXUS_PLATFORM_P_DRIVER_MODULE(module) { nexus_driver_##module##_ioctl } ,
+#include \"nexus_driver_modules.h\"
+#undef NEXUS_PLATFORM_P_DRIVER_MODULE
+{nexus_driver_proxy_ioctl} /* special entry for callback driver */
+}"
+                :type ("" type
+                     (:members 
+                        ( ("ioctl" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("context" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3901 3915])
+                                  ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3916 3933])
+                                  ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3934 3952])
+                                  ("type" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3953 3972])
+                                  ("unlocked" variable (:type "bool") (reparse-symbol arg-sub-list) [3973 3987]))                                
+                              :type "int")
+                              (reparse-symbol classsubparts) [3888 3988]))                        
+                      :type "struct")
+                      nil nil))
+                nil [3863 4251])
+            ("NEXUS_PLATFORM_P_NUM_DRIVERS" variable (:constant-flag t) nil [4346 4374])
+            ("g_nexus_driver_state_handlers" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+#define NEXUS_PLATFORM_P_DRIVER_MODULE(module) {nexus_driver_##module##_open, nexus_driver_##module##_close, NULL},
+#include \"nexus_driver_modules.h\"
+#undef NEXUS_PLATFORM_P_DRIVER_MODULE
+    {NULL, NULL, NULL} /* no special open/close for proxy */
+}"
+                :type ("" type
+                     (:members 
+                        ( ("open" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4658 4667]))                                
+                              :type "int")
+                              (reparse-symbol classsubparts) [4646 4668])
+                          ("close" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4687 4692]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [4673 4693])
+                          ("header" variable
+                             (:pointer 1
+                              :type ("nexus_driver_module_header" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [4698 4740]))                        
+                      :type "struct")
+                      nil nil))
+                nil [4626 5070])
+            ("g_nexus_driver_state_order" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("module_order" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5072 5292])
+            ("module_order" type
+               (:members 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol classsubparts) [5105 5120])
+                    ("order" variable (:type "unsigned int") (reparse-symbol classsubparts) [5172 5187]))                  
+                :type "struct")
+                nil [5072 5292])
+            ("nexus_driver_state" variable (:type ("nexus_driver_state" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [5294 5339])
+            ("nexus_driver_server_init_lock" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5386 5399]))                  
+                :type "int")
+                nil [5340 5400])
+            ("nexus_driver_server_preinit" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5445 5450]))                  
+                :type "int")
+                nil [5401 5451])
+            ("nexus_driver_server_postinit_lock" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5502 5507]))                  
+                :type "int")
+                nil [5452 5508])
+            ("nexus_driver_server_preuninit_lock" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5560 5565]))                  
+                :type "void")
+                nil [5509 5566])
+            ("nexus_driver_server_uninit_lock" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5615 5620]))                  
+                :type "void")
+                nil [5567 5621])
+            ("nexus_driver_process_cleanup_queue_lock" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5678 5683]))                  
+                :type "void")
+                nil [5622 5684])
+            ("nexus_driver_open_client_lock" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5758 5771]))                  
+                :type ("nexus_driver_client_state" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5685 5772])
+            ("nexus_driver_close_client_lock" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("nexus_driver_client_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5820 5861]))                  
+                :type "void")
+                nil [5773 5862])
+            ("nexus_driver_connect_client_lock" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5939 5952])
+                    ("pCertificate" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_Certificate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5953 5991]))                  
+                :type ("nexus_driver_client_state" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5863 5992])
+            ("nexus_driver_disable_client_lock" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("nexus_driver_client_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6042 6083]))                  
+                :type "void")
+                nil [5993 6084])
+            ("nexus_driver_create_client_lock" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pCertificate" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_Certificate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6158 6196])
+                    ("pConfig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_ClientConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6197 6238]))                  
+                :type ("nexus_driver_client_state" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6085 6239])
+            ("nexus_driver_disable_clients_lock" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("including_server" variable (:type "bool") (reparse-symbol arg-sub-list) [6290 6312]))                  
+                :type "void")
+                nil [6240 6313])
+            ("nexus_driver_free" function
+               (:arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6338 6349]))                  
+                :type "void")
+                nil [6315 6411])
+            ("nexus_driver_send_addr" function
+               (:arguments 
+                  ( ("paddr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6505 6518]))                  
+                :type "void")
+                nil [6477 6690])
+            ("nexus_driver_recv_addr_cached" function
+               (:arguments 
+                  ( ("paddr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6728 6741]))                  
+                :type "void")
+                nil [6693 6921])
+            ("nexus_driver_module_init" function
+               (:arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7045 7060])
+                    ("header" variable
+                       (:pointer 1
+                        :type ("nexus_driver_module_header" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7061 7103])
+                    ("module" variable (:type ("NEXUS_ModuleHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7104 7130])
+                    ("class_table" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("b_objdb_class" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7139 7179])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7180 7197]))                  
+                :type "int")
+                nil [7016 7921])
+            ("nexus_driver_module_uninit" function
+               (:arguments 
+                  ( ("header" variable
+                       (:pointer 1
+                        :type ("nexus_driver_module_header" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8051 8093]))                  
+                :type "void")
+                nil [8019 8201])
+            ("nexus_generic_driver_open" function
+               (:arguments 
+                  ( ("module" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8233 8249])
+                    ("pstate" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8250 8264])
+                    ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8265 8278])
+                    ("process_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8279 8304])
+                    ("trusted" variable (:type "bool") (reparse-symbol arg-sub-list) [8305 8318]))                  
+                :type "int")
+                nil [8203 10992])
+            ("nexus_driver_disable_clients" function
+               (:arguments 
+                  ( ("including_server" variable (:type "bool") (reparse-symbol arg-sub-list) [11028 11050]))                  
+                :type "void")
+                nil [10994 11137])
+            ("nexus_driver_disable_clients_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("including_server" variable (:type "bool") (reparse-symbol arg-sub-list) [11185 11207]))                  
+                :type "void")
+                nil [11139 11569])
+            ("nexus_generic_driver_close" function
+               (:arguments 
+                  ( ("module" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11603 11619])
+                    ("state" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11620 11632])
+                    ("abnormal_termination" variable (:type "bool") (reparse-symbol arg-sub-list) [11633 11659]))                  
+                :type "void")
+                nil [11571 13919])
+            ("nexus_generic_driver_validate_mmap" function
+               (:arguments 
+                  ( ("module" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13960 13976])
+                    ("context_" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13977 13992])
+                    ("offset" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13993 14009])
+                    ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14010 14024]))                  
+                :type "int")
+                nil [13921 16214])
+            ("nexus_generic_driver_ioctl" function
+               (:arguments 
+                  ( ("module" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16247 16263])
+                    ("context_" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16264 16279])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16280 16297])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [16298 16316]))                  
+                :type "int")
+                nil [16216 19968])
+            ("nexus_generic_driver_init" function
+               (:arguments 
+                  ( ("settings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("nexus_generic_driver_init_settings" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20000 20058]))                  
+                :type "int")
+                nil [19970 20951])
+            ("nexus_generic_driver_uninit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20986 20991]))                  
+                :type "void")
+                nil [20953 21518])
+            ("nexus_driver_proxy_ioctl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21557 21571])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21572 21589])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21590 21608])
+                    ("type" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21609 21628])
+                    ("unlocked" variable (:type "bool") (reparse-symbol arg-sub-list) [21629 21643]))                  
+                :type "int")
+                nil [21521 32073])
+            ("nexus_driver_module_print_cb_null" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32121 32135]))                  
+                :type "void")
+                nil [32075 32200])
+            ("nexus_driver_module_init_enum_cb" function
+               (:arguments 
+                  ( ("cntx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32240 32251])
+                    ("handle" variable (:type ("NEXUS_ModuleHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32252 32278])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32279 32296])
+                    ("settings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_ModuleSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32297 32334]))                  
+                :type "void")
+                nil [32202 32540])
+            ("nexus_driver_module_uninit_enum_cb" function
+               (:arguments 
+                  ( ("cntx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32582 32593])
+                    ("handle" variable (:type ("NEXUS_ModuleHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32594 32620])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32621 32638])
+                    ("settings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_ModuleSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32639 32676]))                  
+                :type "void")
+                nil [32542 32791])
+            ("BDBG_OBJECT_ID" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("nexus_driver_client_state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34052 34078]))                  
+                :type "int")
+                nil [34037 34079])
+            ("nexus_driver_open_client_lock" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34153 34166]))                  
+                :type ("nexus_driver_client_state" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [34081 36088])
+            ("nexus_driver_disable_client_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("nexus_driver_client_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36386 36427]))                  
+                :type "void")
+                nil [36341 38618])
+            ("nexus_driver_close_client_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("nexus_driver_client_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38726 38767]))                  
+                :type "void")
+                nil [38683 39073])
+            ("nexus_driver_client_id" function
+               (:pointer 1
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type ("nexus_driver_module_driver_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39133 39180]))                  
+                :type ("nexus_driver_client_state" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [39075 39276])
+            ("nexus_driver_create_client" function
+               (:pointer 1
+                :arguments 
+                  ( ("pCertificate" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_Certificate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39340 39378])
+                    ("pConfig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_ClientConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39379 39420]))                  
+                :type ("nexus_driver_client_state" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [39278 39584])
+            ("g_clientModeStr" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{\"unprotected\",\"verified\",\"protected\",\"untrusted\"}"
+                :type "char")
+                nil [39586 39697])
+            ("nexus_driver_create_client_lock" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pCertificate" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_Certificate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40069 40107])
+                    ("pConfig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_ClientConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40108 40149]))                  
+                :type ("nexus_driver_client_state" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [39995 41883])
+            ("nexus_driver_destroy_client_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("nexus_driver_client_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41930 41971]))                  
+                :type "void")
+                nil [41885 42445])
+            ("nexus_driver_destroy_client" function
+               (:arguments 
+                  ( ("client" variable
+                       (:pointer 1
+                        :type ("nexus_driver_client_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42480 42521]))                  
+                :type "void")
+                nil [42447 42916])
+            ("nexus_driver_process_cleanup_queue_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [43134 43139]))                  
+                :type "void")
+                nil [43082 46387])
+            ("nexus_driver_connect_client_lock" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [46534 46547])
+                    ("pCertificate" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("NEXUS_Certificate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46548 46586]))                  
+                :type ("nexus_driver_client_state" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [46459 48499])
+            ("nexus_driver_server_init_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48920 48933]))                  
+                :type "int")
+                nil [48879 49451])
+            ("nexus_driver_server_preinit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [49492 49497]))                  
+                :type "int")
+                nil [49453 49766])
+            ("nexus_driver_server_postinit_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [49898 49903]))                  
+                :type "int")
+                nil [49853 51829])
+            ("nexus_driver_server_preuninit_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [51935 51940]))                  
+                :type "void")
+                nil [51888 53026])
+            ("nexus_driver_server_close_module_headers" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [53172 53177]))                  
+                :type "void")
+                nil [53126 53434])
+            ("nexus_driver_server_uninit_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [53604 53609]))                  
+                :type "void")
+                nil [53560 55539])
+            ("nexus_generic_driver_read_register" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55581 55595])
+                    ("p_value" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55596 55614]))                  
+                :type "void")
+                nil [55541 55666])
+            ("nexus_generic_driver_write_register" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55709 55723])
+                    ("value" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55724 55739]))                  
+                :type "void")
+                nil [55668 55790])
+            ("nexus_driver_get_client_configuration" function
+               (:arguments 
+                  ( ("client_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [55836 55852])
+                    ("pSettings" variable
+                       (:pointer 1
+                        :type ("NEXUS_ClientConfiguration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55853 55890]))                  
+                :type "void")
+                nil [55793 56309])
+            ("nexus_driver_server_postinit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [56344 56349]))                  
+                :type "int")
+                nil [56311 56488])
+            ("nexus_driver_server_preuninit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [56525 56530]))                  
+                :type "void")
+                nil [56490 56602])
+            ("NEXUS_Platform_P_AddDynamicRegion" function
+               (:arguments 
+                  ( ("addr" variable (:type ("NEXUS_Addr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56650 56666])
+                    ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [56667 56681]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [56604 56958])
+            ("NEXUS_Platform_P_RemoveDynamicRegion" function
+               (:arguments 
+                  ( ("addr" variable (:type ("NEXUS_Addr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57009 57025])
+                    ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [57026 57040]))                  
+                :type ("NEXUS_Error" type (:type "class") nil nil))
+                nil [56960 57319])
+            ("b_memory_regions.inc" include nil nil [57321 57352]))          
+      :file "nexus_generic_driver.c"
+      :pointmax 57353
+      :fsize 57352
+      :lastmodtime '(22684 21049 448873 411000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BDBG_MSG_TRACE" (spp-arg-list ("x") 3167 . 3170))
+          ("NEXUS_PLATFORM_P_NUM_DRIVERS" . ((semantic-list "(sizeof(g_nexus_driver_ioctl_handlers)/sizeof(*g_nexus_driver_ioctl_handlers))" 4376 . 4454)))
+          ("UNLOCK" (spp-arg-list nil 3259 . 3261) . ((symbol "BKNI_ReleaseMutex" 3262 . 3279) (semantic-list "(nexus_driver_state.lock)" 3279 . 3304)))
+          ("LOCK" (spp-arg-list nil 3199 . 3201) . ((symbol "BKNI_AcquireMutex" 3202 . 3219) (semantic-list "(nexus_driver_state.lock)" 3219 . 3244)))
+          )
+)
+    (semanticdb-table "nexus_generic_driver_impl.h"
+      :file "nexus_generic_driver_impl.h"
+      :fsize 6907
+      :lastmodtime '(22684 21049 448873 411000))
+    (semanticdb-table "nexus_driver_procfs.h"
+      :file "nexus_driver_procfs.h"
+      :fsize 3025
+      :lastmodtime '(22684 21049 448873 411000)))
+  :file "!home!babel!work!drv!brcm_200!BcmLinuxDVB!DRV!unified_20160329!nexus!platforms!common!src!linuxkernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

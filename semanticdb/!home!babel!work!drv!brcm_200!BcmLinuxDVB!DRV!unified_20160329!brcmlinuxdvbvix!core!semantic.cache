@@ -1,0 +1,212 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+    (semanticdb-table "bcmlinuxdvb.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("../linuxcommon/linuxcommon.h" include nil nil [1 40])
+            ("linux/module.h" include (:system-flag t) nil [41 66])
+            ("bstd.h" include nil nil [67 84])
+            ("bkni.h" include nil nil [85 102])
+            ("nexus_base_driver.h" include nil nil [103 133])
+            ("nexus_base.h" include nil nil [134 157])
+            ("../frontuart/front_common.h" include nil nil [383 421])
+            ("ver.h" include nil nil [422 438])
+            ("hw_info" variable
+               (:typemodifiers ("extern")
+                :type ("HARDWARE_INFO_S" type (:type "class") nil nil))
+                nil [440 471])
+            ("GetRandom" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "unsigned long")
+                nil [473 506])
+            ("Process" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("pRandom" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [536 559])
+                    ("dealy0" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [560 581])
+                    ("delay1" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [582 603]))                  
+                :type "unsigned char")
+                nil [507 604])
+            ("SC50CR_Algorithm" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("pRandom" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [978 1001])
+                    ("dealy0" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1002 1023])
+                    ("delay1" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1024 1045]))                  
+                :type "unsigned char")
+                nil [940 1046])
+            ("linuxdvb_start" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "int")
+                nil [1068 1100])
+            ("linuxdvb_stop" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "int")
+                nil [1101 1132])
+            ("init_module" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1156 1161]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [1137 1162])
+            ("cleanup_module" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1186 1191]))                  
+                :type "void")
+                nil [1163 1192])
+            ("_hwtype" variable
+               (:default-value "0"
+                :type "int")
+                nil [1193 1207])
+            ("b_env" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "\"\""
+                :type "char")
+                nil [1208 1234])
+            ("twinmode" variable
+               (:default-value "false"
+                :type "bool")
+                nil [1235 1255])
+            ("b_parse_env" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1392 1402]))                  
+                :type "void")
+                nil [1368 2007])
+            ("nexus_driver_dev_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2362 2367]))                  
+                :type "int")
+                nil [2329 3557])
+            ("MODULE_AUTHOR" function
+               (:prototype-flag t
+                :type "int")
+                nil [3559 3617])
+            ("MODULE_DESCRIPTION" function
+               (:prototype-flag t
+                :type "int")
+                nil [3618 3681])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [3682 3704])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("_hwtype" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3718 3726])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3727 3731]))                  
+                :type "int")
+                nil [3705 3738])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("_hwtype" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3756 3764]))                  
+                :type "int")
+                nil [3739 3823])
+            ("check_alpumr" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [3899 4290])
+            ("check_alpuc" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [4299 4776])
+            ("check_co164" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [4852 5239])
+            ("check_sc41cr" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [5241 5766])
+            ("SC50CR_Version_Check" function (:type "unsigned char") nil [6243 6970])
+            ("check_sc50cr" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [6972 7366])
+            ("VFD_WaitBootMsg" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [7408 7642])
+            ("init_module" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7667 7672]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [7648 10496])
+            ("cleanup_module" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10518 10523]))                  
+                :type "void")
+                nil [10498 10753])
+            ("bstd.h" include nil nil [10755 10772])
+            ("nexus_types.h" include nil nil [10773 10797])
+            ("nexus_platform.h" include nil nil [10798 10825])
+            ("nexus_parser_band.h" include nil nil [10826 10856])
+            ("linuxdvb_start" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [10857 12435])
+            ("linuxdvb_stop" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [12459 12530])
+            ("nexus_driver_scheduler_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12686 12691]))                  
+                :type ("BERR_Code" type (:type "class") nil nil))
+                nil [12648 12784])
+            ("nexus_driver_scheduler_uninit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12821 12826]))                  
+                :type "void")
+                nil [12786 12830])
+            ("nexus_driver_init_proc_modules" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12892 12897]))                  
+                :type "void")
+                nil [12856 12939])
+            ("TRACE_SIDA_DUMP" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15309 15319])
+                    ("pdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15320 15332])
+                    ("lengh" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15333 15348]))                  
+                :type "void")
+                nil [15288 15352]))          
+      :file "bcmlinuxdvb.c"
+      :pointmax 15361
+      :fsize 15588
+      :lastmodtime '(22684 20995 968871 194000)
+      :unmatched-syntax '((INT 7644 . 7647) (string 3765 . 3821) (number 3732 . 3736) (string 3697 . 3702) (string 3637 . 3679) (string 3573 . 3615) (INT 1133 . 1136)))
+    (semanticdb-table "ver.h"
+      :file "ver.h"
+      :fsize 73
+      :lastmodtime '(22685 27048 5281 193000)))
+  :file "!home!babel!work!drv!brcm_200!BcmLinuxDVB!DRV!unified_20160329!brcmlinuxdvbvix!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,29 @@
+* Technomate Issue 20170125 [6/11]
+- [ ]Downloaded cyrus i setting channel list ok But next time try to open the plaguing  got green screen
+  - try to delete this plaguing  could not find it in the exetention
+  - 설치된 상태에서의 gui 재시작 및 plugin 을 재 실행 시에 green screen 의 현상을 재현하지 못하였습니다.
+  - 이 플러그인으로 채널 리스트를 받으면, 채널 데이터 및 플러그인 코드가 전부 지워지지 않으므로 강제적으로 지워지는 소스를 추가할 필요가 있습니다.
+
+- [ ] Getting to hot even fan working
+- [X] in the next image please default 50HZ >>Not multi
+- [X] please default not configured for both tuners.
+  - 자동으로 튜너 설정 가능합니다.
+  - 요구하는 튜너 설정 정보를 알아야 하므로, 테크노메이트에 튜너 설정 관련 정보를 요청하여 주셔야 합니다.
+- [ ] Default fan by 50%  live and stand by
+- [X] Default time zone   Dublin/Lisbon/London
+- [ ] oscam usually used for card reader  please advise for this box
+  - oscam 관련 사항은 시간이 좀더 소요될 듯 합니다.
+- [ ] is ci+ default/can it be turned off/on ???
+- [X] In usals motor   please default
+	Longitude  000.000
+        Latitude  051.500
+
+- [X] in pip how to do split pictures same as vix image in tm-3t>>50% left 50% right
+  - blue 키로 pip 활성화 한 다음에 green 버튼 메뉴인 Move Picture in Picture 를 누르면 +/- 로는 위치 변동을, 채널 위/아래 로는 창 크기를
+    조정 할 수 있습니다. 또한, 0 번키를 누르면 pip 창이 vix 이미지와 같이 side by side, Cascade PiP 등등 창 대비 조절이 가능합니다.
+  - 이외의 다른 사항이라면 Vix 이미지의 관련 사항을 스크린 샷으로 받아 보아야 알 수 있을것 같습니다.
+
+- [X] recomend picons for  28 east and motorise. picons in server no good is not filling all channels
+  - openvix의 이미지에서 picon 을 다운받아 서버에 올리겟습니다.
+
+- [ ] channel change is very slow using non  4k tv in 1080p

@@ -1,0 +1,54 @@
+NOTE: multiple providers are available for runtime enigma2-plugin-extensions-audiosync (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-extensions-audiosync
+NOTE: multiple providers are available for runtime enigma2-plugin-extensions-cutlisteditor (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-extensions-cutlisteditor
+NOTE: multiple providers are available for runtime enigma2-plugin-extensions-graphmultiepg (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-extensions-graphmultiepg
+NOTE: multiple providers are available for runtime enigma2-plugin-extensions-mediaplayer (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-extensions-mediaplayer
+NOTE: multiple providers are available for runtime enigma2-plugin-extensions-mediascanner (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-extensions-mediascanner
+NOTE: multiple providers are available for runtime enigma2-plugin-extensions-moviecut (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-extensions-moviecut
+NOTE: multiple providers are available for runtime enigma2-plugin-extensions-pictureplayer (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-extensions-pictureplayer
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-fastscan (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-fastscan
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-hotplug (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-hotplug
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-positionersetup (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-positionersetup
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-satfinder (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-satfinder
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-skinselector (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-skinselector
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-softwaremanager (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-softwaremanager
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-videomode (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-videomode
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-videotune (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-videotune
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-osd3dsetup (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-osd3dsetup
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-hdmicec (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-hdmicec
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-osdpositionsetup (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-osdpositionsetup
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-wirelesslan (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-wirelesslan
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-networkwizard (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-networkwizard
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-videoenhancement (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-videoenhancement
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-satelliteequipmentcontrol (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-satelliteequipmentcontrol
+NOTE: multiple providers are available for runtime enigma2-plugin-extensions-dvdplayer (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-extensions-dvdplayer
+NOTE: multiple providers are available for runtime enigma2-plugin-extensions-cooltvguide (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-extensions-cooltvguide
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-networkbrowser (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-networkbrowser
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-autobouquetsmaker (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-autobouquetsmaker
+NOTE: multiple providers are available for runtime enigma2-plugin-systemplugins-tempfancontrol (enigma2-oe-plugins, enigma2-plugins)
+NOTE: consider defining a PREFERRED_PROVIDER entry to match enigma2-plugin-systemplugins-tempfancontrol

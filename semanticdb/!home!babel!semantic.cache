@@ -1,0 +1,87 @@
+;; Object babel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "babel/"
+  :tables
+  (list
+    (semanticdb-table "About.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [25 45])
+            ("os" include nil nil [25 45])
+            ("sys" include nil nil [25 45])
+            ("Tools.HardwareInfo" include nil nil [46 89])
+            ("getVersionString" function nil nil [91 147])
+            ("getImageVersionString" function nil nil [148 535])
+            ("getFlashDateString" function nil nil [536 686])
+            ("getEnigmaVersionString" function nil nil [687 1062])
+            ("getBoxType" function nil nil [1152 1385])
+            ("getImageDistro" function nil nil [1386 1624])
+            ("getMachineName" function nil nil [1625 1810])
+            ("getMachineBrand" function nil nil [1811 2046])
+            ("getImageVersion" function nil nil [2047 2288])
+            ("getMachineKernelFile" function nil nil [2289 2537])
+            ("getMachineInitrdfile" function nil nil [2538 2786])
+            ("getImageFolder" function nil nil [2795 3031])
+            ("getMachineUBINIZE" function nil nil [3041 3283])
+            ("getMachineMKUBIFS" function nil nil [3284 3526])
+            ("getImageFileSystem" function nil nil [3527 3771])
+            ("getMachineMtdKernel" function nil nil [3773 4019])
+            ("getMachineMtdInitrd" function nil nil [4020 4459])
+            ("getMachineMtdRoot" function nil nil [4460 4704])
+            ("getMachineBuild" function nil nil [4705 4943])
+            ("getMachineRootFile" function nil nil [4945 5189])
+            ("getGStreamerVersionString" function nil nil [5191 5282])
+            ("getKernelVersionString" function nil nil [5283 5425])
+            ("getHardwareTypeString" function nil nil [5426 5498])
+            ("getImageTypeString" function nil nil [5499 5634])
+            ("getBrandString" function nil nil [5634 5737])
+            ("getHardwareModelString" function nil nil [5758 5840])
+            ("getMacAddressString" function (:arguments 
+              ( ("ifname" variable nil (reparse-symbol function_parameters) [5865 5871]))              ) nil [5841 5984])
+            ("getMicomVersionString" function nil nil [5985 6205])
+            ("getCPUInfoString" function nil nil [6206 7322])
+            ("getDriverInstalledDate" function nil nil [7323 7822])
+            ("getChipSetString" function nil nil [7824 8034])
+            ("getCPUSpeedString" function nil nil [8035 8581])
+            ("getCPUString" function nil nil [8582 9066])
+            ("getPythonVersionString" function nil nil [9067 9239])
+            ("getCpuCoresString" function nil nil [9239 9638])
+            ("getImageTypeString" function nil nil [9639 9780])
+            ("GetIPsFromNetworkInterfaces" function nil nil [9781 10654])
+            ("about" variable nil nil [10703 10732]))          
+      :file "About.py"
+      :pointmax 10733
+      :fsize 10732
+      :lastmodtime '(22683 62992 899895 320000)
+      :unmatched-syntax '((NAME 9892 . 9903) (IF 9909 . 9911) (ELSE 9922 . 9926)))
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(top_srcdir)/include" "-include" "Python.h" "-include" "$(top_builddir)/enigma2_config.h")) nil [1 127])
+            ("AM_CXXFLAGS" variable (:default-value ("$(LIBSDL_CFLAGS)")) nil [128 162])
+            ("bin_PROGRAMS" variable (:default-value ("enigma2")) nil [163 186])
+            ("enigma2_SOURCES" variable (:default-value ("bsod.cpp" "bsod.h" "enigma.cpp" "xmlgenerator.cpp" "xmlgenerator.h" "version_info.cpp" "version_info.h" "version.h")) nil [187 330])
+            ("EXTRA_DIST" variable (:default-value ("enigma-dvbtest.cpp" "enigma-gdi.cpp" "enigma-gui.cpp" "enigma-playlist.cpp" "enigma-scan.cpp")) nil [331 444])
+            ("enigma2_LDADD_WHOLE" variable (:default-value ("$(top_builddir)/lib/actions/libenigma_actions.a" "$(top_builddir)/lib/base/libenigma_base.a" "$(top_builddir)/lib/components/libenigma_components.a" "$(top_builddir)/lib/driver/libenigma_driver.a" "$(top_builddir)/lib/mmi/libenigma_mmi.a" "$(top_builddir)/lib/dvb/libenigma_dvb.a" "$(top_builddir)/lib/dvb_ci/libenigma_dvb_ci.a" "$(top_builddir)/lib/gdi/libenigma_gdi.a" "$(top_builddir)/lib/gui/libenigma_gui.a" "$(top_builddir)/lib/python/libenigma_python.a" "$(top_builddir)/lib/nav/libenigma_nav.a" "$(top_builddir)/lib/network/libenigma_network.a" "$(top_builddir)/lib/network_sr/libenigma_network_sr.a" "$(top_builddir)/lib/service/libenigma_service.a")) nil [445 1141])
+            ("enigma2_LDADD" variable (:default-value ("@BASE_LIBS@" "@LIBGIF_LIBS@" "@LIBJPEG_LIBS@" "@LIBSDL_LIBS@" "@LIBXINE_LIBS@" "@LIBXMLCCWRAP_LIBS@" "@PTHREAD_LIBS@" "@PYTHON_LDFLAGS@" "@LIBDDVD_LIBS@" "-ltuxtxt" "-ltuxtxt32bpp" "-lcrypt" "-lrt" "-ldl")) nil [1142 1366])
+            ("enigma2_LDFLAGS" variable (:default-value ("-Wl,--export-dynamic")) nil [1367 1406])
+            ("GIT_DIR" variable (:default-value ("$(top_srcdir)/.git")) nil [1423 1452])
+            ("GIT" variable (:default-value ("git" "--git-dir=$(GIT_DIR)")) nil [1452 1483])
+            ("ENIGMA2_COMMIT_DATE" variable (:default-value ("`grep '^CommitDate:' $(GIT_DIR)/last_commit_info | cut -d' ' -f2`")) nil [1505 1593])
+            ("ENIGMA2_BRANCH" variable (:default-value ("`cat $(GIT_DIR)/branch`")) nil [1593 1634])
+            ("ENIGMA2_COMMIT_DATE" variable (:default-value ("`date +%d-%m-%Y`")) nil [1764 1803])
+            ("ENIGMA2_BRANCH" variable (:default-value ("`$(GIT) branch --no-color 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/\\1/'`")) nil [1803 1899])
+            ("ENIGMA2_REV" variable (:default-value ("`$(GIT) describe --abbrev=7 --always --long --tags`")) nil [1899 1965])
+            ("BUILT_SOURCES" variable (:default-value ("version-intermediate.h")) nil [1978 2017])
+            (".INTERMEDIATE" function (:arguments ("version-intermediate.h")) nil [2017 2055])
+            (".PHONY" function (:arguments ("version-intermediate.h")) nil [2055 2086])
+            ("version-intermediate.h" function nil nil [2086 2536])
+            ("enigma2" function (:arguments ("$(enigma2_OBJECTS)" "$(enigma2_DEPENDENCIES)" "$(enigma2_LDADD_WHOLE)")) nil [2537 2835]))          
+      :file "Makefile.am"
+      :pointmax 2835
+      :fsize 2834
+      :lastmodtime '(22684 13978 32580 247000)
+      :unmatched-syntax '((shell-command 2622 . 2834) (bol 2621 . 2621))))
+  :file "!home!babel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

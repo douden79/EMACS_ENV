@@ -1,10 +1,10 @@
 * Theme
 ** monokai-theme
 #+begin_src emacs-lisp
-;;(use-package monokai-theme
-;;:ensure t
-;;:config (load-theme 'monokai 0)
-;;(setq monokai-use-variable-pitch nil))
+(use-package monokai-theme
+:ensure t
+:config (load-theme 'monokai 0)
+(setq monokai-use-variable-pitch nil))
 #+end_src
 ** darkokai-theme
 #+begin_src emacs-lisp
@@ -20,9 +20,9 @@
 ;;:config (load-theme 'ample-light))
 ** solarized-theme
 #+begin_src emacs-lisp
-(use-package solarized-theme
-:ensure t
-:config (load-theme 'solarized-light t))
+;;(use-package solarized-theme
+;;:ensure t
+;;:config (load-theme 'solarized-light t))
 #+end_src
 ** alect themes
 #+begin_src emacs-lisp
@@ -164,11 +164,11 @@ Description:
 #+begin_src emacs-lisp
 (use-package bm
 :ensure t
-:bind (("C-1" . bm-toggle)
+:bind (("C-3" . bm-toggle)
 ("C-2" . bm-next)
-("C-3" . bm-previous)))
+("C-1" . bm-previous)))
 #+end_src
-
+  
 *** tabbar
 #+begin_src emacs-lisp
 (use-package tabbar
@@ -209,9 +209,10 @@ Description:
 * org-mode
 ** org-bullets
 #+begin_src emacs-lisp
-;;(use-package org-bullets
-;;:ensure t
-;;:init (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+(use-package org-bullets
+:ensure t
+:config
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 #+end_src
 ** task management
 #+begin_src emacs-lisp
@@ -513,3 +514,9 @@ Description:
 (unless (eq major-mode 'python-mode) ad-do-it))
 (ad-activate 'auto-complete-mode))
 #+end_src 
+** Indent Hint
+#+begin_src emacs-listp
+(require 'indent-hints)
+(add-hook 'c-mode-common-hook 'indent-hints-activate)
+(setq indent-hints-profile-switching-enabled t)
+#+end_src

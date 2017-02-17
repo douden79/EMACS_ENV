@@ -514,9 +514,10 @@ Description:
 (unless (eq major-mode 'python-mode) ad-do-it))
 (ad-activate 'auto-complete-mode))
 #+end_src 
-** Indent Hint
-#+begin_src emacs-listp
-(require 'indent-hints)
-(add-hook 'c-mode-common-hook 'indent-hints-activate)
-(setq indent-hints-profile-switching-enabled t)
+** highlight-indent-guide
+#+begin_src emacs-lisp
+(use-package highlight-indent-guides
+:ensure t
+:config (add-hook 'c-mode-hook 'highlight-indent-guides-mode)
+:init (setq highlight-indent-guides-method 'character))
 #+end_src
